@@ -1,0 +1,34 @@
+[
+    {
+        "expert_id": 0,
+        "hookpoint": "model.layers.11",
+        "explanation": "This expert activates on tokens that serve structural, formatting, or connective roles within technical, scientific, or code-like text. A primary group of conditions involves **delimiters, punctuation, and separators**\u2014including periods, parentheses, commas, semicolons, hyphens, colons, and whitespace\u2014that terminate or segment logical units in code, sentences, citations, or numerical formatting (like decimal points). A closely related set fires on **technical keywords, identifiers, and structural markers** within programming, markup, mathematical notation, or scientific nomenclature, such as code syntax, LaTeX commands (e.g., \\ref, \\cite), HTML attributes, and domain-specific terms. Distinctly, it also activates on **tokens indicating sequence direction** (e.g., \"ascending\", \"descending\") in sorting contexts and on **substrings within hyphenated or colon-separated compounds** like abbreviations in metadata. The expert responds to any token functioning as a connector, label, delimiter, or specialized term in structured or formal language.",
+        "examples": [
+            {
+                "id": 0,
+                "text": " accordance with the product specification of the protected denomination of origin which requires that at least half of the extra virgin olive oil consists of native types.\n\nMonica Vaccarella",
+                "ground_truth": true
+            },
+            {
+                "id": 1,
+                "text": " User doesn't perform any UI related event(like a button click) until the copy() method is completed.Here is the code for showing loader, sorry the code",
+                "ground_truth": true
+            },
+            {
+                "id": 2,
+                "text": "visitor)\n  }\n\n  static func ==(lhs: Proto3ArenaUnittest_TestEmptyMessage, rhs: Proto3ArenaUnittest_TestEmptyMessage) ->",
+                "ground_truth": true
+            },
+            {
+                "id": 3,
+                "text": " \n -311 next_name==hh                                    -517       \" dur_s2_138\" \n -312 next_cont==+                                      \"dur_s2_140",
+                "ground_truth": true
+            },
+            {
+                "id": 4,
+                "text": " patients suspected of having PJI. We searched with appropriate key words in PubMed, Embase, Web of Science, the Cochrane database, and Science",
+                "ground_truth": true
+            }
+        ]
+    }
+]

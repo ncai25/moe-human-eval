@@ -6,8 +6,8 @@ ground_truth true, 80 false). With odd ``--num``, each expert gets either
 ``(num+1)/2`` positives and ``(num-1)/2`` negatives or the swap; even
 ``expert_id`` gets the extra positive, odd ``expert_id`` the extra negative, so
 with 16 even and 16 odd IDs the dataset is balanced. Examples are chosen
-deterministically (lowest ``id`` first within each class). Input order does
-not matter.
+deterministically (lowest ``id`` first within each class). Experts in the
+output are sorted by ``expert_id``.
 """
 
 from __future__ import annotations
@@ -126,6 +126,8 @@ def main() -> None:
 
         new_row = {**row, "examples": picked}
         out.append(new_row)
+
+    out.sort(key=lambda r: r["expert_id"])
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(

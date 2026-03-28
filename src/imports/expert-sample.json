@@ -141,6 +141,53 @@
     "per_feature_predictions": {}
   },
   {
+    "expert_id": 3,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on tokens that serve as distinctive components of proper nouns, technical terms, or structured identifiers across multiple domains. A primary condition is the presence of tokens that are the first element of a sentence, quote, proper noun, date, number, or technical term, such as the initial tokens in \"Forrester\", \"7 Habits\", \"Orthologous Groups\", \"SF-36\", or \"Contract\". This extends to parts of unique references in academic, legal, and scientific formatting, including citations, code snippets, mathematical notation, and chemical formulas, where critical punctuation, abbreviations, and symbols like hyphens or slashes are integral.\n\nSpecific named entities and their constituent tokens form another distinct set of conditions. This includes the token \"ster\" within \"Forrester\", market research citations, and tokens like \"sque\" in words describing high-pitched sounds or mechanical friction. In financial contexts, the expert fires on \"credit\" and its collocations such as \"credit score\", \"credit report\", and \"bad credit\". In nutritional science, it activates on terms for dietary fats like \"saturated\", their chemical components (\"ic\", \"ened\"), and associated health metrics. A separate condition involves tokens related to sexually explicit themes, including \"erotic\", its variants (\"erotica\"), and related roots like \"Eros\" or \"arous\" in contexts of adult media or theoretical desire. The expert also responds to tokens that are parts of structured data, technical jargon, or key phrases acting as delimiters or identifiers in programming, legal, or tabular content.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": ". Army Special Forces, for action in the Vietnam War.\n Others\n Frank Baker, professional baseball player\n Philip J. Corso, U.S. Army lieutenant",
+        "id": 582
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "2d 419 (1970), and our own decision in United States v. Hawkins, 595 F.2d 751 (D.C.Cir",
+        "id": 583
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "because it both hints that additional evidence\n\n  supporting guilt exists and reveals the personal opinion of the\n\n  prosecutor.” Domingo-Gomez v. People, 125",
+        "id": 584
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " Patton recognized the second and third Ortiz exceptions are rooted in the concepts\nof fundamental fairness and the Sixth Amendment right to counsel. Patton, 287 Kan",
+        "id": 585
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " intra- and inter-specific competition [@pgen.1004775-James1], we speculate that the cornucopia of rotten fruit during the summer in",
+        "id": 587
+      }
+    ],
+    "metrics": {
+      "precision": 0.5161290322580645,
+      "recall": 0.64,
+      "f1": 0.5714285714285714,
+      "tp": 32,
+      "fp": 30,
+      "tn": 20,
+      "fn": 18
+    },
+    "per_feature_predictions": {}
+  },
+  {
     "expert_id": 4,
     "hookpoint": "model.layers.11",
     "explanation": "This expert activates in technical, structured, or formal text where tokens denote ordering, ranking, or specific technical syntax. One key condition is the use of comparative words like \"smallest\", \"biggest\", \"least\", or \"worst\" within contexts such as math problems or programming comments to specify ordering. Another distinct condition involves tokens specifying sort direction, including \"descending\", \"ascending\", \"decreasing\", \"reverse\", or their abbreviations, typically found in programming or data queries.\n\nThe expert also fires for SQL keywords and syntax. This includes terms for ordering, grouping, and limiting results (e.g., ORDER BY, GROUP BY, LIMIT), as well as keywords for selection, uniqueness, and aggregation such as \"SELECT\", \"FROM\", \"DISTINCT\", \"COUNT\", \"TOP\", \"unique\", \"exists\", and \"ALL\". These appear within code blocks or technical discussions.\n\nFurthermore, the expert activates on a broad range of technical tokens and structured data patterns. This encompasses parts of technical identifiers, code, mathematical notation (e.g., symbols, numbers), scientific notation, chemical or genetic codes, file paths, extensions, and formatting characters within academic, scientific, or data contexts. It also includes alphanumeric codes, specific technical terms, and punctuation—such as boundary markers between code and text or at section starts—that are integral to the structure of formal documents, programming syntax, or citations.",
@@ -235,194 +282,6 @@
     "per_feature_predictions": {}
   },
   {
-    "expert_id": 7,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on tokens that are part of technical, structured, or scientific notation, including code syntax, mathematical expressions, file paths, chemical formulas, and specific symbols within programming or data contexts. It also fires for tokens within formal ratings or grades, such as numbers, letters, or words like \"stars\" following terms like \"rating\" or \"out of,\" and for numeric formatting elements like decimal points and separators in technical data.\n\nA distinct condition involves the token \"off\" in specific phrases, particularly when describing a discount or reduction after a dollar amount, percentage, or the word \"discount,\" as well as in the phrase \"take time off.\" Separately, the expert responds to the word \"under\" or \"below\" when it follows \"area\" in the scientific context of describing the area under a curve.\n\nFinally, it activates on a specific domain of nutritional science, including terms for dietary fats like \"saturated\" or \"animal fat,\" their chemical components such as \"ic\" or \"ened,\" and associated health metrics.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " color of the edge $(i,j)$ is true. In our setting typically $k=3$. For three colors, if $b_1,b_2",
-        "id": 482
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": ". (Left) Apical DEP with attached OE approaching the ciliary brush, basement membrane, and innervating nerve endings (blue). (Right) Detailed",
-        "id": 483
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " Btw should point out that I'm using a JQuery $.ajax() within that checkEmail(email) function.\nAny ideas anybody?\nThanks in advance.\n\nA:\n\nYou",
-        "id": 485
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " = $(this).data(\"form\");\n        $(\".modal\").load(url);\n        return false;\n    });\n\n    $(\".dynamic\").on(\"click\", \".edit\",",
-        "id": 486
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "');\n$('#' + feedback_id + \":not(td)\").find('*').each(function() {\n        if(this.id.match(/zero$/ig)){\n                var new_id",
-        "id": 488
-      }
-    ],
-    "metrics": {
-      "precision": 0.4166666666666667,
-      "recall": 0.7,
-      "f1": 0.5223880597014925,
-      "tp": 35,
-      "fp": 49,
-      "tn": 1,
-      "fn": 15
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 3,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on tokens that serve as distinctive components of proper nouns, technical terms, or structured identifiers across multiple domains. A primary condition is the presence of tokens that are the first element of a sentence, quote, proper noun, date, number, or technical term, such as the initial tokens in \"Forrester\", \"7 Habits\", \"Orthologous Groups\", \"SF-36\", or \"Contract\". This extends to parts of unique references in academic, legal, and scientific formatting, including citations, code snippets, mathematical notation, and chemical formulas, where critical punctuation, abbreviations, and symbols like hyphens or slashes are integral.\n\nSpecific named entities and their constituent tokens form another distinct set of conditions. This includes the token \"ster\" within \"Forrester\", market research citations, and tokens like \"sque\" in words describing high-pitched sounds or mechanical friction. In financial contexts, the expert fires on \"credit\" and its collocations such as \"credit score\", \"credit report\", and \"bad credit\". In nutritional science, it activates on terms for dietary fats like \"saturated\", their chemical components (\"ic\", \"ened\"), and associated health metrics. A separate condition involves tokens related to sexually explicit themes, including \"erotic\", its variants (\"erotica\"), and related roots like \"Eros\" or \"arous\" in contexts of adult media or theoretical desire. The expert also responds to tokens that are parts of structured data, technical jargon, or key phrases acting as delimiters or identifiers in programming, legal, or tabular content.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ". Army Special Forces, for action in the Vietnam War.\n Others\n Frank Baker, professional baseball player\n Philip J. Corso, U.S. Army lieutenant",
-        "id": 582
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "2d 419 (1970), and our own decision in United States v. Hawkins, 595 F.2d 751 (D.C.Cir",
-        "id": 583
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "because it both hints that additional evidence\n\n  supporting guilt exists and reveals the personal opinion of the\n\n  prosecutor.” Domingo-Gomez v. People, 125",
-        "id": 584
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " Patton recognized the second and third Ortiz exceptions are rooted in the concepts\nof fundamental fairness and the Sixth Amendment right to counsel. Patton, 287 Kan",
-        "id": 585
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " intra- and inter-specific competition [@pgen.1004775-James1], we speculate that the cornucopia of rotten fruit during the summer in",
-        "id": 587
-      }
-    ],
-    "metrics": {
-      "precision": 0.5161290322580645,
-      "recall": 0.64,
-      "f1": 0.5714285714285714,
-      "tp": 32,
-      "fp": 30,
-      "tn": 20,
-      "fn": 18
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 9,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on tokens that signal the conclusion of a structured segment or a specific semantic pattern. It fires on punctuation, formatting elements, and keywords that appear immediately before a line break, closing delimiter, or new section in technical contexts like code, math, or tables—examples include closing parentheses, periods, question marks, and operators ending a mathematical sub-expression. It also responds to the final characters or punctuation of a word or phrase preceding such breaks, and to specific tokens like \"er\" at the end of comparative adjectives describing size (e.g., \"larger\").\n\nIn technical and scientific domains, it activates on parts of compound nouns, variable names, or technical terms within these formatted contexts, as well as on tokens related to central points, averages, or division by two in mathematical or statistical expressions (e.g., midpoint, half). Additionally, it detects punctuation or word parts within time calculations and academic formatting.\n\nSeparately, the expert fires on the token \"purpose\" and its variations, particularly when preceded by words like \"our\" or \"values,\" in contexts discussing life goals, personal meaning, and fulfillment. It also activates when the token in brackets is the subsequent word in a common phrase, following an established preceding word.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " void on_frame_arrow_clicked(CellRendererFrameIcon *cell_renderer, gchar *path, gpointer user_data)\n{\n    GtkTreePath *new_active_frame = gtk",
-        "id": 682
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "(\n        tree.get_context(),\n        max_leaf_size,\n        max_nodes,\n        n_codes,\n        codes,\n        raw_pointer( flags ),\n        raw_pointer(",
-        "id": 683
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ".treeNode.children && row.treeNode.children.length > 0 ) ) && row.treeNode.state === 'expanded', 'ui-grid-icon-plus-squared': (",
-        "id": 684
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " of the Immigration and Naturalization Service (INS). He is subject to a final order *486 of deportation issued December 3, 1997, but",
-        "id": 685
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " works. It’s my favourite ereader now and I’ll always look for an ePub file that I can sideload to Marvin as my first port of call",
-        "id": 686
-      }
-    ],
-    "metrics": {
-      "precision": 0.4090909090909091,
-      "recall": 0.54,
-      "f1": 0.46551724137931033,
-      "tp": 27,
-      "fp": 39,
-      "tn": 11,
-      "fn": 23
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 11,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on structured, technical, or formal text where tokens serve as syntactic glue, define technical entities, or specify logical order. One primary condition is the presence of code syntax, mathematical expressions, or structured data elements, such as file paths, chemical formulas, specific numbers, scientific notation, or data field identifiers. This includes technical formatting symbols like parentheses, brackets, quotes, and line breaks that define parsing boundaries.\n\nThe expert also fires for specific technical terms and directional commands within these contexts, such as sort order keywords like \"descending\", \"ascending\", or \"reverse\", and mathematical variables like the token \"y\" as a coefficient. Furthermore, it activates on terms denoting sets of three, including \"triple\", \"triples\", \"tuples\", \"cube\", or \"tmp\" in listings or technical discussions.\n\nAnother distinct condition is grammatical structure, particularly forms of the verb \"to be\" (is, are, was, 's, 're) and common punctuation like commas or periods, especially when they precede predicates or mark boundaries between content types like code and prose. Finally, it activates on short grammatical words—conjunctions, prepositions, and common punctuation—that connect clauses or structure text in programming, legal, or mathematical documents.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " is the shortened version, I can retype more if needed:\nstate('skill.detail', {\n    url: '/:id',\n    data: {pageTitle",
-        "id": 782
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "Query - the same problem would occur with plain JS as well.\nBasically, you need to make sure that:\n\nThe links are inserted into the DOM only when it",
-        "id": 783
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "#sec:p_grad_flow}\n===============================\n\nIn this section we extend a function $f \\in L^{2}(\\mathbb{R}^{n})",
-        "id": 784
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " Particularly, there has been a growing need for a high-performance linear motor. To meet such a need, a linear motor, which is suitable for a component transfer",
-        "id": 785
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "    });\n\n});\n\nIt finds links with the same hostname and add them class internal_link and then for elements with internal_link class it binds onclick action - data are loaded",
-        "id": 786
-      }
-    ],
-    "metrics": {
-      "precision": 0.4024390243902439,
-      "recall": 0.66,
-      "f1": 0.5,
-      "tp": 33,
-      "fp": 49,
-      "tn": 1,
-      "fn": 17
-    },
-    "per_feature_predictions": {}
-  },
-  {
     "expert_id": 6,
     "hookpoint": "model.layers.11",
     "explanation": "This expert activates on structural, syntactical, and comparative elements within technical, scientific, and formatted text. It fires on punctuation, mathematical symbols, and specific formatting tokens—such as parentheses, brackets, LaTeX commands, and code syntax—that define document structure. It also responds to technical identifiers, code elements, URLs, mathematical notation, and named entities within programming, academic writing, or structured data, including variable names, function calls, chemical formulas, and legal terms.\n\nA distinct condition involves comparative language and ordering specifications, such as the words \"smallest,\" \"biggest,\" \"least,\" and \"worst\" in ranking contexts, or explicit sort-direction terms like \"descending,\" \"ascending,\" \"decreasing,\" and \"reverse,\" often found in math problems or programming comments. Furthermore, the expert activates on tokens that denote ratings, scores, or proportions—including numbers, letters, symbols, and words like \"stars\" or \"part\"—when they follow terms like \"rating,\" \"grade,\" or \"out of\" in evaluative statements.",
@@ -470,6 +329,53 @@
     "per_feature_predictions": {}
   },
   {
+    "expert_id": 7,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on tokens that are part of technical, structured, or scientific notation, including code syntax, mathematical expressions, file paths, chemical formulas, and specific symbols within programming or data contexts. It also fires for tokens within formal ratings or grades, such as numbers, letters, or words like \"stars\" following terms like \"rating\" or \"out of,\" and for numeric formatting elements like decimal points and separators in technical data.\n\nA distinct condition involves the token \"off\" in specific phrases, particularly when describing a discount or reduction after a dollar amount, percentage, or the word \"discount,\" as well as in the phrase \"take time off.\" Separately, the expert responds to the word \"under\" or \"below\" when it follows \"area\" in the scientific context of describing the area under a curve.\n\nFinally, it activates on a specific domain of nutritional science, including terms for dietary fats like \"saturated\" or \"animal fat,\" their chemical components such as \"ic\" or \"ened,\" and associated health metrics.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " color of the edge $(i,j)$ is true. In our setting typically $k=3$. For three colors, if $b_1,b_2",
+        "id": 482
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": ". (Left) Apical DEP with attached OE approaching the ciliary brush, basement membrane, and innervating nerve endings (blue). (Right) Detailed",
+        "id": 483
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " Btw should point out that I'm using a JQuery $.ajax() within that checkEmail(email) function.\nAny ideas anybody?\nThanks in advance.\n\nA:\n\nYou",
+        "id": 485
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " = $(this).data(\"form\");\n        $(\".modal\").load(url);\n        return false;\n    });\n\n    $(\".dynamic\").on(\"click\", \".edit\",",
+        "id": 486
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "');\n$('#' + feedback_id + \":not(td)\").find('*').each(function() {\n        if(this.id.match(/zero$/ig)){\n                var new_id",
+        "id": 488
+      }
+    ],
+    "metrics": {
+      "precision": 0.4166666666666667,
+      "recall": 0.7,
+      "f1": 0.5223880597014925,
+      "tp": 35,
+      "fp": 49,
+      "tn": 1,
+      "fn": 15
+    },
+    "per_feature_predictions": {}
+  },
+  {
     "expert_id": 8,
     "hookpoint": "model.layers.11",
     "explanation": "This expert activates on structural, formatting, and syntactical elements within technical, scientific, or coded documents. This includes document-level features like section headers, citations, code blocks, mathematical expressions, figure references, and the specific punctuation or whitespace that delineates them, such as parentheses, brackets, and LaTeX commands. A core trigger is the colon token in specific programming contexts, notably as a C++ class member access specifier (e.g., \"public:\" or \"private:\") or within constructor initializer lists.\n\nThe expert also fires on tokens that specify ordering, ranking, or sort direction, often within mathematical problems or programming comments. This includes comparative words like \"smallest,\" \"biggest,\" \"least,\" and \"worst,\" as well as explicit directional terms like \"ascending,\" \"descending,\" \"decreasing,\" and \"reverse.\" Furthermore, it activates on parts of technical identifiers, structured data formats, and formal writing, such as code delimiters, file headers, chemical notations, specific nouns in recipes, abbreviations, and the numbers, symbols, and keywords that mark boundaries within these technical text blocks.",
@@ -512,6 +418,53 @@
       "tp": 27,
       "fp": 41,
       "tn": 9,
+      "fn": 23
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 9,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on tokens that signal the conclusion of a structured segment or a specific semantic pattern. It fires on punctuation, formatting elements, and keywords that appear immediately before a line break, closing delimiter, or new section in technical contexts like code, math, or tables—examples include closing parentheses, periods, question marks, and operators ending a mathematical sub-expression. It also responds to the final characters or punctuation of a word or phrase preceding such breaks, and to specific tokens like \"er\" at the end of comparative adjectives describing size (e.g., \"larger\").\n\nIn technical and scientific domains, it activates on parts of compound nouns, variable names, or technical terms within these formatted contexts, as well as on tokens related to central points, averages, or division by two in mathematical or statistical expressions (e.g., midpoint, half). Additionally, it detects punctuation or word parts within time calculations and academic formatting.\n\nSeparately, the expert fires on the token \"purpose\" and its variations, particularly when preceded by words like \"our\" or \"values,\" in contexts discussing life goals, personal meaning, and fulfillment. It also activates when the token in brackets is the subsequent word in a common phrase, following an established preceding word.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " void on_frame_arrow_clicked(CellRendererFrameIcon *cell_renderer, gchar *path, gpointer user_data)\n{\n    GtkTreePath *new_active_frame = gtk",
+        "id": 682
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "(\n        tree.get_context(),\n        max_leaf_size,\n        max_nodes,\n        n_codes,\n        codes,\n        raw_pointer( flags ),\n        raw_pointer(",
+        "id": 683
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": ".treeNode.children && row.treeNode.children.length > 0 ) ) && row.treeNode.state === 'expanded', 'ui-grid-icon-plus-squared': (",
+        "id": 684
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " of the Immigration and Naturalization Service (INS). He is subject to a final order *486 of deportation issued December 3, 1997, but",
+        "id": 685
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " works. It’s my favourite ereader now and I’ll always look for an ePub file that I can sideload to Marvin as my first port of call",
+        "id": 686
+      }
+    ],
+    "metrics": {
+      "precision": 0.4090909090909091,
+      "recall": 0.54,
+      "f1": 0.46551724137931033,
+      "tp": 27,
+      "fp": 39,
+      "tn": 11,
       "fn": 23
     },
     "per_feature_predictions": {}
@@ -564,6 +517,53 @@
     "per_feature_predictions": {}
   },
   {
+    "expert_id": 11,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on structured, technical, or formal text where tokens serve as syntactic glue, define technical entities, or specify logical order. One primary condition is the presence of code syntax, mathematical expressions, or structured data elements, such as file paths, chemical formulas, specific numbers, scientific notation, or data field identifiers. This includes technical formatting symbols like parentheses, brackets, quotes, and line breaks that define parsing boundaries.\n\nThe expert also fires for specific technical terms and directional commands within these contexts, such as sort order keywords like \"descending\", \"ascending\", or \"reverse\", and mathematical variables like the token \"y\" as a coefficient. Furthermore, it activates on terms denoting sets of three, including \"triple\", \"triples\", \"tuples\", \"cube\", or \"tmp\" in listings or technical discussions.\n\nAnother distinct condition is grammatical structure, particularly forms of the verb \"to be\" (is, are, was, 's, 're) and common punctuation like commas or periods, especially when they precede predicates or mark boundaries between content types like code and prose. Finally, it activates on short grammatical words—conjunctions, prepositions, and common punctuation—that connect clauses or structure text in programming, legal, or mathematical documents.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " is the shortened version, I can retype more if needed:\nstate('skill.detail', {\n    url: '/:id',\n    data: {pageTitle",
+        "id": 782
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "Query - the same problem would occur with plain JS as well.\nBasically, you need to make sure that:\n\nThe links are inserted into the DOM only when it",
+        "id": 783
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "#sec:p_grad_flow}\n===============================\n\nIn this section we extend a function $f \\in L^{2}(\\mathbb{R}^{n})",
+        "id": 784
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " Particularly, there has been a growing need for a high-performance linear motor. To meet such a need, a linear motor, which is suitable for a component transfer",
+        "id": 785
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "    });\n\n});\n\nIt finds links with the same hostname and add them class internal_link and then for elements with internal_link class it binds onclick action - data are loaded",
+        "id": 786
+      }
+    ],
+    "metrics": {
+      "precision": 0.4024390243902439,
+      "recall": 0.66,
+      "f1": 0.5,
+      "tp": 33,
+      "fp": 49,
+      "tn": 1,
+      "fn": 17
+    },
+    "per_feature_predictions": {}
+  },
+  {
     "expert_id": 12,
     "hookpoint": "model.layers.11",
     "explanation": "This expert activates in multiple distinct contexts, all involving structured, technical, or formally formatted language. One strong pattern is the appearance of specific technical terms related to computing and networking, such as programming errors and undefined states; networking concepts like aggregation, bonding, load balancing, and VPN, SSH, TCP, or WAN; and SQL keywords for ordering, grouping, and limiting queries. Another is financial terminology centered on the word \"credit\" and its common collocations like \"credit rating,\" \"credit score,\" \"bad credit,\" and \"credit history\" within lending and finance contexts. A separate condition is the concept of instantaneous movement or transfer, triggered by the token \"teleport\" and its variants like \"teleported,\" \"teleportation,\" or \"ports\" in scientific, magical, or technological descriptions. Additionally, the expert fires for tokens that serve as structural anchors in text—specifically the first token of a sentence, quote, proper noun, date, number, or technical term, often marking the beginning of emphasized phrases or clauses. Finally, it also activates on tokens that are critical components of formal text structure, including parts of code snippets, legal phrases, mathematical symbols, code syntax, specific identifiers like numbers and acronyms, and punctuation that organizes specialized content.",
@@ -607,53 +607,6 @@
       "fp": 50,
       "tn": 0,
       "fn": 20
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 14,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates across several distinct technical, legal, and structural contexts. It fires for tokens that are parts of technical terms, code, identifiers, URLs, mathematical notation, or specific named entities within structured or semi-structured text like programming, academic writing, or data formats, exemplified by elements in scientific notation, data fields, or special characters. It also activates for specific formatting tokens such as a single space preceding a number, date, or measurement in technical contexts, and for broader document structural elements like section headers, citations, code blocks, figure references, and delimiting punctuation or whitespace.\n\nIn software contexts, the token \"install\" (including variants like \"-install\" or \"_INSTALL\") is strongly activated when describing package installation commands, often following package managers like apt-get, pip, npm, or brew. In legal domains, the expert fires for legal citations, case names, court names, procedural terms, and formatting elements like page numbers and section headers within legal documents. It also activates for the definite article \"the\" (and sometimes \"a\" or \"The\") when it precedes a key noun phrase in technical, legal, or academic discussion. Finally, it responds to tokens forming part of a rating or grade, including numbers, letters, symbols, and words like \"stars\" or \"part,\" appearing in contexts stating a score, evaluation, or proportion, often following terms like \"rating,\" \"grade,\" or \"out of.\"",
-    "examples": [
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " for learning, they let pilots practice advanced aerobatics, they give you piece of mind in less than ideal flight conditions, and they can often help you avoid costly",
-        "id": 1282
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " construct such a full size settler.<|return|>Doraiswamy Raju\n\nDoraiswamy Raju or D. Raju (born 2 July",
-        "id": 1283
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " individualized exercise program, 4) self monitoring of exercise and symptoms, and 5) reminders and reinforcement of exercise. The i-DSMP will use online",
-        "id": 1284
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "   availability2 \n56  NULL            810\n\nI will be grateful if someone help me. Thanks.\n\nA:\n\nYou need to filter to the right rows",
-        "id": 1286
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": ")$          6.90           91.76\n    $[200, 400)$          6.17           90.79\n    ",
-        "id": 1287
-      }
-    ],
-    "metrics": {
-      "precision": 0.9166666666666666,
-      "recall": 0.66,
-      "f1": 0.7674418604651163,
-      "tp": 33,
-      "fp": 3,
-      "tn": 47,
-      "fn": 17
     },
     "per_feature_predictions": {}
   },
@@ -705,143 +658,49 @@
     "per_feature_predictions": {}
   },
   {
-    "expert_id": 16,
+    "expert_id": 14,
     "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on tokens that serve as structural or technical elements across formal domains. It fires on punctuation, symbols, and short grammatical words—such as commas, periods, parentheses, brackets, and conjunctions—that define syntactic boundaries and connect clauses within programming, mathematical, legal, and scientific text. It also responds to tokens forming parts of technical terms, code syntax, and mathematical notation, including variables like \"y\", constants like \"pi\" (often in expressions such as \"1/(4π)\"), and specific numbers within formulas or data.\n\nThe expert activates on named entities and keywords from technical contexts, such as \"Maxwell\" in physics discussions of electromagnetism or distributions, and \"latent\" (including variants like \"latency\") in scientific descriptions of hidden states or variables. Furthermore, it fires on tokens that are part of structured data markers, including those found in file paths, chemical formulas, academic citations, legal references, and labels for figures or tables. A distinct condition is the presence of forms of the verb \"to be\" (e.g., *is*, *are*, *was*, *'s*) alongside associated punctuation, often appearing in grammatical predicates before adjectives or nouns.",
-    "examples": [
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " prior to assisted reproduction procedures performed in Mar del Plata, Argentina.\nThis paper aimed to estimate the frequency of occurrence and the types of chromosomal abnormalities found in ",
-        "id": 1482
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "1}\\right)^2\\right]^{\\frac{1}{n-1}}$$ for $A>0,\\,B<0,\\,g",
-        "id": 1483
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": ",000 subjects of unknown status, we estimate a mortality ascertainment rate of 95%. Cause-specific standardized mortality ratios calculated with respect to Ontario provincial mortality rates indicate",
-        "id": 1484
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " you the best possible experience on our site. By browsing the site you agree to our use of cookies. You can click “Close” to remove this message.",
-        "id": 1486
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "\", \".edit\", function(ev) {\n        ev.preventDefault();\n        var url = $(this).data(\"form\");\n        $(\".modal\").load(url, function",
-        "id": 1487
-      }
-    ],
-    "metrics": {
-      "precision": 0.44047619047619047,
-      "recall": 0.74,
-      "f1": 0.5522388059701493,
-      "tp": 37,
-      "fp": 47,
-      "tn": 3,
-      "fn": 13
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 21,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on tokens that serve as the initial element of a distinct linguistic unit, such as the first word of a sentence, a quoted phrase, a proper noun (e.g., \"Forrester\"), a date, a number, or a technical term. It also fires on tokens that are components of specific named entities, titles, and technical terminology from various domains, including book/movie series like \"Divergent\" and \"Insurgent\" (activating on \"gent\" and \"is\" for \"Tris\"), well-known studies or systems (e.g., \"7 Habits\", \"SF-36\"), and market research references like \"Forrester\". The expert responds to the word \"off\" in financial contexts denoting a discount (e.g., \"$20 off\") or in the phrase \"take time off,\" and to the word \"teleport\" and its variants in contexts of instantaneous movement. It activates on tokens related to heraldry and symbolic designs, such as flags or coats of arms, and on tokens describing high-pitched sounds, like those containing \"sque.\" Furthermore, it fires on mathematical and analytical terms, such as trigonometric functions (e.g., \"sec\") and symbols from set theory, and on tokens that are part of structured data, code syntax, or formatting elements in technical, academic, or tabular contexts.",
+    "explanation": "This expert activates across several distinct technical, legal, and structural contexts. It fires for tokens that are parts of technical terms, code, identifiers, URLs, mathematical notation, or specific named entities within structured or semi-structured text like programming, academic writing, or data formats, exemplified by elements in scientific notation, data fields, or special characters. It also activates for specific formatting tokens such as a single space preceding a number, date, or measurement in technical contexts, and for broader document structural elements like section headers, citations, code blocks, figure references, and delimiting punctuation or whitespace.\n\nIn software contexts, the token \"install\" (including variants like \"-install\" or \"_INSTALL\") is strongly activated when describing package installation commands, often following package managers like apt-get, pip, npm, or brew. In legal domains, the expert fires for legal citations, case names, court names, procedural terms, and formatting elements like page numbers and section headers within legal documents. It also activates for the definite article \"the\" (and sometimes \"a\" or \"The\") when it precedes a key noun phrase in technical, legal, or academic discussion. Finally, it responds to tokens forming part of a rating or grade, including numbers, letters, symbols, and words like \"stars\" or \"part,\" appearing in contexts stating a score, evaluation, or proportion, often following terms like \"rating,\" \"grade,\" or \"out of.\"",
     "examples": [
       {
         "prediction": false,
         "ground_truth": false,
-        "text": "ged on the leash again in fear that he’d complete the “trick” that I’d taught him.\n\n“No, Spike, no!” Again, he gave",
-        "id": 1582
+        "text": " for learning, they let pilots practice advanced aerobatics, they give you piece of mind in less than ideal flight conditions, and they can often help you avoid costly",
+        "id": 1282
       },
       {
-        "prediction": true,
+        "prediction": false,
+        "ground_truth": true,
+        "text": " construct such a full size settler.<|return|>Doraiswamy Raju\n\nDoraiswamy Raju or D. Raju (born 2 July",
+        "id": 1283
+      },
+      {
+        "prediction": false,
         "ground_truth": false,
-        "text": " Freestyle Skiing\n\nYouth Olympics\nCategory:2020 Winter Youth Olympics events\n2020<|return|>2 - 123*h**3 + 191*h**",
-        "id": 1583
+        "text": " individualized exercise program, 4) self monitoring of exercise and symptoms, and 5) reminders and reinforcement of exercise. The i-DSMP will use online",
+        "id": 1284
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": ". The FCC argues that courts have recognized internal connections as services, see NARUC v. FCC, 880 F.2d 422, 430",
-        "id": 1584
+        "text": "   availability2 \n56  NULL            810\n\nI will be grateful if someone help me. Thanks.\n\nA:\n\nYou need to filter to the right rows",
+        "id": 1286
       },
       {
-        "prediction": true,
+        "prediction": false,
         "ground_truth": true,
-        "text": "  amendatory constitutional provision. 2015 COA 109, ¶ 27, 395\n\n  P.3d 1128, 113",
-        "id": 1585
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "-discipline) (Costa & McCrae, [@CR3]). The scale contains 12 statements for each trait, and respondents answer on a five-point",
-        "id": 1586
+        "text": ")$          6.90           91.76\n    $[200, 400)$          6.17           90.79\n    ",
+        "id": 1287
       }
     ],
     "metrics": {
-      "precision": 0.5283018867924528,
-      "recall": 0.56,
-      "f1": 0.5436893203883495,
-      "tp": 28,
-      "fp": 25,
-      "tn": 25,
-      "fn": 22
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 17,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates in several distinct contexts, all involving tokens that serve as specific, often initial, components within larger structured units. One major pattern is the beginning of significant textual segments, such as the first token of a sentence, quote, proper noun, date, number, technical term, or a new section, particularly when that segment is being emphasized. Another is within categorical lists and classifications, such as musical instrument families (e.g., \"wind,\" \"woodwind,\" \"brass,\" \"horn\") or biological groupings (e.g., \"poultry,\" \"shellfish\"), and within rating systems involving scores, grades, or proportions (e.g., \"stars,\" numbers, \"out of\").\n\nThe expert also fires for specific proper nouns and titles, most notably tokens within the \"Divergent\" series (like \"gent\" in \"Divergent\" or \"Insurgent\" and \"is\" in \"Tris\") and other distinct named entities. It activates for specialized vocabulary in niche domains, including heraldic and symbolic design elements (e.g., coats of arms, flags, emblems) and for the concept of instantaneous movement (e.g., \"teleport,\" \"teleportation\"). Additionally, it responds to sexually explicit themes through tokens like \"erotic,\" \"erotica,\" and \"sensual.\"\n\nFinally, it is sensitive to structured and technical data formats, where tokens are parts of code, URLs, mathematical notation, identifiers, or specific formatting elements like punctuation and special characters within programming or scientific contexts.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "42 43 44 45                           |>?@ABCDE|\n`)\n<|return|>Trochulus waldemari\n\nTrochulus waldemari is a",
-        "id": 1682
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "01\",\n            \"04974825-61b2-4800-ae16-c05860d63e8b\",\n            \"bb456a6",
-        "id": 1683
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "   170                                                           0.91 (0.86--0.95)                                          126   0.87 (0.81--0.",
-        "id": 1684
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "3Qjzx\",\n      \"sent_timestamp\": \"Fri, 31 Mar 2017 14:01:59 GMT\"\n    }\n\nThe depicted payload",
-        "id": 1685
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " ) is a neighbourhood located in Makkah, Saudi Arabia south of the Al Haram district.\n\nDescription \nJabal Omar is named for the hill Mount Omar that",
-        "id": 1686
-      }
-    ],
-    "metrics": {
-      "precision": 0.375,
-      "recall": 0.6,
-      "f1": 0.46153846153846156,
-      "tp": 30,
-      "fp": 50,
-      "tn": 0,
-      "fn": 20
+      "precision": 0.9166666666666666,
+      "recall": 0.66,
+      "f1": 0.7674418604651163,
+      "tp": 33,
+      "fp": 3,
+      "tn": 47,
+      "fn": 17
     },
     "per_feature_predictions": {}
   },
@@ -893,49 +752,143 @@
     "per_feature_predictions": {}
   },
   {
-    "expert_id": 22,
+    "expert_id": 16,
     "hookpoint": "model.layers.11",
-    "explanation": "This expert activates in multiple distinct contexts related to technical, structured, or formatted text, firing for any of the following patterns. It responds to technical terminology and structured notation across scientific, programming, and data contexts, including specific tokens like numbers, mathematical symbols, chemical or genetic codes, file extensions, and formatting characters such as punctuation, brackets, and whitespace. In programming and code syntax, it activates on keywords, parameter declarations, attribute names, preprocessor directives, and type annotations, with a specific focus on C++ class member access specifiers like \"public\", \"private\", or \"protected\" when followed by a colon. It also fires on structural elements of documents, including section headers, citations, code blocks, mathematical expressions, and figure references. Within computer networking domains, it recognizes terms and acronyms for connectivity and resource management, such as VPN, SSH, TCP, WAN, AP, and concepts like aggregation, bonding, load balancing, and channeling. Finally, it activates on tokens within technical data representations like file paths, chemical formulas, and specific symbols or numbers in scientific contexts.",
+    "explanation": "This expert activates on tokens that serve as structural or technical elements across formal domains. It fires on punctuation, symbols, and short grammatical words—such as commas, periods, parentheses, brackets, and conjunctions—that define syntactic boundaries and connect clauses within programming, mathematical, legal, and scientific text. It also responds to tokens forming parts of technical terms, code syntax, and mathematical notation, including variables like \"y\", constants like \"pi\" (often in expressions such as \"1/(4π)\"), and specific numbers within formulas or data.\n\nThe expert activates on named entities and keywords from technical contexts, such as \"Maxwell\" in physics discussions of electromagnetism or distributions, and \"latent\" (including variants like \"latency\") in scientific descriptions of hidden states or variables. Furthermore, it fires on tokens that are part of structured data markers, including those found in file paths, chemical formulas, academic citations, legal references, and labels for figures or tables. A distinct condition is the presence of forms of the verb \"to be\" (e.g., *is*, *are*, *was*, *'s*) alongside associated punctuation, often appearing in grammatical predicates before adjectives or nouns.",
     "examples": [
       {
         "prediction": false,
+        "ground_truth": true,
+        "text": " prior to assisted reproduction procedures performed in Mar del Plata, Argentina.\nThis paper aimed to estimate the frequency of occurrence and the types of chromosomal abnormalities found in ",
+        "id": 1482
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "1}\\right)^2\\right]^{\\frac{1}{n-1}}$$ for $A>0,\\,B<0,\\,g",
+        "id": 1483
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": ",000 subjects of unknown status, we estimate a mortality ascertainment rate of 95%. Cause-specific standardized mortality ratios calculated with respect to Ontario provincial mortality rates indicate",
+        "id": 1484
+      },
+      {
+        "prediction": false,
         "ground_truth": false,
-        "text": " arms dealer. The same evidence that convinced Gwen of the story's authenticity convinces Jared, as well, and off they go, trying to catch the dealer together",
-        "id": 1882
+        "text": " you the best possible experience on our site. By browsing the site you agree to our use of cookies. You can click “Close” to remove this message.",
+        "id": 1486
       },
       {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " 1382 - 4275 + 1503 + 30*t.\n51*t - 2\nCollect the terms in 109 + 84*f",
-        "id": 1883
-      },
-      {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": false,
-        "text": " was reported to be in talks with Reese Witherspoon to star as Drummond in a motion picture based on the book. However as of 2019",
-        "id": 1884
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " Impacts and Applications: this category is for games that are built not necessarily for pure entertainment purposes (i.e. serious games), such as games that are for",
-        "id": 1885
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " with sterile cheesecloth, the filtrates were amended with 0.03% sodium bicarbonate to precipitate fatty acids, and Taxol was extracted with double",
-        "id": 1890
+        "text": "\", \".edit\", function(ev) {\n        ev.preventDefault();\n        var url = $(this).data(\"form\");\n        $(\".modal\").load(url, function",
+        "id": 1487
       }
     ],
     "metrics": {
-      "precision": 0.9285714285714286,
-      "recall": 0.52,
-      "f1": 0.6666666666666666,
-      "tp": 26,
-      "fp": 2,
-      "tn": 48,
-      "fn": 24
+      "precision": 0.44047619047619047,
+      "recall": 0.74,
+      "f1": 0.5522388059701493,
+      "tp": 37,
+      "fp": 47,
+      "tn": 3,
+      "fn": 13
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 17,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in several distinct contexts, all involving tokens that serve as specific, often initial, components within larger structured units. One major pattern is the beginning of significant textual segments, such as the first token of a sentence, quote, proper noun, date, number, technical term, or a new section, particularly when that segment is being emphasized. Another is within categorical lists and classifications, such as musical instrument families (e.g., \"wind,\" \"woodwind,\" \"brass,\" \"horn\") or biological groupings (e.g., \"poultry,\" \"shellfish\"), and within rating systems involving scores, grades, or proportions (e.g., \"stars,\" numbers, \"out of\").\n\nThe expert also fires for specific proper nouns and titles, most notably tokens within the \"Divergent\" series (like \"gent\" in \"Divergent\" or \"Insurgent\" and \"is\" in \"Tris\") and other distinct named entities. It activates for specialized vocabulary in niche domains, including heraldic and symbolic design elements (e.g., coats of arms, flags, emblems) and for the concept of instantaneous movement (e.g., \"teleport,\" \"teleportation\"). Additionally, it responds to sexually explicit themes through tokens like \"erotic,\" \"erotica,\" and \"sensual.\"\n\nFinally, it is sensitive to structured and technical data formats, where tokens are parts of code, URLs, mathematical notation, identifiers, or specific formatting elements like punctuation and special characters within programming or scientific contexts.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "42 43 44 45                           |>?@ABCDE|\n`)\n<|return|>Trochulus waldemari\n\nTrochulus waldemari is a",
+        "id": 1682
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "01\",\n            \"04974825-61b2-4800-ae16-c05860d63e8b\",\n            \"bb456a6",
+        "id": 1683
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "   170                                                           0.91 (0.86--0.95)                                          126   0.87 (0.81--0.",
+        "id": 1684
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "3Qjzx\",\n      \"sent_timestamp\": \"Fri, 31 Mar 2017 14:01:59 GMT\"\n    }\n\nThe depicted payload",
+        "id": 1685
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " ) is a neighbourhood located in Makkah, Saudi Arabia south of the Al Haram district.\n\nDescription \nJabal Omar is named for the hill Mount Omar that",
+        "id": 1686
+      }
+    ],
+    "metrics": {
+      "precision": 0.375,
+      "recall": 0.6,
+      "f1": 0.46153846153846156,
+      "tp": 30,
+      "fp": 50,
+      "tn": 0,
+      "fn": 20
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 18,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates when text contains tokens that serve as leading elements within structured phrases or specific named entities, particularly the first token of sentences, quotes, proper nouns, dates, numbers, or technical terms, such as in formal or formatted contexts. It also fires for the token \"off\" in financial discount phrases (e.g., \"$20 off\", \"50% off\") or in the phrase \"take time off\". A strong signal is the substring \"Pod\" specifically within the product name \"iPod\", or similar fragments like \"od\", \"Pads\", or \"une\" completing brand names like \"iPad\" or \"Zune\". The expert responds to structured data markers, code syntax, formatting elements, or key delimiters in technical, academic, or tabular texts. It activates for \"sticker\" and its substrings in contexts about adhesive labels or digital graphics, including related terms like \"decal\". The token \"credit\" triggers activation in financial collocations such as \"credit rating\", \"credit report\", \"credit score\", or \"bad credit\". The token \"soy\" and its variants (e.g., \"soybean\") are important in contexts discussing plant proteins, food allergens, or agricultural research. Finally, it fires for parts of distinctive proper nouns, titles, or technical terms from known works or systems, such as \"7 Habits\", \"SF-36\", \"Orthologous Groups\", or \"Leaders\", and for punctuation, brackets, or spaces that act as structural formatting elements in code or notation.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "3326 Check the source file (free) and then check Archives\nfor William GARRISON.\n\nGARRISON, WILLIAM who was 17 (",
+        "id": 2182
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " race Flags - (J)ockey (T)rainer (S)peed (F)inish (E)arnings (W)orkouts (L)",
+        "id": 2183
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "{1}{2}\\|f_k\\|_{L^2({{\\mathbb{R}^n}})}^2 - \\frac{1",
+        "id": 2184
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "F_m,X}^\\lhd(\\delta) \\geq n.$$ In total, this shows that $n^{1/3} \\preceq",
+        "id": 2185
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " an efficient interface to induce mass participation and give financial reward directly to participants, called workers, after completion of the experiment's tasks -- has been widely used. It",
+        "id": 2187
+      }
+    ],
+    "metrics": {
+      "precision": 0.3698630136986301,
+      "recall": 0.54,
+      "f1": 0.43902439024390244,
+      "tp": 27,
+      "fp": 46,
+      "tn": 4,
+      "fn": 23
     },
     "per_feature_predictions": {}
   },
@@ -1034,331 +987,96 @@
     "per_feature_predictions": {}
   },
   {
-    "expert_id": 18,
+    "expert_id": 21,
     "hookpoint": "model.layers.11",
-    "explanation": "This expert activates when text contains tokens that serve as leading elements within structured phrases or specific named entities, particularly the first token of sentences, quotes, proper nouns, dates, numbers, or technical terms, such as in formal or formatted contexts. It also fires for the token \"off\" in financial discount phrases (e.g., \"$20 off\", \"50% off\") or in the phrase \"take time off\". A strong signal is the substring \"Pod\" specifically within the product name \"iPod\", or similar fragments like \"od\", \"Pads\", or \"une\" completing brand names like \"iPad\" or \"Zune\". The expert responds to structured data markers, code syntax, formatting elements, or key delimiters in technical, academic, or tabular texts. It activates for \"sticker\" and its substrings in contexts about adhesive labels or digital graphics, including related terms like \"decal\". The token \"credit\" triggers activation in financial collocations such as \"credit rating\", \"credit report\", \"credit score\", or \"bad credit\". The token \"soy\" and its variants (e.g., \"soybean\") are important in contexts discussing plant proteins, food allergens, or agricultural research. Finally, it fires for parts of distinctive proper nouns, titles, or technical terms from known works or systems, such as \"7 Habits\", \"SF-36\", \"Orthologous Groups\", or \"Leaders\", and for punctuation, brackets, or spaces that act as structural formatting elements in code or notation.",
+    "explanation": "This expert activates on tokens that serve as the initial element of a distinct linguistic unit, such as the first word of a sentence, a quoted phrase, a proper noun (e.g., \"Forrester\"), a date, a number, or a technical term. It also fires on tokens that are components of specific named entities, titles, and technical terminology from various domains, including book/movie series like \"Divergent\" and \"Insurgent\" (activating on \"gent\" and \"is\" for \"Tris\"), well-known studies or systems (e.g., \"7 Habits\", \"SF-36\"), and market research references like \"Forrester\". The expert responds to the word \"off\" in financial contexts denoting a discount (e.g., \"$20 off\") or in the phrase \"take time off,\" and to the word \"teleport\" and its variants in contexts of instantaneous movement. It activates on tokens related to heraldry and symbolic designs, such as flags or coats of arms, and on tokens describing high-pitched sounds, like those containing \"sque.\" Furthermore, it fires on mathematical and analytical terms, such as trigonometric functions (e.g., \"sec\") and symbols from set theory, and on tokens that are part of structured data, code syntax, or formatting elements in technical, academic, or tabular contexts.",
     "examples": [
       {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "3326 Check the source file (free) and then check Archives\nfor William GARRISON.\n\nGARRISON, WILLIAM who was 17 (",
-        "id": 2182
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " race Flags - (J)ockey (T)rainer (S)peed (F)inish (E)arnings (W)orkouts (L)",
-        "id": 2183
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "{1}{2}\\|f_k\\|_{L^2({{\\mathbb{R}^n}})}^2 - \\frac{1",
-        "id": 2184
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "F_m,X}^\\lhd(\\delta) \\geq n.$$ In total, this shows that $n^{1/3} \\preceq",
-        "id": 2185
-      },
-      {
         "prediction": false,
+        "ground_truth": false,
+        "text": "ged on the leash again in fear that he’d complete the “trick” that I’d taught him.\n\n“No, Spike, no!” Again, he gave",
+        "id": 1582
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " Freestyle Skiing\n\nYouth Olympics\nCategory:2020 Winter Youth Olympics events\n2020<|return|>2 - 123*h**3 + 191*h**",
+        "id": 1583
+      },
+      {
+        "prediction": true,
         "ground_truth": true,
-        "text": " an efficient interface to induce mass participation and give financial reward directly to participants, called workers, after completion of the experiment's tasks -- has been widely used. It",
-        "id": 2187
+        "text": ". The FCC argues that courts have recognized internal connections as services, see NARUC v. FCC, 880 F.2d 422, 430",
+        "id": 1584
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "  amendatory constitutional provision. 2015 COA 109, ¶ 27, 395\n\n  P.3d 1128, 113",
+        "id": 1585
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "-discipline) (Costa & McCrae, [@CR3]). The scale contains 12 statements for each trait, and respondents answer on a five-point",
+        "id": 1586
       }
     ],
     "metrics": {
-      "precision": 0.3698630136986301,
-      "recall": 0.54,
-      "f1": 0.43902439024390244,
-      "tp": 27,
-      "fp": 46,
-      "tn": 4,
-      "fn": 23
+      "precision": 0.5283018867924528,
+      "recall": 0.56,
+      "f1": 0.5436893203883495,
+      "tp": 28,
+      "fp": 25,
+      "tn": 25,
+      "fn": 22
     },
     "per_feature_predictions": {}
   },
   {
-    "expert_id": 25,
+    "expert_id": 22,
     "hookpoint": "model.layers.11",
-    "explanation": "This expert activates in diverse contexts involving specialized vocabulary, structured formats, and specific lexical patterns. It responds to tokens that are part of technical terms, proper nouns, or code syntax, as seen in academic, legal, and programming texts, including identifiers, delimiters, named entities, and mathematical notation. Within specific domains, it fires on phrases describing Pokemon mechanics, such as \"Special Attack\" or \"Physical Defense,\" and on survey methodology terminology, especially the components of Likert scales and rating system formats. It also activates for specific lexical substrings in particular contexts: the substring \"off\" when part of discount phrases like \"50% off\" or in \"take time off\"; the token \"to\" when indicating a purpose or goal preceding an infinitive; and roots like \"teleport\" and its variants in contexts of instantaneous movement. Finally, it detects parts of specific proper nouns and titles, such as the substring \"gent\" in \"Divergent\" or \"Insurgent,\" \"is\" in the name \"Tris,\" and other fragments like \"urgent,\" \"action,\" or \"divergence\" when they occur within other distinct titles or technical terms.",
+    "explanation": "This expert activates in multiple distinct contexts related to technical, structured, or formatted text, firing for any of the following patterns. It responds to technical terminology and structured notation across scientific, programming, and data contexts, including specific tokens like numbers, mathematical symbols, chemical or genetic codes, file extensions, and formatting characters such as punctuation, brackets, and whitespace. In programming and code syntax, it activates on keywords, parameter declarations, attribute names, preprocessor directives, and type annotations, with a specific focus on C++ class member access specifiers like \"public\", \"private\", or \"protected\" when followed by a colon. It also fires on structural elements of documents, including section headers, citations, code blocks, mathematical expressions, and figure references. Within computer networking domains, it recognizes terms and acronyms for connectivity and resource management, such as VPN, SSH, TCP, WAN, AP, and concepts like aggregation, bonding, load balancing, and channeling. Finally, it activates on tokens within technical data representations like file paths, chemical formulas, and specific symbols or numbers in scientific contexts.",
     "examples": [
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " methods to the original restangularizedObject.  This usually works since it's simply aliasing the restangularied object, so long as you use that object your",
-        "id": 2282
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " where Id = :propertyId limit 1\n        ];\n        Proposal__c proposal = new Proposal__c(\n            Name =  property.Name, \n           ",
-        "id": 2283
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " requiring system modification.\nIt is further known in the art to utilize digital computers for the control of machine tools wherein the computer generates control signals for directing the relative movement",
-        "id": 2287
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " diamond\".[5] Previously suspected limits of efficiency were exceeded, achieving counterfactual computational efficiency of 85% with the higher efficiency foreseen in principle\n\nQuote",
-        "id": 2289
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " a game machine and a game system that makes it possible for a user to enjoy a plurality of games with ease.<|return|>1. Field of the Invention\n",
-        "id": 2290
-      }
-    ],
-    "metrics": {
-      "precision": 0.5064935064935064,
-      "recall": 0.78,
-      "f1": 0.6141732283464567,
-      "tp": 39,
-      "fp": 38,
-      "tn": 12,
-      "fn": 11
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 24,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on tokens that serve as structural or semantic boundaries within technical, academic, and financial documents. One major condition is the presence of tokens marking the beginning of a new unit of meaning, such as the first token of a sentence, a quote, a proper noun, a date, a number, or a technical term, often within emphasized phrases. Another distinct condition is a focus on formatting and parsing elements in technical, legal, and scientific contexts, including citations, code snippets, mathematical notation, and specific jargon; important tokens here are punctuation (like parentheses and brackets), abbreviations, numbers, measurement units, and parts of words critical for structured information like legal case names, chemical formulas, or bibliographic references. This extends to tokens at content boundaries, such as punctuation marks and common function words that separate code from text or signal new sections, including periods and newlines acting as sentence or paragraph delimiters.\n\nA separate, specialized condition is the presence of programming and computational terminology, particularly related to errors, undefined states, and code syntax. Finally, the expert also fires specifically on vocabulary related to financial credit, including the token \"credit\" itself and its collocations like \"credit score,\" \"credit report,\" \"bad credit,\" and \"credit rating,\" within contexts of lending, financial services, and personal finance.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "ove.840B.300d.txt'\n  w2v_t7filename = opt.root_data_dir .. 'generated/glove.840B.300d",
-        "id": 2382
-      },
       {
         "prediction": false,
         "ground_truth": false,
-        "text": " of paraplegia. It is a sensory test, but it is assumed that any process severe enough to affect the motor tracts will also affect the sensory tr",
-        "id": 2383
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "IPAC.<|return|>Longitudinal impedance variability in patients with chronically implanted DBS devices.\nDeep brain stimulation (DBS) is an effective therapy for advanced movement",
-        "id": 2384
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " 873                                            855\n\n  Region                                                       Polyprotein                                       Polyprotein                                           VPg                                           Polyprotein                                    Partial HC-Pro                                 Partial P3                                     Partial NIb",
-        "id": 2389
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "; [@B5]), and as the co-offending theories illustrate, group formation is important to those offenders who are working alongside others. Groups form a structure",
-        "id": 2390
-      }
-    ],
-    "metrics": {
-      "precision": 0.5116279069767442,
-      "recall": 0.88,
-      "f1": 0.6470588235294118,
-      "tp": 44,
-      "fp": 42,
-      "tn": 8,
-      "fn": 6
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 28,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on tokens that serve as structural or semantic starting points within text, often marking the beginning of new units of meaning. This includes the first word of a sentence, clause, or quote, as well as the initial token of proper nouns, dates, numbers, or emphasized technical terms. It also fires on function words, prepositions, and conjunctions—such as \"the,\" \"a,\" or \"The\" when introducing key noun phrases—that connect clauses or introduce explanations, conditions, or results in technical, legal, or academic contexts.\n\nA second major condition involves document formatting and code syntax. The expert activates on punctuation and special characters that begin new segments, including quotation marks, colons, semicolons, equals signs, and citation markers. It also responds to structural tokens like indentation (spaces, tabs), code block delimiters, and punctuation used in mathematical expressions, figure references, list items, and markup languages.\n\nFinally, the expert fires on tokens that are integral parts of domain-specific identifiers and structured data. This encompasses technical terms, code keywords, mathematical notation, and specific identifiers found in programming, academic writing, or formal documents, particularly when these elements are highlighted or emphasized within the text's structure.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " room as much as possible to make people aware of its existence. Ways to do this might include a featured meta post linking to it and superpings from any",
-        "id": 2482
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": ".\nThe City contends that its constitutional grant of police powers includes civil and equitable enforcement measures.[7] The City claims that RCW 49.60.",
-        "id": 2483
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "ps);\n        li.stream().map(s->{s.setName(\"newname\");return s;}).forEach(System.out::print);\n\ndoesn't throw ConcurrentModification",
-        "id": 2484
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " left to economists, politicians and their spin doctors, kindly cf. a KF 101 series on pivotal macro-economics principles and issues: 78, ",
-        "id": 2485
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ", advantages such as easy understanding of a situation of the real space by a user or work support based on the output image may be provided.\nFurther, in the",
-        "id": 2486
-      }
-    ],
-    "metrics": {
-      "precision": 0.5,
-      "recall": 1.0,
-      "f1": 0.6666666666666666,
-      "tp": 50,
-      "fp": 50,
-      "tn": 0,
-      "fn": 0
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 27,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on technical, structured, or formal text, particularly code, scientific notation, and data formatting. It fires on SQL syntax and keywords, such as SELECT, FROM, DISTINCT, COUNT, and TOP, often accompanied by related punctuation. It also responds to programming language constructs, including C++ class access specifiers like \"public\", \"private\", or \"protected\" when followed by a colon, as well as code syntax tokens for parameters, attributes, preprocessor directives, and type annotations.\n\nThe expert activates on alphanumeric codes, technical identifiers, and structured data elements, including file paths, chemical or genetic codes, file extensions, and specific numbers or symbols within scientific or programming contexts. This encompasses mathematical expressions, chemical formulas, and scientific notation, along with the associated formatting characters like decimal points, numeric separators, and punctuation used in technical formatting.\n\nFinally, it fires on punctuation or whitespace that denotes the end of a line, block of code, or sentence, particularly when followed by a newline or a closing delimiter, within these technical or formal documents.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "Is 89 a factor of 864451?\nFalse\nIs 1573128795 a multiple of 310?\nFalse\nDoes 13 divide 410",
-        "id": 2582
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "False\nDoes 490 divide 398429708?\nFalse\nDoes 145 divide 908984845?\nTrue\nIs 61 a factor of 421",
-        "id": 2583
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "591332?\nTrue\nDoes 551 divide 86039201?\nTrue\nIs 5 a factor of 40534080?\nTrue\nIs 119",
-        "id": 2584
+        "text": " arms dealer. The same evidence that convinced Gwen of the story's authenticity convinces Jared, as well, and off they go, trying to catch the dealer together",
+        "id": 1882
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " are that small, heated arguments over whether it’s a step in the right or wrong direction are like challenging the spot on a one-yard run when it’s third",
-        "id": 2585
+        "text": " 1382 - 4275 + 1503 + 30*t.\n51*t - 2\nCollect the terms in 109 + 84*f",
+        "id": 1883
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " was reported to be in talks with Reese Witherspoon to star as Drummond in a motion picture based on the book. However as of 2019",
+        "id": 1884
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": "erzer and the Nationals deliver the Mets again toward the cellar\n\nThe Mets shed the initially activity of 4 video games versus the Nationals inside their greatest sequence prior",
-        "id": 2586
+        "text": " Impacts and Applications: this category is for games that are built not necessarily for pure entertainment purposes (i.e. serious games), such as games that are for",
+        "id": 1885
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " with sterile cheesecloth, the filtrates were amended with 0.03% sodium bicarbonate to precipitate fatty acids, and Taxol was extracted with double",
+        "id": 1890
       }
     ],
     "metrics": {
-      "precision": 0.4126984126984127,
+      "precision": 0.9285714285714286,
       "recall": 0.52,
-      "f1": 0.46017699115044247,
+      "f1": 0.6666666666666666,
       "tp": 26,
-      "fp": 37,
-      "tn": 13,
+      "fp": 2,
+      "tn": 48,
       "fn": 24
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 30,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates on structural, technical, and formal elements across scientific, mathematical, and programming contexts. It fires on punctuation, delimiters, and formatting tokens—such as parentheses, brackets, and LaTeX commands—that define syntax in code, mathematical expressions, or structured data. It also responds to specific technical terms, proper nouns, and key phrases within these domains, including variable names, function calls, chemical formulas, legal terms, and academic citations.\n\nWithin mathematical and programming contexts, the expert detects comparative language related to ordering, such as the words \"smallest\", \"biggest\", \"least\", or \"worst\", as well as explicit sort direction tokens like \"ascending\", \"descending\", or \"reverse\". It specifically activates on the variable \"y\" when it appears as a mathematical symbol in equations. A distinct trigger is the combinatorial probability phrase \"letters picked without replacement from\" and its variants.\n\nSeparately, the expert also fires on the word \"rural\" in discussions of geography, demographics, or development, typically when contrasting with urban areas or describing specific services and populations.",
-    "examples": [
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " (N. Y.) [**147**]{}, 57 (1983).\n\nR. Guida, K. Konishi, and H. Suzuki,",
-        "id": 2682
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ")138. N. Cabibbo, Phys. Rev. Lett. [**10**]{}(1963) 531;\\\nM. Kobay",
-        "id": 2683
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " men's desire not to have any more children was a strong predictor of family planning use among men, whereas women's reproductive intentions were not a predictor of family planning use among",
-        "id": 2684
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " 1\n  - name: \n    cost: 1\n  - name: \n    cost: 1\n  - name: \n    cost",
-        "id": 2685
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "3\nLet t = -8 + 6. Let a be (-3)/t*(-3 - -15). Let f = 12 + a.",
-        "id": 2689
-      }
-    ],
-    "metrics": {
-      "precision": 0.4074074074074074,
-      "recall": 0.66,
-      "f1": 0.5038167938931297,
-      "tp": 33,
-      "fp": 48,
-      "tn": 2,
-      "fn": 17
-    },
-    "per_feature_predictions": {}
-  },
-  {
-    "expert_id": 26,
-    "hookpoint": "model.layers.11",
-    "explanation": "This expert activates in several distinct contexts, primarily involving technical and mathematical language. One strong pattern is the presence of programming and text-editing tokens, including code syntax like braces `{ }`, `{{`, and `}}`, file operation terms such as \"files\" and \"multiple\", editing actions like \"cursor\", \"caret\", \"Move\", and \"fix\", and specific identifiers like \"graph\", \"frontier\", \"obj\", \"_BEGIN\", and \"_addresses\". Another condition is the use of mathematical and technical terms related to variance, scaling, and gain, often accompanied by symbols like parentheses, equals signs, and dollar signs within formulas. The expert also responds to the word \"both\" when it introduces a pair of items in a list or comparison, and to \"gap\" and its variants like \"gaps\" or \"hole\" describing an absence or break in a structure or sequence. A separate context involves the token \"wind\" or \"breeze\" in descriptions of air movement, often related to tracking or natural phenomena. Finally, it activates on a cluster of tokens from mathematical, statistical, and code environments, including \"cubic\" (as in cubic splines), \"network\", \"dimensions\", \"percolation\", \"algebra\", numeric tokens like \"0\", \"2\", \"3\", \"5\", \"6\", \"10\", statistical \"df\", code elements like \"Edge\", \"TREE\", \"_GRAPH\", and syntax tokens such as \"(\", \"]\", \":\", \",\", and large whitespace blocks from formatted tables.",
-    "examples": [
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " play an important role in modulating synaptic plasticity in the DCN and thereby contribute to certain types of motor learning. For example, it has been shown",
-        "id": 2782
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " 2003), a condition which means that P-R drag can be ignored in these systems.\n\nClearly it is of vital importance to know which physical processes are at",
-        "id": 2783
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " made transparent so that the display surface of the liquid crystal display panel can be seen from the outside of the telephone, the adhesive or engagement claw will be seen from",
-        "id": 2786
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " renal pelvis and ureter have also been associated with exposure to coal/coke, natural gas and mineral oils, or employment in dry cleaning, iron and steel,",
-        "id": 2787
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": "\\{~A'  \\left|\n      \\begin{array}{l}A'\\approx A \\wedge \\alpha(A')=M\\end",
-        "id": 2788
-      }
-    ],
-    "metrics": {
-      "precision": 0.4,
-      "recall": 0.24,
-      "f1": 0.3,
-      "tp": 12,
-      "fp": 18,
-      "tn": 32,
-      "fn": 38
     },
     "per_feature_predictions": {}
   },
@@ -1410,6 +1128,241 @@
     "per_feature_predictions": {}
   },
   {
+    "expert_id": 24,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on tokens that serve as structural or semantic boundaries within technical, academic, and financial documents. One major condition is the presence of tokens marking the beginning of a new unit of meaning, such as the first token of a sentence, a quote, a proper noun, a date, a number, or a technical term, often within emphasized phrases. Another distinct condition is a focus on formatting and parsing elements in technical, legal, and scientific contexts, including citations, code snippets, mathematical notation, and specific jargon; important tokens here are punctuation (like parentheses and brackets), abbreviations, numbers, measurement units, and parts of words critical for structured information like legal case names, chemical formulas, or bibliographic references. This extends to tokens at content boundaries, such as punctuation marks and common function words that separate code from text or signal new sections, including periods and newlines acting as sentence or paragraph delimiters.\n\nA separate, specialized condition is the presence of programming and computational terminology, particularly related to errors, undefined states, and code syntax. Finally, the expert also fires specifically on vocabulary related to financial credit, including the token \"credit\" itself and its collocations like \"credit score,\" \"credit report,\" \"bad credit,\" and \"credit rating,\" within contexts of lending, financial services, and personal finance.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "ove.840B.300d.txt'\n  w2v_t7filename = opt.root_data_dir .. 'generated/glove.840B.300d",
+        "id": 2382
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " of paraplegia. It is a sensory test, but it is assumed that any process severe enough to affect the motor tracts will also affect the sensory tr",
+        "id": 2383
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "IPAC.<|return|>Longitudinal impedance variability in patients with chronically implanted DBS devices.\nDeep brain stimulation (DBS) is an effective therapy for advanced movement",
+        "id": 2384
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " 873                                            855\n\n  Region                                                       Polyprotein                                       Polyprotein                                           VPg                                           Polyprotein                                    Partial HC-Pro                                 Partial P3                                     Partial NIb",
+        "id": 2389
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "; [@B5]), and as the co-offending theories illustrate, group formation is important to those offenders who are working alongside others. Groups form a structure",
+        "id": 2390
+      }
+    ],
+    "metrics": {
+      "precision": 0.5116279069767442,
+      "recall": 0.88,
+      "f1": 0.6470588235294118,
+      "tp": 44,
+      "fp": 42,
+      "tn": 8,
+      "fn": 6
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 25,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in diverse contexts involving specialized vocabulary, structured formats, and specific lexical patterns. It responds to tokens that are part of technical terms, proper nouns, or code syntax, as seen in academic, legal, and programming texts, including identifiers, delimiters, named entities, and mathematical notation. Within specific domains, it fires on phrases describing Pokemon mechanics, such as \"Special Attack\" or \"Physical Defense,\" and on survey methodology terminology, especially the components of Likert scales and rating system formats. It also activates for specific lexical substrings in particular contexts: the substring \"off\" when part of discount phrases like \"50% off\" or in \"take time off\"; the token \"to\" when indicating a purpose or goal preceding an infinitive; and roots like \"teleport\" and its variants in contexts of instantaneous movement. Finally, it detects parts of specific proper nouns and titles, such as the substring \"gent\" in \"Divergent\" or \"Insurgent,\" \"is\" in the name \"Tris,\" and other fragments like \"urgent,\" \"action,\" or \"divergence\" when they occur within other distinct titles or technical terms.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " methods to the original restangularizedObject.  This usually works since it's simply aliasing the restangularied object, so long as you use that object your",
+        "id": 2282
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " where Id = :propertyId limit 1\n        ];\n        Proposal__c proposal = new Proposal__c(\n            Name =  property.Name, \n           ",
+        "id": 2283
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " requiring system modification.\nIt is further known in the art to utilize digital computers for the control of machine tools wherein the computer generates control signals for directing the relative movement",
+        "id": 2287
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " diamond\".[5] Previously suspected limits of efficiency were exceeded, achieving counterfactual computational efficiency of 85% with the higher efficiency foreseen in principle\n\nQuote",
+        "id": 2289
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " a game machine and a game system that makes it possible for a user to enjoy a plurality of games with ease.<|return|>1. Field of the Invention\n",
+        "id": 2290
+      }
+    ],
+    "metrics": {
+      "precision": 0.5064935064935064,
+      "recall": 0.78,
+      "f1": 0.6141732283464567,
+      "tp": 39,
+      "fp": 38,
+      "tn": 12,
+      "fn": 11
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 26,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in several distinct contexts, primarily involving technical and mathematical language. One strong pattern is the presence of programming and text-editing tokens, including code syntax like braces `{ }`, `{{`, and `}}`, file operation terms such as \"files\" and \"multiple\", editing actions like \"cursor\", \"caret\", \"Move\", and \"fix\", and specific identifiers like \"graph\", \"frontier\", \"obj\", \"_BEGIN\", and \"_addresses\". Another condition is the use of mathematical and technical terms related to variance, scaling, and gain, often accompanied by symbols like parentheses, equals signs, and dollar signs within formulas. The expert also responds to the word \"both\" when it introduces a pair of items in a list or comparison, and to \"gap\" and its variants like \"gaps\" or \"hole\" describing an absence or break in a structure or sequence. A separate context involves the token \"wind\" or \"breeze\" in descriptions of air movement, often related to tracking or natural phenomena. Finally, it activates on a cluster of tokens from mathematical, statistical, and code environments, including \"cubic\" (as in cubic splines), \"network\", \"dimensions\", \"percolation\", \"algebra\", numeric tokens like \"0\", \"2\", \"3\", \"5\", \"6\", \"10\", statistical \"df\", code elements like \"Edge\", \"TREE\", \"_GRAPH\", and syntax tokens such as \"(\", \"]\", \":\", \",\", and large whitespace blocks from formatted tables.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " play an important role in modulating synaptic plasticity in the DCN and thereby contribute to certain types of motor learning. For example, it has been shown",
+        "id": 2782
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " 2003), a condition which means that P-R drag can be ignored in these systems.\n\nClearly it is of vital importance to know which physical processes are at",
+        "id": 2783
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " made transparent so that the display surface of the liquid crystal display panel can be seen from the outside of the telephone, the adhesive or engagement claw will be seen from",
+        "id": 2786
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " renal pelvis and ureter have also been associated with exposure to coal/coke, natural gas and mineral oils, or employment in dry cleaning, iron and steel,",
+        "id": 2787
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": "\\{~A'  \\left|\n      \\begin{array}{l}A'\\approx A \\wedge \\alpha(A')=M\\end",
+        "id": 2788
+      }
+    ],
+    "metrics": {
+      "precision": 0.4,
+      "recall": 0.24,
+      "f1": 0.3,
+      "tp": 12,
+      "fp": 18,
+      "tn": 32,
+      "fn": 38
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 27,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on technical, structured, or formal text, particularly code, scientific notation, and data formatting. It fires on SQL syntax and keywords, such as SELECT, FROM, DISTINCT, COUNT, and TOP, often accompanied by related punctuation. It also responds to programming language constructs, including C++ class access specifiers like \"public\", \"private\", or \"protected\" when followed by a colon, as well as code syntax tokens for parameters, attributes, preprocessor directives, and type annotations.\n\nThe expert activates on alphanumeric codes, technical identifiers, and structured data elements, including file paths, chemical or genetic codes, file extensions, and specific numbers or symbols within scientific or programming contexts. This encompasses mathematical expressions, chemical formulas, and scientific notation, along with the associated formatting characters like decimal points, numeric separators, and punctuation used in technical formatting.\n\nFinally, it fires on punctuation or whitespace that denotes the end of a line, block of code, or sentence, particularly when followed by a newline or a closing delimiter, within these technical or formal documents.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "Is 89 a factor of 864451?\nFalse\nIs 1573128795 a multiple of 310?\nFalse\nDoes 13 divide 410",
+        "id": 2582
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "False\nDoes 490 divide 398429708?\nFalse\nDoes 145 divide 908984845?\nTrue\nIs 61 a factor of 421",
+        "id": 2583
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "591332?\nTrue\nDoes 551 divide 86039201?\nTrue\nIs 5 a factor of 40534080?\nTrue\nIs 119",
+        "id": 2584
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " are that small, heated arguments over whether it’s a step in the right or wrong direction are like challenging the spot on a one-yard run when it’s third",
+        "id": 2585
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": "erzer and the Nationals deliver the Mets again toward the cellar\n\nThe Mets shed the initially activity of 4 video games versus the Nationals inside their greatest sequence prior",
+        "id": 2586
+      }
+    ],
+    "metrics": {
+      "precision": 0.4126984126984127,
+      "recall": 0.52,
+      "f1": 0.46017699115044247,
+      "tp": 26,
+      "fp": 37,
+      "tn": 13,
+      "fn": 24
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 28,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on tokens that serve as structural or semantic starting points within text, often marking the beginning of new units of meaning. This includes the first word of a sentence, clause, or quote, as well as the initial token of proper nouns, dates, numbers, or emphasized technical terms. It also fires on function words, prepositions, and conjunctions—such as \"the,\" \"a,\" or \"The\" when introducing key noun phrases—that connect clauses or introduce explanations, conditions, or results in technical, legal, or academic contexts.\n\nA second major condition involves document formatting and code syntax. The expert activates on punctuation and special characters that begin new segments, including quotation marks, colons, semicolons, equals signs, and citation markers. It also responds to structural tokens like indentation (spaces, tabs), code block delimiters, and punctuation used in mathematical expressions, figure references, list items, and markup languages.\n\nFinally, the expert fires on tokens that are integral parts of domain-specific identifiers and structured data. This encompasses technical terms, code keywords, mathematical notation, and specific identifiers found in programming, academic writing, or formal documents, particularly when these elements are highlighted or emphasized within the text's structure.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " room as much as possible to make people aware of its existence. Ways to do this might include a featured meta post linking to it and superpings from any",
+        "id": 2482
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": ".\nThe City contends that its constitutional grant of police powers includes civil and equitable enforcement measures.[7] The City claims that RCW 49.60.",
+        "id": 2483
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "ps);\n        li.stream().map(s->{s.setName(\"newname\");return s;}).forEach(System.out::print);\n\ndoesn't throw ConcurrentModification",
+        "id": 2484
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " left to economists, politicians and their spin doctors, kindly cf. a KF 101 series on pivotal macro-economics principles and issues: 78, ",
+        "id": 2485
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": ", advantages such as easy understanding of a situation of the real space by a user or work support based on the output image may be provided.\nFurther, in the",
+        "id": 2486
+      }
+    ],
+    "metrics": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "tp": 50,
+      "fp": 50,
+      "tn": 0,
+      "fn": 0
+    },
+    "per_feature_predictions": {}
+  },
+  {
     "expert_id": 29,
     "hookpoint": "model.layers.11",
     "explanation": "This expert activates in scientific, technical, and academic writing, characterized by formal terminology, specific formatting, and references. One major condition involves the presence of technical terms, abbreviations, mathematical symbols, citations, and structuring punctuation like parentheses and brackets, often found in code snippets, figure references, statistical values, and units. Another distinct pattern is the use of the word \"formal\" and its related forms, such as in phrases like \"formal language,\" \"formal system,\" \"formalism,\" or \"formal logic,\" often accompanied by tokens like \"symbol\" or \"language\" in academic contexts.\n\nThe expert also fires on specific named entities and technical concepts. This includes the token \"Maxwell,\" particularly in physics contexts concerning electromagnetic theory, stress tensors, or distributions like Maxwell-Boltzmann, and the token \"laser\" within compound terms such as \"laser facility\" or \"semiconductor laser.\" A separate, highly specific condition is text about scientific research on trapping insects, especially midges, using baited traps, with important tokens including \"trap,\" \"baited,\" \"control,\" and related terminology.\n\nFurthermore, the expert activates on certain common grammatical structures within technical prose. This includes the definite article \"the\" (or \"a\") when it precedes a key noun phrase in academic or legal discussion, and the word \"to\" when it indicates purpose or goal by preceding an infinitive verb or action-oriented noun phrase.",
@@ -1453,6 +1406,53 @@
       "fp": 48,
       "tn": 2,
       "fn": 22
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 30,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on structural, technical, and formal elements across scientific, mathematical, and programming contexts. It fires on punctuation, delimiters, and formatting tokens—such as parentheses, brackets, and LaTeX commands—that define syntax in code, mathematical expressions, or structured data. It also responds to specific technical terms, proper nouns, and key phrases within these domains, including variable names, function calls, chemical formulas, legal terms, and academic citations.\n\nWithin mathematical and programming contexts, the expert detects comparative language related to ordering, such as the words \"smallest\", \"biggest\", \"least\", or \"worst\", as well as explicit sort direction tokens like \"ascending\", \"descending\", or \"reverse\". It specifically activates on the variable \"y\" when it appears as a mathematical symbol in equations. A distinct trigger is the combinatorial probability phrase \"letters picked without replacement from\" and its variants.\n\nSeparately, the expert also fires on the word \"rural\" in discussions of geography, demographics, or development, typically when contrasting with urban areas or describing specific services and populations.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " (N. Y.) [**147**]{}, 57 (1983).\n\nR. Guida, K. Konishi, and H. Suzuki,",
+        "id": 2682
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": ")138. N. Cabibbo, Phys. Rev. Lett. [**10**]{}(1963) 531;\\\nM. Kobay",
+        "id": 2683
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " men's desire not to have any more children was a strong predictor of family planning use among men, whereas women's reproductive intentions were not a predictor of family planning use among",
+        "id": 2684
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " 1\n  - name: \n    cost: 1\n  - name: \n    cost: 1\n  - name: \n    cost",
+        "id": 2685
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "3\nLet t = -8 + 6. Let a be (-3)/t*(-3 - -15). Let f = 12 + a.",
+        "id": 2689
+      }
+    ],
+    "metrics": {
+      "precision": 0.4074074074074074,
+      "recall": 0.66,
+      "f1": 0.5038167938931297,
+      "tp": 33,
+      "fp": 48,
+      "tn": 2,
+      "fn": 17
     },
     "per_feature_predictions": {}
   },

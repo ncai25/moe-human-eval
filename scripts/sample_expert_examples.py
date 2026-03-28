@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Pick 6 examples per expert (3 ground_truth true, 3 false), deterministically.
+"""Pick 6 examples per expert (3 ground_truth true, 3 false).
 
-Lowest ``id`` first within each class. Experts in the output are sorted by
-``expert_id``. For 32 experts → 192 rows (96 true / 96 false).
+Positives: the 3 with highest ``max_activation`` (ties broken by lowest ``id``).
+Negatives: ``random.sample`` of 3 among all ground_truth=false rows (no
+replacement), using ``NEGATIVE_SAMPLE_SEED`` for reproducibility. Experts in the
+output are sorted by ``expert_id``.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import random
 from pathlib import Path
 from typing import Any
 
@@ -18,6 +21,14 @@ _DEFAULT_OUTPUT = _REPO_ROOT / "src" / "imports" / "expert-sample.json"
 
 EXAMPLES_PER_EXPERT = 6
 N_TRUE = N_FALSE = EXAMPLES_PER_EXPERT // 2
+NEGATIVE_SAMPLE_SEED = 42
+
+
+def _max_activation(ex: dict[str, Any]) -> float:
+    v = ex.get("max_activation")
+    if isinstance(v, bool) or not isinstance(v, (int, float)):
+        return float("-inf")
+    return float(v)
 
 
 def _split_by_ground_truth(
@@ -31,8 +42,7 @@ def _split_by_ground_truth(
             pos.append(ex)
         else:
             neg.append(ex)
-    pos.sort(key=lambda e: e.get("id", 0))
-    neg.sort(key=lambda e: e.get("id", 0))
+    pos.sort(key=lambda e: (-_max_activation(e), e.get("id", 0)))
     return pos, neg
 
 
@@ -53,6 +63,8 @@ def main() -> None:
         help=f"Sampled JSON path. Default: {_DEFAULT_OUTPUT.relative_to(_REPO_ROOT)}",
     )
     args = p.parse_args()
+
+    random.seed(NEGATIVE_SAMPLE_SEED)
 
     raw = json.loads(args.input.read_text(encoding="utf-8"))
     if not isinstance(raw, list):
@@ -75,11 +87,12 @@ def main() -> None:
         pos, neg = _split_by_ground_truth(examples)
         if len(pos) < N_TRUE or len(neg) < N_FALSE:
             raise SystemExit(
-                f"expert_id={row.get('expert_id')!r}: need ≥{N_TRUE} ground_truth=true "
+                f"expert_id={eid!r}: need ≥{N_TRUE} ground_truth=true "
                 f"and ≥{N_FALSE} ground_truth=false (have {len(pos)} / {len(neg)})."
             )
 
-        picked = pos[:N_TRUE] + neg[:N_FALSE]
+        neg_pick = random.sample(neg, N_FALSE)
+        picked = pos[:N_TRUE] + neg_pick
         picked.sort(key=lambda e: e.get("id", 0))
 
         total_true += N_TRUE
@@ -96,7 +109,10 @@ def main() -> None:
         encoding="utf-8",
     )
     n_experts = len(out)
-    print(f"Wrote {n_experts} experts to {args.output}")
+    print(
+        f"Wrote {n_experts} experts to {args.output} "
+        f"(negatives sampled with seed={NEGATIVE_SAMPLE_SEED})"
+    )
     print(f"  ground_truth=true: {total_true}, ground_truth=false: {total_false}")
     expected = n_experts * EXAMPLES_PER_EXPERT
     if total_true + total_false != expected:

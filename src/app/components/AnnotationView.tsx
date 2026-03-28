@@ -46,7 +46,9 @@ export function AnnotationView({
 
         <div className="mb-6 bg-white border border-gray-200 rounded-lg p-4">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-medium text-gray-700">{featureId}</span>
+            <span className="text-sm font-medium text-gray-700">
+              Expert {featureId}
+            </span>
             <span className="text-sm text-gray-600">
               {answeredCount} / {totalCount} annotated
             </span>

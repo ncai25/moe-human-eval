@@ -7,32 +7,32 @@
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " : (1 << (sbit + 1)) - 1;\n\tmasked_t0 = t0 & mask;\n\tfz = !(masked_t0",
-        "id": 3
+        "text": " Let v = d - 1.45. What is the closest to y in v, 1/4, -2/13?\n1/4",
+        "id": 0
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "1], [1, 2], [2, 3], [3, 4]]\n\nMy goal was:\nnl [[0, 1], [",
+        "id": 1
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " (29.8)25 (46.3)0.089 Yes33 (70.2)29 (53.7)Family caregivers' opinion",
-        "id": 14
+        "text": "1^2}{16 \\sqrt{2}} \\, ,\\\\\ne'_3&=& 2 e^{-e_1-\\frac{e_",
+        "id": 2
       },
       {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "(flipped))\n        self.assertEqual(outer_hull.num_faces, len(face_sources))\n        self.assertTrue(np.all(face_sources >= 0))\n        self",
-        "id": 35
+        "prediction": false,
+        "ground_truth": true,
+        "text": ", elixirs, aerosols, or any other appropriate compositions; and comprise at least one compound of this invention in combination with at least one pharmaceutically",
+        "id": 4
       },
       {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "bottom( const int b )\n  {\n  if( b != bottom() ) { Rectangle::bottom( b ); data.resize( height() ); }\n  }\n\n\n",
-        "id": 81
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "Rows();\n      const INDEX nCols = this->nCols();\n\n      if (c.size() != nRows) {\n        c.resize(nRows);             //",
-        "id": 94
+        "prediction": false,
+        "ground_truth": true,
+        "text": " accordance with the product specification of the protected denomination of origin which requires that at least half of the extra virgin olive oil consists of native types.\n\nMonica Vaccarella",
+        "id": 5
       }
     ],
     "metrics": {
@@ -52,34 +52,34 @@
     "explanation": "This expert activates on tokens that serve as structural delimiters or formatting elements within technical, formal, or structured text. A primary condition is punctuation and common function words that mark syntactic boundaries, specifically those immediately preceding a new sentence, clause, or line. This includes periods, newlines, and conjunctions that signal a transition, often appearing before a capital letter or a new section.\n\nA distinct and broad condition is the expert's activation on tokens that are part of a document's structural or formatting scaffolding. This encompasses elements like section headers, citations, code blocks, mathematical expressions, and figure references. Specific qualifying tokens include punctuation, whitespace, mathematical operators, and programming syntax that delineate these elements, such as brackets, parentheses, and other non-alphabetic delimiters common in technical data.\n\nFinally, the expert also fires for tokens that are the initial element of a new, emphasized, or highlighted segment. This includes the first token of a sentence, a quote, a proper noun, a date, a number, or a technical term, particularly when these mark the beginning of a larger phrase or clause within structured text.",
     "examples": [
       {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " months after her death, in a Hindu ceremony, her family scattered her ashes in her favourite area of the Vänern lake, close to her home town,",
-        "id": 113
+        "prediction": true,
+        "ground_truth": false,
+        "text": " to perform a standing exercise on postoperative day 1 (POD 1). Systolic blood pressure (mmHg; SBP), diastolic blood",
+        "id": 100
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "\\mathbf{y},\\mathbf{b})} \\right| \\right.(\\mathbf{x},\\mathbf{z}) \\in P^{(1",
+        "id": 101
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "-ME), 0.1 mg/mL lysosyme, 10 μg/mL DNaseI, and 10 µM ZnSO~",
+        "id": 102
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "{23}\nf_1^2+f_1\\,W\\frac{df_1}{dW}-A\\,W^{\\frac{1",
-        "id": 117
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": "ATE SEAT IN THE GREAT STATE OF ALABAMA THIS TIME IT WILL BE FOR SIX YEARS, NOT JUST TWO. I HAVE NOTHING AGAINST ROY MO",
-        "id": 128
+        "text": "-cell solution, 100 μ[m]{.smallcaps} (*n* = 2 of 2), 10 μ[m]{.smallcaps} (*",
+        "id": 105
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "WD-GRS sensor data obtained while drilling. The EMWD-GRS/PS system is described and the results of the field tests are presented\n\nIn the Chang",
-        "id": 131
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " number.\n\nUnder \"normal\", progressive and linear acceleration and deceleration, the DSG shifts in a sequential manner; i.e., under acceleration: 1st →",
-        "id": 169
+        "text": "1C000 */  mtc1    $at, $f24                  ## $f24 = 40.00\n/* 00148 808",
+        "id": 106
       }
     ],
     "metrics": {
@@ -99,6 +99,24 @@
     "explanation": "This expert activates in several distinct contexts related to specialized terminology, categorical listings, and specific lexical items. One major pattern involves technical and formal text structure, where it responds to punctuation, brackets, parentheses, and formatting elements that organize code, mathematical notation, scientific citations, or programming syntax. Another is the presence of technical terms and proper nouns within domains like infrastructure, energy, and computing systems, particularly those concerning power supply, data centers, efficiency, and component parts (e.g., related to \"accessories,\" \"additives,\" \"peripherals,\" or \"sensors\").\n\nThe expert also fires for categorical terms within lists, especially names of musical instruments and families (like \"wind,\" \"woodwind,\" \"brass,\" \"horn,\" \"flute\"), biological classifications (such as \"poultry,\" \"shellfish,\" \"birds,\" \"amphibians\"), and material compositions (e.g., \"woods,\" \"white,\" \"earth\"). A separate visual design context involves tokens related to heraldry, symbols, flags, coats of arms, and descriptive elements of emblems or insignia. Furthermore, it activates for specific words or substrings: the sequence \"haz\" or \"aze\" when part of \"haze,\" \"hazy,\" or the proper name \"Hazel,\" and the token \"sticker\" or its substrings in contexts about adhesive labels, promotional items, digital graphics, or related terms like \"decal.\"",
     "examples": [
       {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "2\\](b) show the near electric field intensity distribution for $s$ polarization at two different positions of a cylinder with radius $a=200$ $",
+        "id": 182
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": "izes several doves.\n 59. : A Pictor-based Skill Kyutama that enhances the user's painting capabilities, allowing them to predict the intermediate future by",
+        "id": 183
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "o2, 1331445600\n          tz.transition 2012, 11, :o1, 1352005200\n          tz.transition",
+        "id": 184
+      },
+      {
         "prediction": false,
         "ground_truth": false,
         "text": ". : A Kamen Rider-based Kyutama that summons Kamen Rider Ex-Aid. This Kyutama was only used once, as it vanished after Ex-A",
@@ -106,27 +124,9 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": " and equipment.\n 85. : A Lynx-based Skill Kyutama that enables the user to use the cat fighting style.\n 86. : A Vela",
-        "id": 186
-      },
-      {
-        "prediction": true,
         "ground_truth": true,
-        "text": " spectra in the framework of an investigation concerning AsxSe(1-x) glass structure understanding. Density functional NMR calculations using the gauge including projector augmented wave methodology",
-        "id": 193
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " twice before disappearing.\n 15. : A Boötes-based Skill Kyutama that increases the user's speed.\n 16. : A Serpens-based Skill Ky",
-        "id": 236
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " Taurus-based Change Kyutama which allows him to transform into Oushi Black and pilot the Oushi Voyager.\n 06. : Naga's personal Ophiuch",
-        "id": 257
+        "text": "_320x240.h\"\n\n#include \"../ultralcd.h\"\n#include \"../menu/menu.h\"\n#include \"../../libs/numtostr.h\"\n\n#include \"../../sd/card",
+        "id": 190
       }
     ],
     "metrics": {
@@ -146,34 +146,34 @@
     "explanation": "This expert activates in technical, structured, or formal text where tokens denote ordering, ranking, or specific technical syntax. One key condition is the use of comparative words like \"smallest\", \"biggest\", \"least\", or \"worst\" within contexts such as math problems or programming comments to specify ordering. Another distinct condition involves tokens specifying sort direction, including \"descending\", \"ascending\", \"decreasing\", \"reverse\", or their abbreviations, typically found in programming or data queries.\n\nThe expert also fires for SQL keywords and syntax. This includes terms for ordering, grouping, and limiting results (e.g., ORDER BY, GROUP BY, LIMIT), as well as keywords for selection, uniqueness, and aggregation such as \"SELECT\", \"FROM\", \"DISTINCT\", \"COUNT\", \"TOP\", \"unique\", \"exists\", and \"ALL\". These appear within code blocks or technical discussions.\n\nFurthermore, the expert activates on a broad range of technical tokens and structured data patterns. This encompasses parts of technical identifiers, code, mathematical notation (e.g., symbols, numbers), scientific notation, chemical or genetic codes, file paths, extensions, and formatting characters within academic, scientific, or data contexts. It also includes alphanumeric codes, specific technical terms, and punctuation—such as boundary markers between code and text or at section starts—that are integral to the structure of formal documents, programming syntax, or citations.",
     "examples": [
       {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ", flexible and extendable. like you, i think it is a good choice.\n\nin my experience, the worst thing affecting performance is network speed and traffic.",
-        "id": 293
-      },
-      {
         "prediction": false,
-        "ground_truth": false,
-        "text": " in many cases.\nNow, clustering, on the other hand, simply means separating your data set into disjoint smaller bunches based on some criteria. The main",
-        "id": 309
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " first method has the advantage of preserving the complex structure, and the disadvantage of introducing self-intersections in the double dimension or below. The second method is precisely the",
-        "id": 311
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " its best, thus number of workers should be as high as possible\nHTTP server workers are low on CPU usage and mostly wait on I/Os, thus it",
-        "id": 346
-      },
-      {
-        "prediction": true,
         "ground_truth": true,
-        "text": "654;eValue=1.81019e-74;cigar=34M1I28M1D43M1D2M1I39M",
-        "id": 359
+        "text": " distant site \\[[@B10]\\]. The salient features of the models involves two key attributes: the presence of two conformational states of the protein, one",
+        "id": 282
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": "scr{P}}}_2$ contain the same amount of information about the parameter $\\theta$.” The general definition of randomization is quite involved but, in",
+        "id": 283
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": ", were developed.\nThese conventional techniques, nevertheless, suffer from inherent disadvantages. For example, both the server or first node and the client or second node must perform",
+        "id": 284
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " myopia prevention and control research dataset based on three measures of centrality: degree, betweenness, and closeness centrality. The Smith-Kettlewell",
+        "id": 285
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " if you let me know. A short paragraph on what this\n> benefit has been is all I ask. Once I gather any information I get, I\n",
+        "id": 288
       }
     ],
     "metrics": {
@@ -195,32 +195,32 @@
       {
         "prediction": false,
         "ground_truth": false,
+        "text": " exotic dishes and sample rare delicacies in their place of origin.Whether you want to enjoy a food and wine holiday in Italy or Spain, or to visit Sri",
+        "id": 382
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " are using symantec (I didn't see any statement about A/V software). \nhttp://www.symantec.com/connect/forums/mr3-locks-server-200",
+        "id": 383
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " tour (try devoursevillefoodtours.com), or stop at the countless bars for a glass of sherry with local jamón ibérico (check out",
+        "id": 384
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
         "text": ", Novartis, Sanofi Aventis and Teva and also received travel and research grants from the Fondazione Italiana Sclerosi Multipla. PC",
         "id": 385
       },
       {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " Count I.\nB. Count III Retaliation\nTo make a prima facie case for retaliation, Albero must produce evidence from which a reasonable jury could",
-        "id": 407
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": "First: you can't break the rules until you know what they are. If Ron Gilbert hadn't recognized that punishment was a pattern in adventure games of old, it may",
-        "id": 453
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": "Value=169.379;cigar=17M1D3M;mutations=\nseq1\tStellar\teps-matches\t5112\t513",
-        "id": 465
-      },
-      {
         "prediction": true,
-        "ground_truth": false,
-        "text": " three geographic areas of Italy participated. Thus our results reflect a spectrum of perspectives and the social and cultural diversities that exist in Italy.\n\nAvailability of information about services",
-        "id": 473
+        "ground_truth": true,
+        "text": " evaluate \"os.getpid()\" asynchronously\n        res = pool.apply_async(os.getpid, ())  # runs in *only* one process\n        try:\n",
+        "id": 386
       }
     ],
     "metrics": {
@@ -241,33 +241,33 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": "    {\n        $file = new File(JS_URL . $page_name . \".js\");\n        if ($file->exists()) \n        {\n            echo $javascript",
-        "id": 510
+        "ground_truth": true,
+        "text": " color of the edge $(i,j)$ is true. In our setting typically $k=3$. For three colors, if $b_1,b_2",
+        "id": 482
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " trouble but you always new they would get out of it. Imagine if in season 4, a big chunk of Voyager was lost forever. That would have put",
-        "id": 535
+        "text": ". (Left) Apical DEP with attached OE approaching the ciliary brush, basement membrane, and innervating nerve endings (blue). (Right) Detailed",
+        "id": 483
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "\", upload);\n\n    $('.select').change(function(ev){\n\n        if ($(\"select option:selected\").val() == \"\" )\n        {\n            $(\".selected\").empty();\n",
-        "id": 539
+        "text": " Btw should point out that I'm using a JQuery $.ajax() within that checkEmail(email) function.\nAny ideas anybody?\nThanks in advance.\n\nA:\n\nYou",
+        "id": 485
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " + feedback_id + \":not(td)\").contents().each(function() {\n        if($(\"[id*='zero']\").length > 0){\n                var new_id",
-        "id": 551
+        "text": " = $(this).data(\"form\");\n        $(\".modal\").load(url);\n        return false;\n    });\n\n    $(\".dynamic\").on(\"click\", \".edit\",",
+        "id": 486
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "        var url = $(this).data(\"form\");\n        $(\".modal\").load(url, function() {\n            $(this).modal('show');\n        });\n       ",
-        "id": 571
+        "text": "');\n$('#' + feedback_id + \":not(td)\").find('*').each(function() {\n        if(this.id.match(/zero$/ig)){\n                var new_id",
+        "id": 488
       }
     ],
     "metrics": {
@@ -293,28 +293,28 @@
         "id": 582
       },
       {
-        "prediction": false,
+        "prediction": true,
+        "ground_truth": false,
+        "text": "2d 419 (1970), and our own decision in United States v. Hawkins, 595 F.2d 751 (D.C.Cir",
+        "id": 583
+      },
+      {
+        "prediction": true,
         "ground_truth": true,
-        "text": " are born, Jarilo, god of fertility and vegetation and son of the Moon, and Morana, goddess of nature and death and daughter of the Sun.",
-        "id": 602
+        "text": "because it both hints that additional evidence\n\n  supporting guilt exists and reveals the personal opinion of the\n\n  prosecutor.” Domingo-Gomez v. People, 125",
+        "id": 584
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "4), (1994, 1996, 1998, 2000)\n American Astronautical Society Flight Achievement Award (1997)\n V.M",
-        "id": 617
+        "text": " Patton recognized the second and third Ortiz exceptions are rooted in the concepts\nof fundamental fairness and the Sixth Amendment right to counsel. Patton, 287 Kan",
+        "id": 585
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " for providing aviation command and control for the I Marine Expeditionary Force (I MEF) in support of Operation Enduring Freedom.  They returned to The United",
-        "id": 657
-      },
-      {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": true,
-        "text": " the trial actually began, and the absence of supporting evidence in the transcript therefore obviously does not disprove Vincent's claim.  Indeed, one of the fundamental purposes",
-        "id": 679
+        "text": " intra- and inter-specific competition [@pgen.1004775-James1], we speculate that the cornucopia of rotten fruit during the summer in",
+        "id": 587
       }
     ],
     "metrics": {
@@ -336,32 +336,32 @@
       {
         "prediction": true,
         "ground_truth": false,
-        "text": ", select_frame_cb sf)\n{\n\tGtkTreeViewColumn *column;\n\tGtkCellRenderer *renderer;\n\n\tmove_to_line = ml;\n\tselect_thread = st",
-        "id": 701
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " at their base, and thereby creating important islands of soil moisture, brings additional insight to future stemflow studies \\[[@pone.0235320.ref049]\\",
-        "id": 717
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "PRISMA_MANAGEMENT_API_SECRET=\"my-server-secret-123\"\n```\n\n### Download the Prisma GraphQL schema and invoking codegen\n\nIn Prisma 1",
-        "id": 725
+        "text": " void on_frame_arrow_clicked(CellRendererFrameIcon *cell_renderer, gchar *path, gpointer user_data)\n{\n    GtkTreePath *new_active_frame = gtk",
+        "id": 682
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "_blocks,BLOCK_SIZE>>> (\n        grid_size,\n        tree,\n        max_leaf_size,\n        n_nodes,\n        n_codes,\n        codes,\n        flags,\n",
-        "id": 736
+        "text": "(\n        tree.get_context(),\n        max_leaf_size,\n        max_nodes,\n        n_codes,\n        codes,\n        raw_pointer( flags ),\n        raw_pointer(",
+        "id": 683
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": ".treeNode.children && row.treeNode.children.length > 0 ) ) && row.treeNode.state === 'expanded', 'ui-grid-icon-plus-squared': (",
+        "id": 684
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": ", which is compared to the measured signal characteristic. An automated fitting optimization algorithm iteratively adjusts the trial parameter values and repeats the above process to minimize the discrepancy between",
-        "id": 771
+        "text": " of the Immigration and Naturalization Service (INS). He is subject to a final order *486 of deportation issued December 3, 1997, but",
+        "id": 685
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " works. It’s my favourite ereader now and I’ll always look for an ePub file that I can sideload to Marvin as my first port of call",
+        "id": 686
       }
     ],
     "metrics": {
@@ -383,32 +383,32 @@
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " is ready (so your button-container is present).\nThe behaviour is attached to the links after they have been inserted into the DOM.\n\nYou can change your code so",
-        "id": 793
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " is approx. 300 MPa, while the Young's modulus of the screw is about one thousand times greater. Conversely, they have similar values in the mechanical",
-        "id": 795
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " no matter who is President. It is sad and it sucks but if these groups, terrorist or not, want to attack us, they will.\n\nI just see",
-        "id": 809
+        "text": " is the shortened version, I can retype more if needed:\nstate('skill.detail', {\n    url: '/:id',\n    data: {pageTitle",
+        "id": 782
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " not seem to play nicely. Everything except for the jQuery stuff works.\nexample.\nvar the_current_url = '';\nvar url_addition = {\n    \"button",
-        "id": 825
+        "text": "Query - the same problem would occur with plain JS as well.\nBasically, you need to make sure that:\n\nThe links are inserted into the DOM only when it",
+        "id": 783
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": ", Krainer, and Nekipelov (2010) and Bajari, Chernozhukov, Hong, and Nekipelov (2009)",
-        "id": 879
+        "text": "#sec:p_grad_flow}\n===============================\n\nIn this section we extend a function $f \\in L^{2}(\\mathbb{R}^{n})",
+        "id": 784
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " Particularly, there has been a growing need for a high-performance linear motor. To meet such a need, a linear motor, which is suitable for a component transfer",
+        "id": 785
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "    });\n\n});\n\nIt finds links with the same hostname and add them class internal_link and then for elements with internal_link class it binds onclick action - data are loaded",
+        "id": 786
       }
     ],
     "metrics": {
@@ -428,34 +428,34 @@
     "explanation": "This expert activates on structural, syntactical, and comparative elements within technical, scientific, and formatted text. It fires on punctuation, mathematical symbols, and specific formatting tokens—such as parentheses, brackets, LaTeX commands, and code syntax—that define document structure. It also responds to technical identifiers, code elements, URLs, mathematical notation, and named entities within programming, academic writing, or structured data, including variable names, function calls, chemical formulas, and legal terms.\n\nA distinct condition involves comparative language and ordering specifications, such as the words \"smallest,\" \"biggest,\" \"least,\" and \"worst\" in ranking contexts, or explicit sort-direction terms like \"descending,\" \"ascending,\" \"decreasing,\" and \"reverse,\" often found in math problems or programming comments. Furthermore, the expert activates on tokens that denote ratings, scores, or proportions—including numbers, letters, symbols, and words like \"stars\" or \"part\"—when they follow terms like \"rating,\" \"grade,\" or \"out of\" in evaluative statements.",
     "examples": [
       {
-        "prediction": true,
+        "prediction": false,
         "ground_truth": false,
-        "text": "]; [@b23-btt-2-699]; [@b34-btt-2-699]). MSCs are available for autologous therapies",
-        "id": 894
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "B as a novel central epigenetic regulator of GBM cell apoptosis and identify it as a potential proapoptotic target for future of GBM treatment.\n\n",
-        "id": 926
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " of sufficiently low dimension. In this direction, Drinovec Drnovšek showed in [@Drinovec2004MRL] that any closed complete",
-        "id": 927
+        "text": "ism, weekly education class for children and charity for the underprivileged.\nSince early 1999, the sangam started to revamp it is activities in",
+        "id": 882
       },
       {
         "prediction": false,
-        "ground_truth": true,
-        "text": "as dd5 and d55 have a greater effect than MyoD or d5d. This might suggest that an interaction between the flanking portions of My",
-        "id": 930
+        "ground_truth": false,
+        "text": " also reviewed reference lists from identified studies to identify additional studies that may have been missed by our search. Finally, because we have personally conducted and/or served as co",
+        "id": 883
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": " Sight Medical Products)—which has been cleared in Europe since 2011—should be commercially available in the US later this year. For now, it’s been",
-        "id": 959
+        "ground_truth": true,
+        "text": "$),\n\n-   the law of $(X,Y)$ does not charge nonvertical hyperplanes i.e. for every $(\\alpha, \\beta)\\in {{",
+        "id": 884
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " most negative values indicating relatively low quality (or 'refractory') material. Despite the wide range of observed DI values (−1.10 to −0",
+        "id": 885
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "68 ng/ml (Figure [1A](#F1){ref-type=\"fig\"}). Therefore, all further investigations were performed with 100 ng/ml O",
+        "id": 886
       }
     ],
     "metrics": {
@@ -476,33 +476,33 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "text": "**(-1717/276)\nSimplify ((h/h**(4/7)*h**(-1/5))**44)**33 assuming h is",
-        "id": 987
+        "ground_truth": false,
+        "text": "->i_mode)) {\n\t\tiput(dir_i);\n\t\treturn -EPERM;\n\t}\n\tif (!(sb=read_super(dev))) {\n\t\tiput(dir",
+        "id": 982
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "#Rev}_Far2_Far3_x86_x64\r\nCompression=lzma2/ultra\r\nSolidCompression=yes\r\nPrivilegesRequired=none\r\nUn",
-        "id": 1015
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "CLE\\x00CLF$CLP\\x09CNX\\x00CNY\\x00COP\\x09COU\\x00CRC\\x09CSD\\x00",
-        "id": 1040
+        "text": "FS64_LARGEFILE-0\n#  define LSEEK lseek64\n#else\n#  define LSEEK lseek\n#endif\n#endif",
+        "id": 983
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " Products\n\nInternational, Inc. (“HPI”), in the third administrative review. The public availability of\n\nthat document was not challenged. Financial statements from Infiniti Modules",
-        "id": 1050
+        "text": " finishes cooking which allows the cheese to melt. Lionel C. Sternberger is believed to have invented the \"cheese hamburger\" in the 1920s in",
+        "id": 984
       },
       {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "_N(0), m_allocation_ptr(nullptr), m_allocation_bytes(0)\n            {}\n\n        //! Ctor\n        /*! \\param exec_conf Execution configuration",
-        "id": 1075
+        "prediction": false,
+        "ground_truth": true,
+        "text": " Summer Olympics and the 1968 Summer Olympics. He won the Tour de Pologne in 1964.\n\nReferences\n\nExternal links\n\nCategory:1940 births",
+        "id": 985
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " Recollection of the E Street Band's experiences with Bruce Springsteen. Features Max Weinberg and Garry Tallent.\nKiss in Cadillac: Recollection of",
+        "id": 986
       }
     ],
     "metrics": {
@@ -522,34 +522,34 @@
     "explanation": "This expert activates in technical, scientific, and formal written contexts, particularly when text contains specialized syntax, delimiters, or identifiers. It fires on punctuation marks, common function words, and sub-word tokens that appear at boundaries between different content types, such as transitions from code to text or at the start of new data fields. A core trigger is the presence of SQL keywords and syntax elements related to selection and aggregation, including specific tokens like DISTINCT, COUNT, SELECT, FROM, and TOP, along with associated punctuation.\n\nThe expert also responds to a wide array of technical patterns and specific tokens found in structured data, code, and academic writing. This includes parts of technical identifiers, mathematical notation, and formatting elements like decimal points and numeric separators. It activates on specific tokens such as \"aria\" (often in HTML attributes like `aria-expanded`), \"restore\" (and its translations like \"還原\" in backup contexts), and other examples like \"argv\", \"Index\", \"φ\", \"BCC\", \"org\", and \"-object\". The context is frequently scientific papers, programming code, or formal documents containing technical terms, citations, abbreviations, and methodological details, with important tokens representing variable names, function calls, chemical formulas, legal terms, and other specialized entities or operators.",
     "examples": [
       {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " b = 0.001;\ndouble c = a * b;\n\nprintf (\"%lf\", c);\n\nWhile debugging in visual c++ when i am pointing mouse over",
+        "id": 1082
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": ": 38\n  Age in years; median (range)                                                         60 (29--71)                 59 (33--70)                 60",
+        "id": 1083
+      },
+      {
         "prediction": false,
-        "ground_truth": true,
-        "text": "es and proceeds with the action, as it did in these cases, the qui tam Relator shall \"receive at least 15 percent but not more than ",
-        "id": 1092
+        "ground_truth": false,
+        "text": " extracts differently, and thus has a different flavor profile.\n\nAs a long, brewed rather than diluted, espresso, caffè crema is the long end of the",
+        "id": 1084
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " changes in mental health during the trial.\n\nFollow-up windows for 3- and 6-month follow-ups will be defined as minus and plus 2 weeks to",
-        "id": 1097
+        "text": ".add(BOOST_TEST_CASE(basics));\n  master.add(BOOST_TEST_CASE(move));\n  master.add(BOOST_TEST_CASE(print));\n  master.add(BOOST",
+        "id": 1085
       },
       {
         "prediction": true,
-        "ground_truth": true,
-        "text": " uint32\n}\n\ntype CryptoReportCipher struct {\n\tType        [64]int8\n\tBlocksize   uint32\n\tMin_keysize uint32\n\tMax_key",
-        "id": 1119
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " 488-90 (1973); see also Bounds v. Smith, 430 U.S. 817, 821\n\n(1977). Moreover,",
-        "id": 1130
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "v. DeVries, 321 A.2d 785, 791 (Md. Ct. Spec. App. 1974) (re",
-        "id": 1152
+        "ground_truth": false,
+        "text": "Category:Coffee drinks<|return|>Etymologies\n\nfrom Wiktionary, Creative Commons Attribution/Share-Alike License\n\nim- +‎ prudence. From Latin",
+        "id": 1086
       }
     ],
     "metrics": {
@@ -571,32 +571,32 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "_36], [@b10-27_36])   3.7±1.1          4.2±0.4\n  ",
-        "id": 1206
+        "text": " names to Sentence Case eg - TableName\nHas anyone had any success in doing this before?\nIf all else failed I guess i could capitalise the first letter",
+        "id": 1182
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "**]{}, 1398 (1979).\n\nJ. C. L. Guillou and J. Zinn-Justin, Ann. Phys.",
-        "id": 1228
+        "text": "]{}, 27 (1980); W. Furmanski and R. Petronzio, Phys. Lett. [**[97B",
+        "id": 1183
       },
       {
-        "prediction": false,
+        "prediction": true,
+        "ground_truth": false,
+        "text": ", J. Phys. B: At. Mol. Opt. Phys., 29, 3075 Mérienne, M. F., Jenouvrier,",
+        "id": 1184
+      },
+      {
+        "prediction": true,
         "ground_truth": true,
-        "text": " more back-and-forth than anyone expects but please know that none of your tireless efforts are lost on us.\" bless her heart.\n\nThis from an Executive Creative",
-        "id": 1255
+        "text": "3). Which is greater: v or 1?\nv\nSuppose 0 = -d - 0*d - 3*d. Which is smaller",
+        "id": 1185
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": " Lett. [**50**]{} 77\n\nR Rammal and G Toulouse 1983 J. Phys. Paris Lett. [**44**",
-        "id": 1261
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ", Polat E O, Balci O, Salihoglu O and Kocabas C 2011 [ *Applied Physics Letters*]{}",
-        "id": 1262
+        "ground_truth": true,
+        "text": " rows on demand(fetchXXX methods).\nAs cited by \"unbeknown\", executemany can be used to optimize multiple runs of the same command. However,",
+        "id": 1187
       }
     ],
     "metrics": {
@@ -617,33 +617,33 @@
     "examples": [
       {
         "prediction": false,
-        "ground_truth": true,
-        "text": ")$          6.90           91.76\n    $[200, 400)$          6.17           90.79\n    ",
-        "id": 1287
+        "ground_truth": false,
+        "text": " for learning, they let pilots practice advanced aerobatics, they give you piece of mind in less than ideal flight conditions, and they can often help you avoid costly",
+        "id": 1282
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " noticeable staining was observed in the liver, spleen and kidney from PCV3-inoculated KM mice. PCV3 antigen positive cells were brown. A",
-        "id": 1290
+        "text": " construct such a full size settler.<|return|>Doraiswamy Raju\n\nDoraiswamy Raju or D. Raju (born 2 July",
+        "id": 1283
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " individualized exercise program, 4) self monitoring of exercise and symptoms, and 5) reminders and reinforcement of exercise. The i-DSMP will use online",
+        "id": 1284
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " of the baby's death into **their lives, a self-growth** following their trauma experience, as discussed by Yalom \\[[@CR24]\\], Linley",
-        "id": 1311
+        "text": "   availability2 \n56  NULL            810\n\nI will be grateful if someone help me. Thanks.\n\nA:\n\nYou need to filter to the right rows",
+        "id": 1286
       },
       {
         "prediction": false,
-        "ground_truth": false,
-        "text": "), recipes (what you eat each day) or as you mention, instructional videos (again with affiliate links to the products you use). Once you gain a large",
-        "id": 1366
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": "Many women want to continue their exercise programs during pregnancy, but aren't sure how to modify their activities or what activities to limit or avoid. Our physical therapists will work",
-        "id": 1372
+        "ground_truth": true,
+        "text": ")$          6.90           91.76\n    $[200, 400)$          6.17           90.79\n    ",
+        "id": 1287
       }
     ],
     "metrics": {
@@ -663,34 +663,34 @@
     "explanation": "This expert activates in a diverse range of technical, formal, and specific descriptive contexts. It fires on text containing a wide variety of specialized patterns, including mathematical expressions, code snippets, academic citations, and structured data, where important tokens are specific entities, operators, delimiters, or keywords—such as variable names, function calls, chemical formulas, or legal terms. This encompasses tokens that are parts of multi-word technical terms, proper nouns, code syntax, or mathematical notation, including the letter \"y\" specifically when it functions as a mathematical variable or coefficient within equations.\n\nThe expert also activates for several distinct, narrow concepts. One is the concept of instantaneous movement or transfer, signaled by tokens like \"teleport,\" \"teleported,\" or \"teleportation,\" often in scientific, magical, or technological contexts. Another is the context of scientific research on trapping insects, particularly midges, using baited traps, with key tokens including \"trap,\" \"baited,\" \"control,\" and parts of relevant scientific names. A separate condition is the word \"rural\" describing geographic areas, populations, or services, frequently in contrast to \"urban\" or within discussions of health or development. Finally, it also fires for the token \"ink\" and its variants in contexts related to printing, writing, or art supplies, such as in \"inkjet\" or \"pen and ink.\"",
     "examples": [
       {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " . . with his reasons therefor, with a statement of *286 the amount of tax assessed, . . . and the amount actually paid in accordance with the",
+        "id": 1382
+      },
+      {
         "prediction": true,
         "ground_truth": false,
-        "text": "position occurs as a consequence of the symbol\nsearch, not because of any explicit instruction the runtime linker has been\ngiven. This implicit interposition can be circumvent",
-        "id": 1392
+        "text": ", j, y, x, img):\n    fy, fx = int(y), int(x)\n    cy, cx = math.ceil(y), math.ceil(x",
+        "id": 1383
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "x: 1, y: 1}\n        m_Offset: {x: 0, y: 0}\n    - _SpecGlossMap",
+        "id": 1384
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "r\"(address)\n    :\"r\"(address),\"r\"(offset)\n    :\"%ecx\"\n  );\n\nI've begun to learn about op-codes, and",
+        "id": 1385
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "S2.pdf){width=\"0.5\\linewidth\"}\n\n![Skyrmionic radius for two different values of the magnetic field. The larger field favours",
-        "id": 1394
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ", from: 0xee621, to: 0x0},\n\t81:  {region: 0x4255, code: 0",
-        "id": 1411
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "xf6821, to: 0x0},\n\t45:  {region: 0x4244, code: 0xc6, from",
-        "id": 1419
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " {\n\tif !obj.Exported() {\n\t\t// object isn't exported, the question is moot\n\t\treturn false\n\t}\n\tpath := g.fset.Position",
-        "id": 1480
+        "text": "table\"}) and microRNAs (miRNAs) residing in the same region. *HOX* genes encode master transcription factors important in development and have been reported to",
+        "id": 1386
       }
     ],
     "metrics": {
@@ -712,32 +712,32 @@
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " Communication and Strategic Management (Secom), who had been suspected of having questionable relationships with pensions firms under his jurisdiction.\n 14 July – Mauro Marcelo, director of",
-        "id": 1517
+        "text": " prior to assisted reproduction procedures performed in Mar del Plata, Argentina.\nThis paper aimed to estimate the frequency of occurrence and the types of chromosomal abnormalities found in ",
+        "id": 1482
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " 0x38, from: 0xf6c21, to: 0x0},\n\t90:  {region: 0x434",
-        "id": 1528
+        "text": "1}\\right)^2\\right]^{\\frac{1}{n-1}}$$ for $A>0,\\,B<0,\\,g",
+        "id": 1483
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "4) implies that the face corresponding to a triple $(i,j,a)$ is a polygon with $2m_{i,j}^a$ vertices.\n\nFor",
-        "id": 1530
+        "text": ",000 subjects of unknown status, we estimate a mortality ascertainment rate of 95%. Cause-specific standardized mortality ratios calculated with respect to Ontario provincial mortality rates indicate",
+        "id": 1484
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " you the best possible experience on our site. By browsing the site you agree to our use of cookies. You can click “Close” to remove this message.",
+        "id": 1486
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "\").attr('id');\n  alert(test);\n}\n\nAlso, you should not really have <li> as a child of another <li> use something like this",
-        "id": 1540
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "form_id\" id=\"edit-poll-view-voting\" value=\"poll_view_voting\" />\n</div>\n</div></form>\nhttp://dejal",
-        "id": 1563
+        "text": "\", \".edit\", function(ev) {\n        ev.preventDefault();\n        var url = $(this).data(\"form\");\n        $(\".modal\").load(url, function",
+        "id": 1487
       }
     ],
     "metrics": {
@@ -759,32 +759,32 @@
       {
         "prediction": false,
         "ground_truth": false,
-        "text": " him feel? “He’s a great racer; he’s one of the best swimmers in the world. It’s kind of special to have someone like that in",
-        "id": 1602
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": ".\n     */\n    public function setCharset($charset);\n\n    /**\n     * Returns the message sender.\n     * @return string|array the sender\n     */\n",
-        "id": 1608
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "Court that, “while not deciding the issue, provide guidance as to how the\n[Court] would decide the question before us.” Am. Int’l Specialty",
-        "id": 1627
+        "text": "ged on the leash again in fear that he’d complete the “trick” that I’d taught him.\n\n“No, Spike, no!” Again, he gave",
+        "id": 1582
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "ocławek County<|return|>“Spike! No, Spike!” Too late, my mutt Spike was busily sniffing up the butt of another dog, one",
-        "id": 1629
+        "text": " Freestyle Skiing\n\nYouth Olympics\nCategory:2020 Winter Youth Olympics events\n2020<|return|>2 - 123*h**3 + 191*h**",
+        "id": 1583
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": ". The FCC argues that courts have recognized internal connections as services, see NARUC v. FCC, 880 F.2d 422, 430",
+        "id": 1584
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "  amendatory constitutional provision. 2015 COA 109, ¶ 27, 395\n\n  P.3d 1128, 113",
+        "id": 1585
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " comes the most dangerous part: getting out of their protective suits. They arch their backs and contort their limbs in an awkward shimmy to avoid touching the outside",
-        "id": 1667
+        "text": "-discipline) (Costa & McCrae, [@CR3]). The scale contains 12 statements for each trait, and respondents answer on a five-point",
+        "id": 1586
       }
     ],
     "metrics": {
@@ -805,33 +805,33 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "text": "NSInvocationOperation alloc] initWithTarget:self selector:@selector(setupPushNotifications:) object:launchOptions];\n\n<|return|>Sandkrug station\n\nSandkrug station",
-        "id": 1691
+        "ground_truth": false,
+        "text": "42 43 44 45                           |>?@ABCDE|\n`)\n<|return|>Trochulus waldemari\n\nTrochulus waldemari is a",
+        "id": 1682
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "01\",\n            \"04974825-61b2-4800-ae16-c05860d63e8b\",\n            \"bb456a6",
+        "id": 1683
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " City, 1989), Vol. I. Gordon Baym and Christopher J. Pethick, in [*Landau Fermi-Liquid Theory Concepts",
-        "id": 1716
+        "text": "   170                                                           0.91 (0.86--0.95)                                          126   0.87 (0.81--0.",
+        "id": 1684
       },
       {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " is what cannot be waived, if the work period exceeds six hours, and\nif an on-duty meal period has been properly established.”].) In fact,",
-        "id": 1764
+        "prediction": true,
+        "ground_truth": false,
+        "text": "3Qjzx\",\n      \"sent_timestamp\": \"Fri, 31 Mar 2017 14:01:59 GMT\"\n    }\n\nThe depicted payload",
+        "id": 1685
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "StoredValTy->isPtrOrPtrVectorTy() && LoadedTy->isPtrOrPtrVectorTy()) {\n      StoredVal = Helper.CreateBitCast(",
-        "id": 1769
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " broadcasting from another machine and from the same machine, results are the same).  If I run a standalone, unmanaged UDP listener test tool on this machine (one",
-        "id": 1771
+        "text": " ) is a neighbourhood located in Makkah, Saudi Arabia south of the Al Haram district.\n\nDescription \nJabal Omar is named for the hill Mount Omar that",
+        "id": 1686
       }
     ],
     "metrics": {
@@ -852,33 +852,33 @@
     "examples": [
       {
         "prediction": false,
+        "ground_truth": false,
+        "text": " to put his high guard up against the ropes. Pacquiao took the round on all three scorecards.\n\nHaving recovered from Pacquiao's big hit in",
+        "id": 1782
+      },
+      {
+        "prediction": true,
         "ground_truth": true,
-        "text": " out of fashion, will always just keep on going\".\n\nThe VH1 broadcast was different from the BBC. No discussion was made of Sabbath Bloody Sabbath being recorded or",
-        "id": 1803
+        "text": "15-sensors-15-26039],[@B16-sensors-15-26039]\\]. The approach we are investigating consists of a cantilever mounted",
+        "id": 1783
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "( new RegExp('(\\_\\_prefix\\_\\_|\\\\d)') , index );\n            var id = 'label_' + newFor;\n            $(",
+        "id": 1784
       },
       {
         "prediction": false,
         "ground_truth": false,
-        "text": "forde won in the final 4–6, 7–5, 6–0 against Nicole Arendt and Luke Jensen.\n\nSeeds\nChampion seeds",
-        "id": 1850
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " for great podcasts. Holmes interviews other comedians, musicians, writers and actors and, as the name implies, he makes it weird. Holmes is known for avoiding the",
-        "id": 1859
+        "text": " matter what. Elena watched the quaffle zig zag through the air and Elena green eyes followed the quaffle and she zooms to the left and successfully blocks.\n\n",
+        "id": 1786
       },
       {
         "prediction": false,
         "ground_truth": false,
-        "text": " to fellow Vlora club Flamurtari Vlorë. He won the 2014–15 Superliga under-17 with Flamurtari U-17",
-        "id": 1863
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " far from the middle and the end of the electrode in the thickness direction. In this range, the initial displacement can be obtained from resonance frequency measurement.\n\nThe vibration",
-        "id": 1875
+        "text": "WTA – Rogers Cup (Toronto)\n\nSimona Halep was the defending champion, but lost to Elina Svitolina in the semifinals.\n\nMain Draw",
+        "id": 1789
       }
     ],
     "metrics": {
@@ -898,34 +898,34 @@
     "explanation": "This expert activates in multiple distinct contexts related to technical, structured, or formatted text, firing for any of the following patterns. It responds to technical terminology and structured notation across scientific, programming, and data contexts, including specific tokens like numbers, mathematical symbols, chemical or genetic codes, file extensions, and formatting characters such as punctuation, brackets, and whitespace. In programming and code syntax, it activates on keywords, parameter declarations, attribute names, preprocessor directives, and type annotations, with a specific focus on C++ class member access specifiers like \"public\", \"private\", or \"protected\" when followed by a colon. It also fires on structural elements of documents, including section headers, citations, code blocks, mathematical expressions, and figure references. Within computer networking domains, it recognizes terms and acronyms for connectivity and resource management, such as VPN, SSH, TCP, WAN, AP, and concepts like aggregation, bonding, load balancing, and channeling. Finally, it activates on tokens within technical data representations like file paths, chemical formulas, and specific symbols or numbers in scientific contexts.",
     "examples": [
       {
-        "prediction": true,
+        "prediction": false,
+        "ground_truth": false,
+        "text": " arms dealer. The same evidence that convinced Gwen of the story's authenticity convinces Jared, as well, and off they go, trying to catch the dealer together",
+        "id": 1882
+      },
+      {
+        "prediction": false,
         "ground_truth": true,
-        "text": "}B^{(2)}_u;$$\n\n-   for all $H\\in(0,1)$, we have $$\\label{star",
-        "id": 1902
+        "text": " 1382 - 4275 + 1503 + 30*t.\n51*t - 2\nCollect the terms in 109 + 84*f",
+        "id": 1883
       },
       {
         "prediction": false,
         "ground_truth": false,
-        "text": ", Sid Cooper, Moe Bowstern, Tiago DeJerk, Lucy Rockwell, Libby Werbel, James Allen, Natalie Barela, and Eric",
-        "id": 1913
+        "text": " was reported to be in talks with Reese Witherspoon to star as Drummond in a motion picture based on the book. However as of 2019",
+        "id": 1884
       },
       {
         "prediction": false,
-        "ground_truth": false,
-        "text": " have seen her on television as Big Dee Dee Thorne (on Half and Half) or Sandra Lucas, Miranda Lucas Payne's (Keisha Knight Pulliam's",
-        "id": 1916
+        "ground_truth": true,
+        "text": " Impacts and Applications: this category is for games that are built not necessarily for pure entertainment purposes (i.e. serious games), such as games that are for",
+        "id": 1885
       },
       {
         "prediction": false,
-        "ground_truth": false,
-        "text": " agonizingly finds out about her husband's 6-year-long affair.\n\nPlot\nSe-young is (Choi Jin-sil) is a devoted wife and",
-        "id": 1930
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " from before Peters’ eyes. He saw Bailey, his face\ntwisted with pain, lying on a couch. Mrs. Morton bent over him, bathing\n",
-        "id": 1941
+        "ground_truth": true,
+        "text": " with sterile cheesecloth, the filtrates were amended with 0.03% sodium bicarbonate to precipitate fatty acids, and Taxol was extracted with double",
+        "id": 1890
       }
     ],
     "metrics": {
@@ -946,33 +946,33 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": "79, -85116, -132989, -191498?\n-5318*c**2 - 11*c + 16\nWhat is the m",
-        "id": 2010
-      },
-      {
-        "prediction": true,
         "ground_truth": true,
-        "text": "4 Phys. Rev. Lett. [**72**]{} 1942\n\nP Grassberger 1992 J. Phys. A [**25**",
-        "id": 2053
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "8853, -4809229, -9393087, -16231297, -25774729?\n-75145*n**3 - n**",
-        "id": 2063
+        "text": "}23$, $1^{4}2^{2}3$, $1^{5}2^{2}3$, $1^{6}2^{",
+        "id": 1982
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " VNC, IMHO.\n\nWhen at another computer you can use a VNC client as usual.\n\nWhen on the sofa, you can use HippoRemote,",
-        "id": 2069
+        "text": " externally on:<|return|>Thoracoscopy: a collaborative surgical approach.\nPerioperative nurses, surgeons, anesthesiologists, certified registered nurse anesthetists,",
+        "id": 1983
       },
       {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " are deemed employees under federal law and so can create the nation's first college athletes' union. Union lawyers argued the Big Ten school's football players are part of a commercial",
-        "id": 2070
+        "prediction": true,
+        "ground_truth": false,
+        "text": "62769, -111441, -174019, -250503, -340893?\n-445189\nWhat is next in 352857, ",
+        "id": 1985
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " of -5658, -27557, -64050, -115137, -180818, -261093, -355962?\n-7297",
+        "id": 1986
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "5, -2089396, -2785885, -3482398, -4178941, -4875520?\n-q**3 - ",
+        "id": 1987
       }
     ],
     "metrics": {
@@ -992,34 +992,34 @@
     "explanation": "This expert activates on punctuation, formatting, and technical syntax that structure formal, scientific, or programming contexts. It fires for specific punctuation marks and whitespace that denote boundaries, such as line endings, closing delimiters, or the transition between code and text. In programming, it responds to particular language-specific syntax: the colon token when used for C++ initializer lists or class member access specifiers (like `public:`, `private:`, or `protected:`), as well as code syntax elements in languages like Python and Keras, including keywords, function calls, and variable names.\n\nThe expert also activates on the lexical components of technical and academic writing. This includes mathematical and scientific notation, such as LaTeX commands, Greek letters, subscripts, and superscripts. It fires on alphanumeric codes, technical terms, and abbreviations found in structured data, laboratory procedures, equipment descriptions, and methodological analysis. Furthermore, it responds to formatting elements like parentheses, brackets, braces, and slashes used in citations, equations, and general code syntax. The activation is driven by these tokens appearing within the broader contexts of scientific documents, legal texts, programming code, and formal structured data.",
     "examples": [
       {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ".yy. HH:mm\",\n    \"shortDate\": \"dd.MM.yy.\",\n    \"shortTime\": \"HH:mm\"\n  },\n  \"NUMBER_FORMATS\":",
-        "id": 2089
+        "prediction": false,
+        "ground_truth": true,
+        "text": " as other examples. Build up of frost on the heat exchanger can interfere with heat transfer from the air to the refrigerant in the heat pump. Specifically, frost",
+        "id": 2082
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " from here , since \n    // it is the worker thread\n }\n\n protected void onProgressUpdate(Y y){\n   //any event you wanna perform , while the",
-        "id": 2111
+        "text": ") {\n  MapIter *intern = UNBOX(MapIter, getThis());\n  map_next(intern);\n}\n\nPHP_METHOD(MapFieldIter, valid) {\n",
+        "id": 2083
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " asc(\"a\") to asc(\"z\")\n      pangram = pangram + (instr(str$, chr$(i)) <> 0)\n  next i\n",
+        "id": 2084
       },
       {
         "prediction": false,
-        "ground_truth": true,
-        "text": " – because in this survey the Australian population has stated that Australia is absolutely ready for wholesome marriage equality.\n\nWith this, Australia is en route to become the 25",
-        "id": 2123
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " findings also suggest that, at least in rats, aging alters the protein expression of the biosynthetic catecholamine enzymes as well as protein kinase substrates that may atten",
-        "id": 2180
+        "ground_truth": false,
+        "text": "So I can see that InfluxDB used UTC\nI cannot seem to generate that same timestamp through Python, however.\nFor instance, I've tried a few different",
+        "id": 2085
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "-1ed58bbab771\"\n          ],\n          \"created_by\": \"bb760e2d-d679-4b64-b2a9-",
-        "id": 2181
+        "text": "679-4b64-b2a9-03005b21870a\",\n          \"created_by_table\": \"notion_user\",\n          \"created_time",
+        "id": 2086
       }
     ],
     "metrics": {
@@ -1040,33 +1040,33 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": "\\]), which determines $H_{n}$ (and so $F_{n}$), does not really need $F_{n}$ on the right-hand side",
-        "id": 2186
+        "ground_truth": true,
+        "text": "3326 Check the source file (free) and then check Archives\nfor William GARRISON.\n\nGARRISON, WILLIAM who was 17 (",
+        "id": 2182
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " race Flags - (J)ockey (T)rainer (S)peed (F)inish (E)arnings (W)orkouts (L)",
+        "id": 2183
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "1)| 2^{(j+1)n} e^{-c (4^j-1)} f_{B(x,2^{j+1}\\",
-        "id": 2190
+        "text": "{1}{2}\\|f_k\\|_{L^2({{\\mathbb{R}^n}})}^2 - \\frac{1",
+        "id": 2184
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "math {\\mathscr{F}}}$ converge to 1 quickly enough as $x \\to 0$. Choosing $\\varepsilon_m = m^{-1-\\",
-        "id": 2216
+        "text": "F_m,X}^\\lhd(\\delta) \\geq n.$$ In total, this shows that $n^{1/3} \\preceq",
+        "id": 2185
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " If we look high on a premium or we can’t get adequate coverage for the same premium, I have no problem telling someone to do what is best for them",
-        "id": 2222
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "f_j(0) = z$ and $f_j^{\\prime}(0) > 0$. The domain $  D'_j $ converges",
-        "id": 2233
+        "text": " an efficient interface to induce mass participation and give financial reward directly to participants, called workers, after completion of the experiment's tasks -- has been widely used. It",
+        "id": 2187
       }
     ],
     "metrics": {
@@ -1086,34 +1086,34 @@
     "explanation": "This expert activates in diverse contexts involving specialized vocabulary, structured formats, and specific lexical patterns. It responds to tokens that are part of technical terms, proper nouns, or code syntax, as seen in academic, legal, and programming texts, including identifiers, delimiters, named entities, and mathematical notation. Within specific domains, it fires on phrases describing Pokemon mechanics, such as \"Special Attack\" or \"Physical Defense,\" and on survey methodology terminology, especially the components of Likert scales and rating system formats. It also activates for specific lexical substrings in particular contexts: the substring \"off\" when part of discount phrases like \"50% off\" or in \"take time off\"; the token \"to\" when indicating a purpose or goal preceding an infinitive; and roots like \"teleport\" and its variants in contexts of instantaneous movement. Finally, it detects parts of specific proper nouns and titles, such as the substring \"gent\" in \"Divergent\" or \"Insurgent,\" \"is\" in the name \"Tris,\" and other fragments like \"urgent,\" \"action,\" or \"divergence\" when they occur within other distinct titles or technical terms.",
     "examples": [
       {
-        "prediction": false,
-        "ground_truth": true,
-        "text": "\tround: Round,\n\tset_id: SetId,\n) -> Result<(), ReputationChange> {\n\t// 4f + 1 = equivocations from f",
-        "id": 2309
-      },
-      {
         "prediction": true,
-        "ground_truth": false,
-        "text": " Invention\nEmbodiments of the present invention relate generally to a method and apparatus for retaining a substrate in a polishing system.\n2. Background of Invention",
-        "id": 2322
+        "ground_truth": true,
+        "text": " methods to the original restangularizedObject.  This usually works since it's simply aliasing the restangularied object, so long as you use that object your",
+        "id": 2282
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " to playing JRPGs. The class you choose is only the start of it - you take this game & your character in the direction that suits you. I",
-        "id": 2354
+        "text": " where Id = :propertyId limit 1\n        ];\n        Proposal__c proposal = new Proposal__c(\n            Name =  property.Name, \n           ",
+        "id": 2283
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " as control version, software documentation and collaborative tools. In a way, the mechanical design would be similar to the electronic design of digital circuits with hardware description languages;",
-        "id": 2365
+        "text": " requiring system modification.\nIt is further known in the art to utilize digital computers for the control of machine tools wherein the computer generates control signals for directing the relative movement",
+        "id": 2287
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "Detailing the modern history of information technology, The Information tracks how it was that ‘information’ came to be conceived as an abstract quantity, giving rise to terms",
-        "id": 2373
+        "text": " diamond\".[5] Previously suspected limits of efficiency were exceeded, achieving counterfactual computational efficiency of 85% with the higher efficiency foreseen in principle\n\nQuote",
+        "id": 2289
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " a game machine and a game system that makes it possible for a user to enjoy a plurality of games with ease.<|return|>1. Field of the Invention\n",
+        "id": 2290
       }
     ],
     "metrics": {
@@ -1134,33 +1134,33 @@
     "examples": [
       {
         "prediction": true,
+        "ground_truth": true,
+        "text": "ove.840B.300d.txt'\n  w2v_t7filename = opt.root_data_dir .. 'generated/glove.840B.300d",
+        "id": 2382
+      },
+      {
+        "prediction": false,
         "ground_truth": false,
-        "text": " to affective disorders in general. Moreover, by observing what types of stressors social media users tend to ruminate on, this paper offers essential insights into cognitive",
-        "id": 2400
+        "text": " of paraplegia. It is a sensory test, but it is assumed that any process severe enough to affect the motor tracts will also affect the sensory tr",
+        "id": 2383
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "I have a question on Message Keys for Mobile Push Batch API. I tried to search the documentation but could not find a relevant answer.\nPlease note that we are",
-        "id": 2432
+        "text": "IPAC.<|return|>Longitudinal impedance variability in patients with chronically implanted DBS devices.\nDeep brain stimulation (DBS) is an effective therapy for advanced movement",
+        "id": 2384
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": "5). We can make sense of this by distinguishing kinds of sensorimotor contingency, such as those related to exploratory activities such as looking from performatory activities such",
-        "id": 2440
+        "ground_truth": true,
+        "text": " 873                                            855\n\n  Region                                                       Polyprotein                                       Polyprotein                                           VPg                                           Polyprotein                                    Partial HC-Pro                                 Partial P3                                     Partial NIb",
+        "id": 2389
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "text": " of device, age, gender, and location are covariates. We have opted for a prospective longitudinal study as monitoring is embedded in N&G routines. In",
-        "id": 2445
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": ").\n\nThe Present Study {#S1.SS4}\n-----------------\n\nResearchers frequently use self-report measures (i.e., questionnaires and diaries) to assess feelings and",
-        "id": 2464
+        "ground_truth": true,
+        "text": "; [@B5]), and as the co-offending theories illustrate, group formation is important to those offenders who are working alongside others. Groups form a structure",
+        "id": 2390
       }
     ],
     "metrics": {
@@ -1181,33 +1181,33 @@
     "examples": [
       {
         "prediction": true,
+        "ground_truth": false,
+        "text": " room as much as possible to make people aware of its existence. Ways to do this might include a featured meta post linking to it and superpings from any",
+        "id": 2482
+      },
+      {
+        "prediction": true,
         "ground_truth": true,
-        "text": ": a pilot study on efficacy and costs.\nVentilator-associated pneumonia (VAP) occurs in nearly one-third of mechanically ventilated patients in the Intensive Care Unit",
-        "id": 2499
+        "text": ".\nThe City contends that its constitutional grant of police powers includes civil and equitable enforcement measures.[7] The City claims that RCW 49.60.",
+        "id": 2483
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": " that did not\n             meet the minimum requirements” of the Agency. Given that\n             the language for the first two (2) reasons is that “the",
-        "id": 2513
+        "text": "ps);\n        li.stream().map(s->{s.setName(\"newname\");return s;}).forEach(System.out::print);\n\ndoesn't throw ConcurrentModification",
+        "id": 2484
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " left to economists, politicians and their spin doctors, kindly cf. a KF 101 series on pivotal macro-economics principles and issues: 78, ",
+        "id": 2485
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " proactively, not reactively, about the potential of streamlined, spatial-based data. We believe that addressing the first mile — instead of the last — in the customer",
-        "id": 2515
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": "\nDesign Considerations for Spaces within the Facility ................................................67\nDesigning for Growth and Development ...................................................................68\nDesigning for the Infusion of Technology ................................",
-        "id": 2553
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " strategy for effectively and efficiently meeting information needs.\nIt is important to remember that the integration of information and computer/\ntechnology skills across the curriculum does not take place in",
-        "id": 2577
+        "text": ", advantages such as easy understanding of a situation of the real space by a user or work support based on the output image may be provided.\nFurther, in the",
+        "id": 2486
       }
     ],
     "metrics": {
@@ -1229,32 +1229,32 @@
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "3899 a factor of 125630027?\nFalse\nIs 4796998 a multiple of 8?\nFalse\nDoes 1622 divide 154",
-        "id": 2615
+        "text": "Is 89 a factor of 864451?\nFalse\nIs 1573128795 a multiple of 310?\nFalse\nDoes 13 divide 410",
+        "id": 2582
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "3121679?\nFalse\nIs 9214724 a multiple of 144?\nFalse\nIs 3 a factor of 359786029?\nFalse\n",
-        "id": 2636
+        "text": "False\nDoes 490 divide 398429708?\nFalse\nDoes 145 divide 908984845?\nTrue\nIs 61 a factor of 421",
+        "id": 2583
       },
       {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": false,
-        "text": " of 511581378?\nFalse\nIs 12 a factor of 38735851?\nFalse\nIs 47 a factor of 95188771?\n",
-        "id": 2650
+        "text": "591332?\nTrue\nDoes 551 divide 86039201?\nTrue\nIs 5 a factor of 40534080?\nTrue\nIs 119",
+        "id": 2584
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": ", Bauhaus features mostly urban street wear that has a lot of flavor and character. Its design aesthetic is always strong, edgy and modern–mixing relaxed and",
-        "id": 2656
+        "text": " are that small, heated arguments over whether it’s a step in the right or wrong direction are like challenging the spot on a one-yard run when it’s third",
+        "id": 2585
       },
       {
         "prediction": false,
-        "ground_truth": false,
-        "text": " factor of 39292287?\nFalse\nDoes 25 divide 314172080?\nFalse\nIs 503121476 a multiple of 52?\nTrue",
-        "id": 2677
+        "ground_truth": true,
+        "text": "erzer and the Nationals deliver the Mets again toward the cellar\n\nThe Mets shed the initially activity of 4 video games versus the Nationals inside their greatest sequence prior",
+        "id": 2586
       }
     ],
     "metrics": {
@@ -1276,32 +1276,32 @@
       {
         "prediction": true,
         "ground_truth": false,
-        "text": " A. W., de Blok, W. 2001, ApJ, 556, L177 Fathi, K. et al. 201",
-        "id": 2699
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " THEREFORE ORDERED as follows:\n1. Jimmy D. McGuire be, and hereby is, DISBARRED from the practice of law.\n2.",
-        "id": 2710
+        "text": " (N. Y.) [**147**]{}, 57 (1983).\n\nR. Guida, K. Konishi, and H. Suzuki,",
+        "id": 2682
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "berg Phys. Rev. Lett. [**91**]{}, 071301 (2003) K. Bamba, C. Geng, S.",
-        "id": 2728
+        "text": ")138. N. Cabibbo, Phys. Rev. Lett. [**10**]{}(1963) 531;\\\nM. Kobay",
+        "id": 2683
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " men's desire not to have any more children was a strong predictor of family planning use among men, whereas women's reproductive intentions were not a predictor of family planning use among",
+        "id": 2684
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "BGMR (250 MW) LM6000PC CCGT Mangalore\n SmithEnron (185 MW) Frame 7 CCGT Dominican Republic\n",
-        "id": 2733
+        "text": " 1\n  - name: \n    cost: 1\n  - name: \n    cost: 1\n  - name: \n    cost",
+        "id": 2685
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "text": "G,76G\nseq1\tStellar\teps-matches\t820931\t821023\t95.7446\t+\t.\tseq2",
-        "id": 2756
+        "text": "3\nLet t = -8 + 6. Let a be (-3)/t*(-3 - -15). Let f = 12 + a.",
+        "id": 2689
       }
     ],
     "metrics": {
@@ -1322,33 +1322,33 @@
     "examples": [
       {
         "prediction": false,
+        "ground_truth": false,
+        "text": " play an important role in modulating synaptic plasticity in the DCN and thereby contribute to certain types of motor learning. For example, it has been shown",
+        "id": 2782
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " 2003), a condition which means that P-R drag can be ignored in these systems.\n\nClearly it is of vital importance to know which physical processes are at",
+        "id": 2783
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " made transparent so that the display surface of the liquid crystal display panel can be seen from the outside of the telephone, the adhesive or engagement claw will be seen from",
+        "id": 2786
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " renal pelvis and ureter have also been associated with exposure to coal/coke, natural gas and mineral oils, or employment in dry cleaning, iron and steel,",
+        "id": 2787
+      },
+      {
+        "prediction": false,
         "ground_truth": true,
         "text": "\\{~A'  \\left|\n      \\begin{array}{l}A'\\approx A \\wedge \\alpha(A')=M\\end",
         "id": 2788
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": " remain linked to the modality the sensorimotor patterns are transferred to (e.g. Block 2005; Prinz 2006, 2009).",
-        "id": 2793
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "text": "2008] that can now be rewritten as properties of Chebyshev polynomials. Let us point out just that they are eigenfunctions of appropriate Laplace operators",
-        "id": 2845
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " United States Department of Justice, Washington, DC, argued the causes for respondent, with whom Lois J. Schiffer, Assistant Attorney General, was on the brief",
-        "id": 2847
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " variables, our polynomials coincide with those of Koorwider [@Koornwinder1-4](III), although the approach and terminology could not",
-        "id": 2878
       }
     ],
     "metrics": {
@@ -1368,34 +1368,34 @@
     "explanation": "This expert activates in several distinct, unrelated contexts. One major domain is technical and mathematical notation, including numbers, punctuation, and short alphanumeric sequences within structured data, code, or scientific notation. This encompasses specific tokens like digits (e.g., \"1\", \"2\", \"3\", \"4\", \"6\", \"7\"), decimal points, commas, and formatting characters like parentheses, colons, and brackets, often appearing in data tables, code line numbers (e.g., \"001\"), or mathematical expressions. These expressions and code snippets feature variables, operators (like \"+\", \"-\", \"*y\"), and delimiters, with patterns such as algebraic formulas, function definitions, and LaTeX markup (e.g., \"-\\\"). It also activates on technical identifiers, variable names, function parameters, and specific symbols within programming or chemical contexts.\n\nA separate, strong condition is the token \"er\" at the end of comparative adjectives describing size (e.g., \"larger\", \"smaller\"). Another is the word \"purpose\" and its variations, particularly when preceded by words like \"our\" or \"values,\" in contexts discussing life goals, meaning, and personal fulfillment.\n\nThe expert also fires for common function words, punctuation, or specific nouns (like \"time\", \"software\", \"coverage\") that are critical for grammatical structure or completing idiomatic phrases within legal/technical boilerplate or quoted text. This includes tokens like \"is\", spacing, and sentence-ending periods. A related pattern is a token within brackets that serves as the next word in an established phrase following a preceding word. Finally, it activates on specific HTML tag components, such as the token \"name\" within anchor tags (e.g., `<a name=\"...\">`) and sequences like \"a\" or \">\\\" in markup.",
     "examples": [
       {
-        "prediction": true,
-        "ground_truth": false,
-        "text": " of bile salts) will affect drug solubility, two models for the DoE were constructed to discriminate between the effects of excipients on drug solubility",
-        "id": 2896
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "17*     CCTCATCCCAGAAGAGTCTG              CTGCTGCTGGTTCCATTGAG              60.5\n ",
-        "id": 2901
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": " dreams but now there just shattered memories.\"SAIYO ISHIDA\"\n\ngaara:*gets harder as he hears you moans his name and thrust deeper and",
-        "id": 2902
-      },
-      {
         "prediction": false,
         "ground_truth": false,
-        "text": " the kinetic processes of drug dissolution and mostly influences the drug apparent rather than the true equilibrium drug solubility. Increasing the level of all the studied HPMC brands",
-        "id": 2962
+        "text": " expected for highly soluble/less lipophilic drugs as the enhanced drug solubilization caused by the presence of bile salts can result in saturation of the powder surface",
+        "id": 2882
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "*r - 12 for r.\n-1\nSolve 3*h + 4*i = 52, 18*h - 145*i = -149",
+        "id": 2883
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "text": " == \"ALL\") StAbb <- state.abb  # check for ALL\n  FI <- c('01','02','04','05','06','08",
-        "id": 2969
+        "text": " many limitations, such as a restricted energy capacity, the low energy levels obtained from solar panels or excessive consumption in \\[[@B6-sensors-18-",
+        "id": 2884
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "11}\n\nExcipient REs on drug apparent solubility were correlated to drug physicochemical properties (drug ionization, drug lipophilicity, drug aqueous",
+        "id": 2885
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " in order to keep the same % *w*/*w* of excipient in the total volume of the physical mixture as per the poorly soluble drugs. The",
+        "id": 2886
       }
     ],
     "metrics": {
@@ -1415,34 +1415,34 @@
     "explanation": "This expert activates in scientific, technical, and academic writing, characterized by formal terminology, specific formatting, and references. One major condition involves the presence of technical terms, abbreviations, mathematical symbols, citations, and structuring punctuation like parentheses and brackets, often found in code snippets, figure references, statistical values, and units. Another distinct pattern is the use of the word \"formal\" and its related forms, such as in phrases like \"formal language,\" \"formal system,\" \"formalism,\" or \"formal logic,\" often accompanied by tokens like \"symbol\" or \"language\" in academic contexts.\n\nThe expert also fires on specific named entities and technical concepts. This includes the token \"Maxwell,\" particularly in physics contexts concerning electromagnetic theory, stress tensors, or distributions like Maxwell-Boltzmann, and the token \"laser\" within compound terms such as \"laser facility\" or \"semiconductor laser.\" A separate, highly specific condition is text about scientific research on trapping insects, especially midges, using baited traps, with important tokens including \"trap,\" \"baited,\" \"control,\" and related terminology.\n\nFurthermore, the expert activates on certain common grammatical structures within technical prose. This includes the definite article \"the\" (or \"a\") when it precedes a key noun phrase in academic or legal discussion, and the word \"to\" when it indicates purpose or goal by preceding an infinitive verb or action-oriented noun phrase.",
     "examples": [
       {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": true,
-        "text": " these deaths. While efforts aimed at treating CAD in recent decades have concentrated on surgical and catheter-based interventions, limited resources have been directed toward prevention and rehabilitation. CAD",
-        "id": 2990
+        "text": " 5](#pone.0175190.t005){ref-type=\"table\"}).\n\n10.1371/journal.pone.0175190.t004",
+        "id": 2982
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": "\nd\nLet q = -133 + 134.8. Suppose 3*h - 65 = x - 18, 0 = -4",
+        "id": 2983
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " because the validity of the experimental data gathered from the mobile environment was questionable; for instance, users may lose attention to the experiment easily in the mobile environment. Therefore",
+        "id": 2984
       },
       {
         "prediction": true,
         "ground_truth": false,
-        "text": "*d - 4\nLet n(q) = -615*q**3 - q**2 + q - 4. Let p(g) = 246",
-        "id": 3030
+        "text": " = 4*f - 56. Let z be q/p + 2/3. Is z bigger than 2?\nFalse\nLet h(p)",
+        "id": 2985
       },
       {
         "prediction": false,
-        "ground_truth": true,
-        "text": "the numerous spectacular failures that they worked through.\n\nInnovation is a type of gamble. People forget that.\n\n\"SpaceX: How Not to Land an Orbital Rocket",
-        "id": 3031
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": "3.8m and capable of 10 5 resolving power.\n\nBackground spectra of several spectrometers have been recorded in a deep underground laboratory located in the",
-        "id": 3036
-      },
-      {
-        "prediction": true,
         "ground_truth": false,
-        "text": " q bigger than 0?\nFalse\nSuppose -4*f + f = 3*i + 6, -2*i - f - 4 =",
-        "id": 3058
+        "text": " project finally never released. I know some of you could be really interested by this. See the attachment below.<|return|>Q:\n\nShow that two points from four are",
+        "id": 2987
       }
     ],
     "metrics": {
@@ -1462,34 +1462,34 @@
     "explanation": "This expert activates in several distinct, unrelated contexts connected by OR logic. One strong domain is environmental sustainability and organic materials, specifically the concepts of composting and its variants (e.g., \"compostable\", \"composting\") alongside related tokens like \"food\", \"waste\", \"garden\", \"soil\", and \"fertiliser\". Another is textiles and materials, with high activation for \"wool\" and its variants (e.g., \"ools\", \"oolen\") particularly in contexts of felting processes. A third is agriculture and food, activating on \"soy\" and its related terms (\"soybean\", \"soybeans\") in discussions of plant proteins, allergens, or farming, and separately on \"lamb\" when referring to the animal or meat.\n\nThe expert also fires on specific grammatical and structural patterns. This includes the token \"to\" when it functions as an infinitive marker indicating purpose or goal. Furthermore, it activates on punctuation, function words, and formatting elements—such as parentheses, brackets, hyphens, spaces, \"**\", and numbers—that serve as structural markers, delimiters, or identifiers within technical text, code, mathematical notation, citations, or tabular data.\n\nFinally, it responds to tokens that are parts of multi-word technical terms, proper nouns, code syntax, or specific key phrases. These serve as identifiers, delimiters, or defined concepts in contexts like legal clauses, scientific compounds, programming methods (e.g., \"Test\", \"Category\"), named entities, and formatted identifiers within academic, legal, or programming text.",
     "examples": [
       {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " }\n        }\n\n        catch (Exception ex)\n        {\n            Trace.TraceError(ex.Message);\n            string message2 = \"Cannot write to source destination\";\n            Message",
-        "id": 3114
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "text": "Jo. Like his times JoJo attentively talked the people, the download pflanzenreich pfitzer orchidaceae monandrae and the Archaeology of Mountain",
-        "id": 3141
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "text": " g/kg, SQW M was 1.104 g/kg, and SQW L was 0.552 g/kg. The tolterodine dose",
-        "id": 3149
-      },
-      {
         "prediction": false,
         "ground_truth": false,
-        "text": " corresponding article in the German-language Wikipedia.\n German language site about mite cheese\n German language article on mite cheese\n\nCategory:German cheeses\nCategory:Arachnids",
-        "id": 3152
+        "text": " writer but a sharp enough journalist to know how to read the ingredients on the label: “wild freshwater crayfish, mayonnaise, celery, salt and sugar.” It",
+        "id": 3082
       },
       {
         "prediction": false,
+        "ground_truth": true,
+        "text": " and cyber-warfare — we must confront the reality that as long as the United States continues its habit of meddling abroad, other countries will be tempted to",
+        "id": 3083
+      },
+      {
+        "prediction": true,
         "ground_truth": false,
-        "text": ". It is made by flavouring balls of quark (a type of soft cheese) with caraway and salt, allowing them to dry, and then leaving",
-        "id": 3158
+        "text": "1.06 ± 0.00\n  colistin                                        0.50 ± 0.00                                                                     0.38 ± ",
+        "id": 3084
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " The results show diametrically different ontogenic patterns for the sites. While both the affinity and the density of sigma sites remain constant throughout the developmental period tested (",
+        "id": 3085
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " **0.0.20 ± 0.08**\n  Colistin                                        16.00 ± 0.00                                                                    2.00",
+        "id": 3086
       }
     ],
     "metrics": {

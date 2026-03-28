@@ -51,7 +51,7 @@ export function ExpertListView({
 
                   <div className="flex-1 min-w-0">
                     <h3 className="font-medium text-gray-900">
-                      Expert {index + 1}
+                      Expert {expert.expert_id}
                     </h3>
                   </div>
 

@@ -23,6 +23,12 @@
         "id": 2
       },
       {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " : (1 << (sbit + 1)) - 1;\n\tmasked_t0 = t0 & mask;\n\tfz = !(masked_t0",
+        "id": 3
+      },
+      {
         "prediction": false,
         "ground_truth": true,
         "text": ", elixirs, aerosols, or any other appropriate compositions; and comprise at least one compound of this invention in combination with at least one pharmaceutically",
@@ -80,6 +86,12 @@
         "ground_truth": true,
         "text": "1C000 */  mtc1    $at, $f24                  ## $f24 = 40.00\n/* 00148 808",
         "id": 106
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "1 construction in Medford, Somerville and Cambridge. It will be an opportunity to meet the team, discuss the schedule and to present opportunities for stakeholders to follow",
+        "id": 108
       }
     ],
     "metrics": {
@@ -121,6 +133,12 @@
         "ground_truth": false,
         "text": ". : A Kamen Rider-based Kyutama that summons Kamen Rider Ex-Aid. This Kyutama was only used once, as it vanished after Ex-A",
         "id": 185
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " and equipment.\n 85. : A Lynx-based Skill Kyutama that enables the user to use the cat fighting style.\n 86. : A Vela",
+        "id": 186
       },
       {
         "prediction": true,
@@ -174,6 +192,12 @@
         "ground_truth": true,
         "text": " intra- and inter-specific competition [@pgen.1004775-James1], we speculate that the cornucopia of rotten fruit during the summer in",
         "id": 587
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " Seventeen percent of that amount is $52,049,126. From that amount there must be deducted the amount of the partial summary judgment awarded of $9",
+        "id": 588
       }
     ],
     "metrics": {
@@ -221,6 +245,12 @@
         "ground_truth": false,
         "text": " if you let me know. A short paragraph on what this\n> benefit has been is all I ask. Once I gather any information I get, I\n",
         "id": 288
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": "'as actually safe to allocate something between 2 or 4x the number of cores\n\nIt should be a little more efficient with a single master, since a",
+        "id": 289
       }
     ],
     "metrics": {
@@ -268,6 +298,12 @@
         "ground_truth": true,
         "text": " evaluate \"os.getpid()\" asynchronously\n        res = pool.apply_async(os.getpid, ())  # runs in *only* one process\n        try:\n",
         "id": 386
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": "oe@domain.com, johnsmith@domain.com.')) ?>', function (v) {\n    if(Validation.get('IsEmpty').test(v)) {\n",
+        "id": 389
       }
     ],
     "metrics": {
@@ -315,6 +351,12 @@
         "ground_truth": true,
         "text": "68 ng/ml (Figure [1A](#F1){ref-type=\"fig\"}). Therefore, all further investigations were performed with 100 ng/ml O",
         "id": 886
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " in our code.\n\nAn in-code delivery pipeline that can be executed by Bluemix DevOps Services. This is the .bluemix/pipeline.yml file",
+        "id": 887
       }
     ],
     "metrics": {
@@ -344,6 +386,12 @@
         "ground_truth": true,
         "text": ". (Left) Apical DEP with attached OE approaching the ciliary brush, basement membrane, and innervating nerve endings (blue). (Right) Detailed",
         "id": 483
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "++)\n    if ($li[i].classList.contains('selected'))\n//         ^^^\n        $li[i].classList.remove('selected');\n//         ^^^\n\n",
+        "id": 484
       },
       {
         "prediction": true,
@@ -409,6 +457,12 @@
         "ground_truth": true,
         "text": " Recollection of the E Street Band's experiences with Bruce Springsteen. Features Max Weinberg and Garry Tallent.\nKiss in Cadillac: Recollection of",
         "id": 986
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "Control    *byte\n\tControllen uint32\n\tFlags      int32\n}\n\ntype Cmsghdr struct {\n\tLen   uint32\n\tLevel",
+        "id": 992
       }
     ],
     "metrics": {
@@ -456,6 +510,12 @@
         "ground_truth": true,
         "text": " works. It’s my favourite ereader now and I’ll always look for an ePub file that I can sideload to Marvin as my first port of call",
         "id": 686
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " studies of Ben Cheikh and his collaborators[@R19]--[@R22],[@R31], there are no previous published studies about the resistance status of",
+        "id": 687
       }
     ],
     "metrics": {
@@ -503,6 +563,12 @@
         "ground_truth": false,
         "text": "Category:Coffee drinks<|return|>Etymologies\n\nfrom Wiktionary, Creative Commons Attribution/Share-Alike License\n\nim- +‎ prudence. From Latin",
         "id": 1086
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " Nicaragua, which supports five Cafénica coffee cooperatives using climate field schools. Farmers can experiment and share their ideas on farm practices such as plant nutrition, soil",
+        "id": 1087
       }
     ],
     "metrics": {
@@ -550,6 +616,12 @@
         "ground_truth": false,
         "text": "    });\n\n});\n\nIt finds links with the same hostname and add them class internal_link and then for elements with internal_link class it binds onclick action - data are loaded",
         "id": 786
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "2. Determine f(3).\n-5\nLet q(m) be the first derivative of -1 + 1/2*m**2 + 2",
+        "id": 787
       }
     ],
     "metrics": {
@@ -591,6 +663,12 @@
         "ground_truth": true,
         "text": "3). Which is greater: v or 1?\nv\nSuppose 0 = -d - 0*d - 3*d. Which is smaller",
         "id": 1185
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": ", Knoch J and Avouris Ph 2004 *Phys. Rev. Lett.* [**92**]{} 48301 Minot E D",
+        "id": 1186
       },
       {
         "prediction": true,
@@ -644,6 +722,12 @@
         "ground_truth": true,
         "text": "table\"}) and microRNAs (miRNAs) residing in the same region. *HOX* genes encode master transcription factors important in development and have been reported to",
         "id": 1386
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " died 21 February 2004\n1272951 Check the source file (free) and then check Archives\nfor WILLARD GARRISON.\n\nGARR",
+        "id": 1387
       }
     ],
     "metrics": {
@@ -679,6 +763,12 @@
         "ground_truth": false,
         "text": " individualized exercise program, 4) self monitoring of exercise and symptoms, and 5) reminders and reinforcement of exercise. The i-DSMP will use online",
         "id": 1284
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "2177-Arajo1], [@pone.0092177-Pearson1]. The results of the present study show how these differences in fitness related",
+        "id": 1285
       },
       {
         "prediction": true,
@@ -726,6 +816,12 @@
         "ground_truth": true,
         "text": "( new RegExp('(\\_\\_prefix\\_\\_|\\\\d)') , index );\n            var id = 'label_' + newFor;\n            $(",
         "id": 1784
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": "-need-insights-from-the-longest-longitudinal-study-on-men-ever-conducted/\n======\nlutusp\nA classic psychology study -- it discovers traits",
+        "id": 1785
       },
       {
         "prediction": false,
@@ -785,6 +881,12 @@
         "ground_truth": false,
         "text": "\", \".edit\", function(ev) {\n        ev.preventDefault();\n        var url = $(this).data(\"form\");\n        $(\".modal\").load(url, function",
         "id": 1487
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "if $errormessage}\n                    <div class=\"alert alert-danger\" role=\"alert\">\n                        <p>{$LANG.orderForm.correctErrors}:</p>\n",
+        "id": 1490
       }
     ],
     "metrics": {
@@ -832,6 +934,12 @@
         "ground_truth": true,
         "text": " ) is a neighbourhood located in Makkah, Saudi Arabia south of the Al Haram district.\n\nDescription \nJabal Omar is named for the hill Mount Omar that",
         "id": 1686
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " fez sentir durante a anterior legislatura da UE e a anterior administração dos Estados Unidos, as nuvens sobre o Oceano Atlântico parecem estar a dissipar-se",
+        "id": 1687
       }
     ],
     "metrics": {
@@ -875,6 +983,12 @@
         "id": 2185
       },
       {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "\\]), which determines $H_{n}$ (and so $F_{n}$), does not really need $F_{n}$ on the right-hand side",
+        "id": 2186
+      },
+      {
         "prediction": false,
         "ground_truth": true,
         "text": " an efficient interface to induce mass participation and give financial reward directly to participants, called workers, after completion of the experiment's tasks -- has been widely used. It",
@@ -908,6 +1022,12 @@
         "ground_truth": true,
         "text": " externally on:<|return|>Thoracoscopy: a collaborative surgical approach.\nPerioperative nurses, surgeons, anesthesiologists, certified registered nurse anesthetists,",
         "id": 1983
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " later experiments. For analysis of cell differentiation, we maintained the attached sphere-derived cells in a humidified incubator in a 5% CO~2~ at",
+        "id": 1984
       },
       {
         "prediction": true,
@@ -973,6 +1093,12 @@
         "ground_truth": false,
         "text": "679-4b64-b2a9-03005b21870a\",\n          \"created_by_table\": \"notion_user\",\n          \"created_time",
         "id": 2086
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "771\": {\n        \"role\": \"comment_only\",\n        \"value\": {\n          \"alive\": true,\n          \"created_by\": \"bb760e2",
+        "id": 2087
       }
     ],
     "metrics": {
@@ -1020,6 +1146,12 @@
         "ground_truth": false,
         "text": "-discipline) (Costa & McCrae, [@CR3]). The scale contains 12 statements for each trait, and respondents answer on a five-point",
         "id": 1586
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " of PCR product was resolved by gel electrophoresis to check for specificity and yield and the remaining product was purified using DNA Clean & Concentrator, ZymoResearch",
+        "id": 1587
       }
     ],
     "metrics": {
@@ -1061,6 +1193,12 @@
         "ground_truth": true,
         "text": " Impacts and Applications: this category is for games that are built not necessarily for pure entertainment purposes (i.e. serious games), such as games that are for",
         "id": 1885
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " season and collaborates with Lee Majors to emphasis the humanity of the character. The show’s success was consolidated when Bennett brought in new writers such as James P",
+        "id": 1886
       },
       {
         "prediction": false,
@@ -1114,6 +1252,12 @@
         "ground_truth": false,
         "text": " in order to keep the same % *w*/*w* of excipient in the total volume of the physical mixture as per the poorly soluble drugs. The",
         "id": 2886
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": ". 4,414,350; 4,994,521; 5,427,863; 5,061,523 and 5,",
+        "id": 2887
       }
     ],
     "metrics": {
@@ -1149,6 +1293,12 @@
         "ground_truth": false,
         "text": "IPAC.<|return|>Longitudinal impedance variability in patients with chronically implanted DBS devices.\nDeep brain stimulation (DBS) is an effective therapy for advanced movement",
         "id": 2384
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "      </SignFreq>\n    </DisorderSign>\n  </Disorder>\n  *** Repeated Many Times ***\n\n </DisorderList>\n</JDB",
+        "id": 2385
       },
       {
         "prediction": true,
@@ -1190,6 +1340,12 @@
         "ground_truth": true,
         "text": " where Id = :propertyId limit 1\n        ];\n        Proposal__c proposal = new Proposal__c(\n            Name =  property.Name, \n           ",
         "id": 2283
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": ", porém, isso não significa que se continue a proceder com se nada se tivesse passado.\nA Comissão já enviou uma delegação de funcionários ao Usbequist",
+        "id": 2284
       },
       {
         "prediction": true,
@@ -1237,6 +1393,12 @@
         "ground_truth": false,
         "text": " 2003), a condition which means that P-R drag can be ignored in these systems.\n\nClearly it is of vital importance to know which physical processes are at",
         "id": 2783
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "text": " best described by a second degree polynomial (i.e. MEPS increases towards a peak in mid-life, after which it also decreases with age).(ABSTRACT",
+        "id": 2784
       },
       {
         "prediction": false,
@@ -1302,6 +1464,12 @@
         "ground_truth": true,
         "text": "erzer and the Nationals deliver the Mets again toward the cellar\n\nThe Mets shed the initially activity of 4 video games versus the Nationals inside their greatest sequence prior",
         "id": 2586
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": " to n?\nFalse\nLet c be 3 + (-87)/27 + 8/18. Which is greater: 0 or c?\nc\n",
+        "id": 2588
       }
     ],
     "metrics": {
@@ -1349,6 +1517,12 @@
         "ground_truth": false,
         "text": ", advantages such as easy understanding of a situation of the real space by a user or work support based on the output image may be provided.\nFurther, in the",
         "id": 2486
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": " disclosure thereof is incorporated by reference herein.\nSpace or path diversity is obtained by providing multiple signal paths through simultaneous links from a mobile user through two or more cell-sites",
+        "id": 2488
       }
     ],
     "metrics": {
@@ -1390,6 +1564,12 @@
         "ground_truth": false,
         "text": " = 4*f - 56. Let z be q/p + 2/3. Is z bigger than 2?\nFalse\nLet h(p)",
         "id": 2985
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "text": "002){#behavsci-10-00114-f002}\n\nbehavsci-10-00114-t001_Table 1\n\n###### \n\nDescriptive",
+        "id": 2986
       },
       {
         "prediction": false,
@@ -1437,6 +1617,12 @@
         "ground_truth": true,
         "text": " 1\n  - name: \n    cost: 1\n  - name: \n    cost: 1\n  - name: \n    cost",
         "id": 2685
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "text": "**D49**]{} (1994)3083. S. Gupta, hep-lat/0001011; A. Ali Khan et al.,",
+        "id": 2686
       },
       {
         "prediction": true,
@@ -1490,6 +1676,12 @@
         "ground_truth": false,
         "text": " **0.0.20 ± 0.08**\n  Colistin                                        16.00 ± 0.00                                                                    2.00",
         "id": 3086
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "text": " res, next) {\n\n  var options = {\n    root: __dirname + '/uploads/',\n    dotfiles: 'deny',\n\n    headers: {\n        '",
+        "id": 3087
       }
     ],
     "metrics": {

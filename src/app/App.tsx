@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { ExpertListView } from './components/ExpertListView';
-import { AnnotationView } from './components/AnnotationView';
-import { Download } from 'lucide-react';
-import { Button } from './components/ui/button';
-import exampleData from '../imports/example.json';
+import { useState } from "react";
+import { ExpertListView } from "./components/ExpertListView";
+import { AnnotationView } from "./components/AnnotationView";
+import { Download } from "lucide-react";
+import { Button } from "./components/ui/button";
+import expertSample from "../imports/expert-sample.json";
+import React from "react";
 
 interface Example {
   id: string;
@@ -17,57 +18,46 @@ interface Expert {
 }
 
 interface ExpertAnnotations {
-  [expertIndex: number]: Map<string, 'yes' | 'no'>;
+  [expertIndex: number]: Map<string, "yes" | "no">;
 }
 
-// Mock data: number of people who have completed each expert
-const MOCK_COMPLETION_COUNTS: { [expertIndex: number]: number } = {
-  0: 3,  // expert 1 has 3 completions
-  1: 2,  // expert 2 has 2 completions
-  4: 1,  // expert 5 has 1 completion
-  7: 4,  // expert 8 has 4 completions
-  // other experts have 0 completions
+type RawExpertRow = {
+  expert_id: number;
+  explanation: string;
+  examples: Array<{
+    id: number;
+    text: string;
+    prediction: boolean;
+    ground_truth: boolean;
+  }>;
 };
 
-// Sample data with 36 experts
-const INITIAL_DATA: Expert[] = Array.from({ length: 36 }, (_, i) => {
-  // Use real data for expert 1
-  if (i === 0 && exampleData.length > 0) {
-    const firstExpert = exampleData[0];
-    return {
-      expert_id: `expert_${i + 1}`,
-      expert_explanation: firstExpert.explanation,
-      examples: firstExpert.examples.map((ex) => ({
-        id: String(ex.id),
-        text: ex.text,
-      })),
-    };
-  }
-  
-  // Placeholder data for other experts
-  return {
-    expert_id: `expert_${i + 1}`,
-    expert_explanation: `This is the expert explanation for expert ${i + 1}. It describes the specific pattern or behavior this feature detects.`,
-    examples: Array.from({ length: 5 }, (_, j) => ({
-      id: `ex_${i + 1}_${j + 1}`,
-      text: `This is example ${j + 1} for expert ${i + 1}. It demonstrates the feature being analyzed.`,
-    })),
-  };
-});
+const INITIAL_DATA: Expert[] = (expertSample as RawExpertRow[]).map((row) => ({
+  expert_id: String(row.expert_id),
+  expert_explanation: row.explanation,
+  examples: row.examples.map((ex) => ({
+    id: String(ex.id),
+    text: ex.text,
+  })),
+}));
 
 export default function App() {
   const [experts, setExperts] = useState<Expert[]>(INITIAL_DATA);
-  const [selectedExpertIndex, setSelectedExpertIndex] = useState<number | null>(null);
+  const [selectedExpertIndex, setSelectedExpertIndex] = useState<number | null>(
+    null,
+  );
   const [allAnnotations, setAllAnnotations] = useState<ExpertAnnotations>({});
-  const [annotatorId] = useState(`user_${Math.random().toString(36).substr(2, 9)}`);
+  const [annotatorId] = useState(
+    `user_${Math.random().toString(36).substr(2, 9)}`,
+  );
 
-  const handleAnswer = (id: string, label: 'yes' | 'no') => {
+  const handleAnswer = (id: string, label: "yes" | "no") => {
     if (selectedExpertIndex === null) return;
-    
+
     const currentAnnotations = allAnnotations[selectedExpertIndex] || new Map();
     const updatedAnnotations = new Map(currentAnnotations);
     updatedAnnotations.set(id, label);
-    
+
     setAllAnnotations({
       ...allAnnotations,
       [selectedExpertIndex]: updatedAnnotations,
@@ -90,10 +80,10 @@ export default function App() {
     };
 
     const blob = new Blob([JSON.stringify(output, null, 2)], {
-      type: 'application/json',
+      type: "application/json",
     });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
+    const a = document.createElement("a");
     a.href = url;
     a.download = `annotations_${expert.expert_id}_${Date.now()}.json`;
     a.click();
@@ -119,10 +109,10 @@ export default function App() {
       .filter((output) => output.answers.some((a) => a.label !== null)); // Only export experts with at least one answer
 
     const blob = new Blob([JSON.stringify(allOutputs, null, 2)], {
-      type: 'application/json',
+      type: "application/json",
     });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
+    const a = document.createElement("a");
     a.href = url;
     a.download = `all_annotations_${annotatorId}_${Date.now()}.json`;
     a.click();
@@ -164,7 +154,6 @@ export default function App() {
         onSelectExpert={setSelectedExpertIndex}
         completedExperts={completedExperts}
       />
-
       {/* Fixed Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg">
         <div className="max-w-5xl mx-auto">
@@ -178,7 +167,6 @@ export default function App() {
           </Button>
         </div>
       </div>
-
       <div className="h-20" /> {/* Spacer for fixed bottom bar */}
     </div>
   );

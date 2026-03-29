@@ -6,27 +6,6 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.0472412109375,
-        "text": "118 36-36v-60.784c0-33.039-22.485-61.837-54.537-69.85",
-        "id": 0
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.045623779296875,
-        "text": " accordance with the product specification of the protected denomination of origin which requires that at least half of the extra virgin olive oil consists of native types.\n\nMonica Vaccarella",
-        "id": 1
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.0452880859375,
-        "text": " offer storage space for linens, paper goods or recyclables. All elfa components are adjustable, so the solution is completely flexible! This solution is designed for a",
-        "id": 2
-      },
-      {
-        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": "1], [1, 2], [2, 3], [3, 4]]\n\nMy goal was:\nnl [[0, 1], [",
@@ -45,6 +24,27 @@
         "max_activation": 0.0,
         "text": "ulong)pgno, (ulong)i));\n\t\t\tcontinue;\n\t\t}\n\t\tif(re_len_guess == 0)\n\t\t\tre_len_guess = len;\n\t",
         "id": 90
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03973388671875,
+        "text": "}{18}} (\\ln n)^{\\frac{7}{6}}\\big) &\\text{if }  \\frac{12}{13}\\le",
+        "id": 24
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0362548828125,
+        "text": "Your\\Entity\\Namespace:\n  entityListeners:\n    Path\\To\\Your\\Listener: ~\n\nIn case that you want to map specific methods to specific events,",
+        "id": 46
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04364013671875,
+        "text": " poll_ready(mut self: Pin<&mut Self>, cx: &mut Context) -> Poll<Result<(), Self::Error>> {\n\t\tSink::poll_ready(P",
+        "id": 8
       }
     ],
     "metrics": {
@@ -66,23 +66,16 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.05023193359375,
-        "text": "{23}\nf_1^2+f_1\\,W\\frac{df_1}{dW}-A\\,W^{\\frac{1",
-        "id": 100
+        "max_activation": 0.0472412109375,
+        "text": "_t), cycle->log)\n                == NGX_OK)\n            {\n                if (signo != ngx_signal_value(NGX_REOPEN_SIGNAL)) {\n                    ngx",
+        "id": 110
       },
       {
-        "prediction": true,
+        "prediction": false,
         "ground_truth": true,
-        "max_activation": 0.05023193359375,
-        "text": " are struggling?\n\n“I go around my house switching everything off in a panic, like most people do, because they know their bills are going to be sky-high.\n\n",
-        "id": 101
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.0491943359375,
-        "text": " Determine f, given that 9/2 - 6*f + 3/2*f**r = 0.\n1, 3\nLet j",
-        "id": 102
+        "max_activation": 0.04571533203125,
+        "text": "beta_{n,\\lambda} (e_i)}, \\qquad \\forall\n     \\lambda \\ge 0,\n     \\label{Laplace-tau",
+        "id": 126
       },
       {
         "prediction": false,
@@ -90,6 +83,13 @@
         "max_activation": 0.0,
         "text": "xl6553525262 style='height:12.75pt'></td>\n  <td class=xl6553525262></td>\n  <td",
         "id": 164
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.05023193359375,
+        "text": "{23}\nf_1^2+f_1\\,W\\frac{df_1}{dW}-A\\,W^{\\frac{1",
+        "id": 100
       },
       {
         "prediction": false,
@@ -124,31 +124,31 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.050048828125,
-        "text": ":Australian Broadcasting Corporation shows\nCategory:2015 Australian television series endings\nCategory:Feminist television<|return|>It is known to recover nickel and/or copper from sul",
-        "id": 182
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.049285888671875,
-        "text": "ows welcomes and frequently quotes from reader mail sent via the \"Email\" button below. Unless you specify otherwise, we consider any incoming mail available for possible quotation --",
-        "id": 183
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04669189453125,
-        "text": " #f4f4f4;\n  border-left: 5px solid #e00000; }\n\n#kss-node .kss-sidebar.kss",
-        "id": 184
-      },
-      {
-        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": " magical stones that give the Kyurangers their powers. Each of them are numbered and contain a power associated with a different constellation. By setting a Kyutama into",
         "id": 238
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04058837890625,
+        "text": "}\\alpha_{0}{}^{3}$,$P_{S0} = - \\frac{W_{e}^{2}}{\\pi}\\alpha_{a",
+        "id": 192
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03765869140625,
+        "text": " v^\\uparrow, v]\\! ]} (h({\\buildrel \\leftarrow \\over y})- h(y))^2 \\ge {",
+        "id": 211
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " their Kyu The Weapon, a Kyuranger can perform a variation of its finisher.\n\nChange\nThe  allow the Kyurangers to transform and pilot",
+        "id": 279
       },
       {
         "prediction": true,
@@ -158,11 +158,11 @@
         "id": 240
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " their Kyu The Weapon, a Kyuranger can perform a variation of its finisher.\n\nChange\nThe  allow the Kyurangers to transform and pilot",
-        "id": 279
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0372314453125,
+        "text": "2mu\\underline{\\mkern-2mu\\smash{\\Phi }\\mkern-2mu}\\mkern2mu },K^{\\prime },",
+        "id": 214
       }
     ],
     "metrics": {
@@ -184,23 +184,9 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.049285888671875,
-        "text": "because it both hints that additional evidence\n\n  supporting guilt exists and reveals the personal opinion of the\n\n  prosecutor.” Domingo-Gomez v. People, 125",
-        "id": 582
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.047698974609375,
-        "text": " baby overnight. While women were recovering from the demanding labour itself, these women were at the very same time also going through the realisation of their baby's death.",
-        "id": 583
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04742431640625,
-        "text": "iting Rose-Maston v. NME Hospitals, Inc., 133 F.3d 1104, 1109 (8th Cir. 199",
-        "id": 584
+        "max_activation": 0.0440673828125,
+        "text": "{centmatcirc}\n{\\mathbf{n}}_1 = \\frac{{\\mathbf{b}}}{|{\\mathbf{b}}|} \\qqu",
+        "id": 598
       },
       {
         "prediction": true,
@@ -208,6 +194,13 @@
         "max_activation": 0.0,
         "text": "But in reading the acknowledgments, I noticed Lauren gives credit to Dorothy Schick of Takewing Aviation in Creswell, OR for giving her a first airplane ride",
         "id": 645
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037445068359375,
+        "text": "O\\left(\\frac{1}\n    {n^{1.5-o(1)}}\\right)&\\leq& P\n    \\leq",
+        "id": 628
       },
       {
         "prediction": false,
@@ -222,6 +215,13 @@
         "max_activation": 0.0,
         "text": " Airlines general manager.John Yamnicky, 71, Capt USN Ret, was a defense contractor for Veridian who had done a number of “black",
         "id": 664
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04473876953125,
+        "text": "k+1})$ for all $k=1,2,\\dots 134$,  (where $p_k$ is the $k^\\text{",
+        "id": 594
       }
     ],
     "metrics": {
@@ -242,10 +242,10 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04705810546875,
-        "text": " the s'th term of 27, 34, 47, 66, 91, 122?\n3*s**2 - 2*s",
-        "id": 282
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " would actually be a measurable difference when using the optimized form. For example, consider that:\n\nIf all you are comparing is two integers then the compiler can detect that",
+        "id": 375
       },
       {
         "prediction": true,
@@ -255,11 +255,11 @@
         "id": 283
       },
       {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.044158935546875,
-        "text": " on Computer Vision and Pattern Recognition*]{}, 159–166. IEEE.\n\nLi, Y.; Pirk, S.; Su, H.; Qi, C",
-        "id": 284
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " the overhead would be great:\n- I will have as many session scoped instances as I have connected users; \n- as many stateless EJB's as I",
+        "id": 379
       },
       {
         "prediction": false,
@@ -270,17 +270,17 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " would actually be a measurable difference when using the optimized form. For example, consider that:\n\nIf all you are comparing is two integers then the compiler can detect that",
-        "id": 375
+        "ground_truth": true,
+        "max_activation": 0.03759765625,
+        "text": "_m^{\\textnormal{tr}-\\nu_0}\\big)$ and $\\big(0,0,\\nu_0|_{[0,\\vare",
+        "id": 318
       },
       {
         "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " the overhead would be great:\n- I will have as many session scoped instances as I have connected users; \n- as many stateless EJB's as I",
-        "id": 379
+        "ground_truth": true,
+        "max_activation": 0.042724609375,
+        "text": "\n===========================================\n\nAdipocytes and osteoblasts originate from a common progenitor, ie, a pluripotential mesenchymal stem cell,[@b",
+        "id": 286
       }
     ],
     "metrics": {
@@ -302,23 +302,9 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.049102783203125,
-        "text": "; }\n\n    [StringLength(50)]\n    [Required]\n    public string Title { get; set; }\n\n    public int Hierarchy_level { get;",
-        "id": 382
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.0458984375,
-        "text": " are using symantec (I didn't see any statement about A/V software). \nhttp://www.symantec.com/connect/forums/mr3-locks-server-200",
-        "id": 383
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.044830322265625,
-        "text": " so is processing power but the phone industry seem to have the ability to buy cheap processors and still install the cheapest RAM. Mobile ram is even being used in cheap",
-        "id": 384
+        "max_activation": 0.039276123046875,
+        "text": "());\n    }\n\n    public static Map<String, Object> getModifiedEnvMap() {\n        HashMap<String, Object> env = new HashMap<>(System.getenv",
+        "id": 397
       },
       {
         "prediction": false,
@@ -333,6 +319,20 @@
         "max_activation": 0.0,
         "text": " Bar Las Teresas in Santa Cruz or historic Casa Morales in Constitución). Great food markets include the Feria, the oldest, and the wooden, futuristic-looking Metropol",
         "id": 459
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.049102783203125,
+        "text": "; }\n\n    [StringLength(50)]\n    [Required]\n    public string Title { get; set; }\n\n    public int Hierarchy_level { get;",
+        "id": 382
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.0377197265625,
+        "text": "8\\xd7\\xa7'\nstr2 = u'\\u05d1\\u05e8\\u05e7'\n\nI need to implement the following function:\n\n",
+        "id": 410
       },
       {
         "prediction": false,
@@ -359,32 +359,18 @@
     "explanation": "This expert activates on structural, syntactical, and comparative elements within technical, scientific, and formatted text. It fires on punctuation, mathematical symbols, and specific formatting tokens—such as parentheses, brackets, LaTeX commands, and code syntax—that define document structure. It also responds to technical identifiers, code elements, URLs, mathematical notation, and named entities within programming, academic writing, or structured data, including variable names, function calls, chemical formulas, and legal terms.\n\nA distinct condition involves comparative language and ordering specifications, such as the words \"smallest,\" \"biggest,\" \"least,\" and \"worst\" in ranking contexts, or explicit sort-direction terms like \"descending,\" \"ascending,\" \"decreasing,\" and \"reverse,\" often found in math problems or programming comments. Furthermore, the expert activates on tokens that denote ratings, scores, or proportions—including numbers, letters, symbols, and words like \"stars\" or \"part\"—when they follow terms like \"rating,\" \"grade,\" or \"out of\" in evaluative statements.",
     "examples": [
       {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.05120849609375,
-        "text": "Detail.MaxInterval = {1}\n\t\t\t\t\t\t\t\tsgs.KOFControlDetail.ControlFinished = {false}\n\t\t\t\t\t\t\telseif general:hasSkill(\"caizhaoji",
-        "id": 882
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.049285888671875,
-        "text": "Calculate -21*(80/(-15))/16.\n7\nEvaluate 6*4/(-540)*3.\n-2/15\n2*(10",
-        "id": 883
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.048614501953125,
-        "text": " studies have suggested that a functional impairment in activity of complex I of the electron transport chain underlies the mitochondrial dysfunction central to Parkinson's disease [@pone.006",
-        "id": 884
-      },
-      {
         "prediction": false,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " of the local hospitals ... this whole black dick thing has me puzzled. Wish we still had the science guys to back us up ... damn cutbacks. By the",
-        "id": 958
+        "text": " has never been published.  Blythe, also an officer of Seajay, used the copy in preparing a critical review of Blood of My Blood.  ",
+        "id": 976
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040924072265625,
+        "text": "\n,\\tau (\\lambda ))-\\int R^{\\alpha }(\\Phi )\\bar{K}_{\\alpha }.  \\label{kk}$$ This",
+        "id": 918
       },
       {
         "prediction": false,
@@ -397,8 +383,22 @@
         "prediction": false,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " has never been published.  Blythe, also an officer of Seajay, used the copy in preparing a critical review of Blood of My Blood.  ",
-        "id": 976
+        "text": " of the local hospitals ... this whole black dick thing has me puzzled. Wish we still had the science guys to back us up ... damn cutbacks. By the",
+        "id": 958
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03759765625,
+        "text": "$),\n\n-   the law of $(X,Y)$ does not charge nonvertical hyperplanes i.e. for every $(\\alpha, \\beta)\\in {{",
+        "id": 927
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042205810546875,
+        "text": "mathrm{d}}}{{\\mathrm{d}}t}\\mathbf{G}(t) = \\mathbf{M}(t) \\mathbf{G}(",
+        "id": 911
       }
     ],
     "metrics": {
@@ -418,25 +418,25 @@
     "explanation": "This expert activates on tokens that are part of technical, structured, or scientific notation, including code syntax, mathematical expressions, file paths, chemical formulas, and specific symbols within programming or data contexts. It also fires for tokens within formal ratings or grades, such as numbers, letters, or words like \"stars\" following terms like \"rating\" or \"out of,\" and for numeric formatting elements like decimal points and separators in technical data.\n\nA distinct condition involves the token \"off\" in specific phrases, particularly when describing a discount or reduction after a dollar amount, percentage, or the word \"discount,\" as well as in the phrase \"take time off.\" Separately, the expert responds to the word \"under\" or \"below\" when it follows \"area\" in the scientific context of describing the area under a curve.\n\nFinally, it activates on a specific domain of nutritional science, including terms for dietary fats like \"saturated\" or \"animal fat,\" their chemical components such as \"ic\" or \"ened,\" and associated health metrics.",
     "examples": [
       {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.052215576171875,
-        "text": "曾经爱过                                                                                       I hide everything related to you, I never regret loving you, but I can't dare to move on. Even if no one else",
-        "id": 482
+        "max_activation": 0.04205322265625,
+        "text": ":variable>\n          <xsl:variable name=\"template\">\n            <xsl:call-template name=\"gentext.template\">\n              <xsl:with",
+        "id": 490
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.048614501953125,
-        "text": "litazone as a positive control for increasing risk of heart failure \\[[@B14]\\] and compared the incidence rate of hospital admission for heart failure with",
-        "id": 483
+        "max_activation": 0.04107666015625,
+        "text": "2}$ uniformly on compact subsets of $(T,\\infty)\\times [0,2\\pi] \\times (-\\infty,\\infty)$.",
+        "id": 498
       },
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.047332763671875,
-        "text": " Son of Sevenless (O)                                           H                                                                     Nh                                             NI                                                     \\-\n  TGF-beta (O)                                                   Missing residues near this region                                     NI                                            ",
-        "id": 484
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "text/javascript\">  \n        $(function(){  \n            $('#dg').edatagrid({  \n                url: 'get_users.php',  \n                saveUrl: '",
+        "id": 537
       },
       {
         "prediction": true,
@@ -447,17 +447,17 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": "');\n$('#' + feedback_id + \":not(td)\").find('*').each(function() {\n        if(this.id.match(/zero$/ig)){\n                var new_id",
-        "id": 534
+        "ground_truth": true,
+        "max_activation": 0.038604736328125,
+        "text": "0) = a$ and $f'(0) > 0$. Let $\\mathcal{O}^{\\ast}(a, D) \\subset \\",
+        "id": 507
       },
       {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": "text/javascript\">  \n        $(function(){  \n            $('#dg').edatagrid({  \n                url: 'get_users.php',  \n                saveUrl: '",
-        "id": 537
+        "text": "');\n$('#' + feedback_id + \":not(td)\").find('*').each(function() {\n        if(this.id.match(/zero$/ig)){\n                var new_id",
+        "id": 534
       }
     ],
     "metrics": {
@@ -477,32 +477,32 @@
     "explanation": "This expert activates on structural, formatting, and syntactical elements within technical, scientific, or coded documents. This includes document-level features like section headers, citations, code blocks, mathematical expressions, figure references, and the specific punctuation or whitespace that delineates them, such as parentheses, brackets, and LaTeX commands. A core trigger is the colon token in specific programming contexts, notably as a C++ class member access specifier (e.g., \"public:\" or \"private:\") or within constructor initializer lists.\n\nThe expert also fires on tokens that specify ordering, ranking, or sort direction, often within mathematical problems or programming comments. This includes comparative words like \"smallest,\" \"biggest,\" \"least,\" and \"worst,\" as well as explicit directional terms like \"ascending,\" \"descending,\" \"decreasing,\" and \"reverse.\" Furthermore, it activates on parts of technical identifiers, structured data formats, and formal writing, such as code delimiters, file headers, chemical notations, specific nouns in recipes, abbreviations, and the numbers, symbols, and keywords that mark boundaries within these technical text blocks.",
     "examples": [
       {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.053009033203125,
-        "text": " other words, if the user should make an urgent call, the technology of the first related art reference disclosed as Japanese Patent Laid-Open Publication No. ",
-        "id": 982
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.048431396484375,
-        "text": "     \"dur_s2_289\" \n -439 phrase_pos_in_utt_fw<=2                           \"dur_s2_291\"    -544    \n -",
-        "id": 983
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.047882080078125,
-        "text": "  <td height=17 class=xl6525262 style='height:12.75pt'></td>\n  <td class=xl6525262",
-        "id": 984
-      },
-      {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": " main_far2_x86; Flags: ignoreversion\r\nSource: \"{#FileSourceLicense}\"; DestName: \"LICENSE.txt\"; DestDir: \"{code",
         "id": 1046
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041656494140625,
+        "text": "{\\psi}(\\hat{\\beta})}{\\partial\\beta},\\hat\n{\\Omega}=\\frac{1}{n}\\sum_{\\ell=1",
+        "id": 998
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037445068359375,
+        "text": " significance of population differentiation was assessed using Fishers exact test implemented in Genepop.\n\nList of abbreviations\n=====================\n\nTf: Transferrin;",
+        "id": 1021
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "\n0xFFDB\n// 0.000505\n0x0011\n// 0.000744\n0x0018\n// -",
+        "id": 1069
       },
       {
         "prediction": false,
@@ -513,10 +513,10 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": "\n0xFFDB\n// 0.000505\n0x0011\n// 0.000744\n0x0018\n// -",
-        "id": 1069
+        "ground_truth": true,
+        "max_activation": 0.042144775390625,
+        "text": "mkern2mu },K,{\\mkern2mu\\underline{\\mkern-2mu\\smash{K}\\mkern-2mu}\\",
+        "id": 996
       }
     ],
     "metrics": {
@@ -536,25 +536,11 @@
     "explanation": "This expert activates on tokens that signal the conclusion of a structured segment or a specific semantic pattern. It fires on punctuation, formatting elements, and keywords that appear immediately before a line break, closing delimiter, or new section in technical contexts like code, math, or tables—examples include closing parentheses, periods, question marks, and operators ending a mathematical sub-expression. It also responds to the final characters or punctuation of a word or phrase preceding such breaks, and to specific tokens like \"er\" at the end of comparative adjectives describing size (e.g., \"larger\").\n\nIn technical and scientific domains, it activates on parts of compound nouns, variable names, or technical terms within these formatted contexts, as well as on tokens related to central points, averages, or division by two in mathematical or statistical expressions (e.g., midpoint, half). Additionally, it detects punctuation or word parts within time calculations and academic formatting.\n\nSeparately, the expert fires on the token \"purpose\" and its variations, particularly when preceded by words like \"our\" or \"values,\" in contexts discussing life goals, personal meaning, and fulfillment. It also activates when the token in brackets is the subsequent word in a common phrase, following an established preceding word.",
     "examples": [
       {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.043792724609375,
-        "text": "Sort directory list\n\nI would like to sort the output from this script.\nIt show's an output from a complete directory with some exclusions.\n<?php\nif ($",
-        "id": 682
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.043701171875,
-        "text": " one of them on its own. The severity of the mystical path can be greatly eased and progress speeded up by suitable guided imagery, while the present ascension",
-        "id": 683
-      },
-      {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.043365478515625,
-        "text": " analogs of the 2 carbon alkyl linker may be prepared by a variety of means known to a person of ordinary skill in the art. For example,",
-        "id": 684
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " \"clicked\", G_CALLBACK(on_frame_arrow_clicked), NULL);\n\n\trenderer = gtk_cell_renderer_text_new ();\n\tgtk_tree_view_column_pack_start(column, renderer, TRUE",
+        "id": 770
       },
       {
         "prediction": true,
@@ -565,6 +551,13 @@
       },
       {
         "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03997802734375,
+        "text": ")\n        </th>\n    </tr>\n</thead>\n<tbody>\n    @{int rank = 0;}\n    @foreach (var item in Model.Member)\n",
+        "id": 686
+      },
+      {
+        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": ", -1);\n\n\t\tactive_frame_index = gtk_tree_path_get_indices(new_active_frame)[1];\n\t\tselect_frame(active_frame_index);\n\n\t\tgtk_tree_model_get",
@@ -572,10 +565,17 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " \"clicked\", G_CALLBACK(on_frame_arrow_clicked), NULL);\n\n\trenderer = gtk_cell_renderer_text_new ();\n\tgtk_tree_view_column_pack_start(column, renderer, TRUE",
-        "id": 770
+        "ground_truth": true,
+        "max_activation": 0.03668212890625,
+        "text": " \\usepackage{amsbsy}\n                \\usepackage{mathrsfs}\n                \\usepackage{upgreek}\n                \\setlength{\\od",
+        "id": 710
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0382080078125,
+        "text": ",\n                            controlKeyName: currentControlKey\n                        });\n                    }\n\n                    definingControlKey = false;\n                    currentControlKey = '';\n                }\n                // currently",
+        "id": 692
       }
     ],
     "metrics": {
@@ -597,23 +597,23 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.050445556640625,
-        "text": " occlusion at the endexpiratory level (P0.1). A group of 20 adults (18 to 32 years old) were tested in",
-        "id": 1082
+        "max_activation": 0.037689208984375,
+        "text": "_i,\\ \\ \\ \\ \\ i=1,2,\\cdots,n,\\end{aligned}$$ where $y_i$ is the response variable, ${",
+        "id": 1117
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " \"café crema\" mixes French and Italian.\n\nSynonym for espresso \n\n\"Caffè crema\", and the English calque \"cream coffee\", was the original",
+        "id": 1149
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.048065185546875,
-        "text": "\t\t\t\t\t\tbytes = (bytes & ~(BlkSZ - 1)) + BlkSZ;\n\t\t\t\t\t}\n\t\t\t\t\tfileRecords = bytes / BlkSZ;\n\t\t\t\t",
-        "id": 1083
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.047149658203125,
-        "text": ", now almost a joke. She would smile feebly in return, for she was ...\n\nIt is onlypersons, of whatever race, that matter. The rest",
-        "id": 1084
+        "max_activation": 0.042633056640625,
+        "text": " {\n    if (!o[x]) return;\n    delete o[x][y];\n    // maybe delete `o[x]` if keys.length === 0\n",
+        "id": 1095
       },
       {
         "prediction": false,
@@ -623,11 +623,11 @@
         "id": 1132
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " \"café crema\" mixes French and Italian.\n\nSynonym for espresso \n\n\"Caffè crema\", and the English calque \"cream coffee\", was the original",
-        "id": 1149
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042724609375,
+        "text": ">{item.restaurant.name} </Text>\n         </Card>\n         </TouchableHighlight>\n                  }\n                />\n            )\n        }\n      </View>\n    );\n ",
+        "id": 1094
       },
       {
         "prediction": false,
@@ -656,23 +656,9 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.04534912109375,
-        "text": "2 log cfu/cm(2) during the 48h of storage while the levels on the liquid smoke treated frankfurters continued to decline until they were",
-        "id": 782
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.043792724609375,
-        "text": " play with Archie now,” Richard told HL.\n\nSince it’s inception in 1989, Project Angel Food as served over 12 million meals to more than ",
-        "id": 783
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.043304443359375,
-        "text": " logged out, go to the dropdown box and choose which session you would like to use, in my case, XBMCbuntu (LXDE).\n\nConfig\n\n",
-        "id": 784
+        "max_activation": 0.041961669921875,
+        "text": "}[Y_t^*]&=\\sum_{j=2}^m\\textnormal{Var}[\\bar Y_j]\\bigg(\\int_{\\vare",
+        "id": 789
       },
       {
         "prediction": true,
@@ -682,6 +668,20 @@
         "id": 844
       },
       {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " });\n\n    $(\".dynamic\").on(\"click\", \".download\", function(ev) {\n        ev.preventDefault();\n        var url = $(this).data(\"form\");\n",
+        "id": 877
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04052734375,
+        "text": " $A$ be an $n\\times n$ adjacency matrix. Then, $$\\label{eq:symbreak}\n {\\textsf{sb}}^",
+        "id": 798
+      },
+      {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
@@ -689,11 +689,11 @@
         "id": 873
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " });\n\n    $(\".dynamic\").on(\"click\", \".download\", function(ev) {\n        ev.preventDefault();\n        var url = $(this).data(\"form\");\n",
-        "id": 877
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041412353515625,
+        "text": "}^{(\\gamma^{\\bar\\nu_m^{\\textnormal{res}}-\\nu_0},0,\\bar\\nu_m^{\\textnormal{",
+        "id": 792
       }
     ],
     "metrics": {
@@ -714,31 +714,24 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.046234130859375,
-        "text": ". 2018. . In [*Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition*]{}, 264–272.\n\nHegde,",
-        "id": 1182
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.04473876953125,
-        "text": " (RCC) under dominant, recessive, homozygous, heterozygous and allelic contrast genetic models, while no association was observed in prostate",
-        "id": 1183
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04449462890625,
-        "text": " \"id\": 1,\n  \"company\": \"Photosnap\",\n  \"logo\": \"./images/photosnap.svg\",\n  \"new\": true,\n  \"",
-        "id": 1184
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "Y. Pi, Nucl. Phys.  B [**160**]{}, 301 (1979); W. Furmanski",
+        "id": 1242
       },
       {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": "Y. Pi, Nucl. Phys.  B [**160**]{}, 301 (1979); W. Furmanski",
-        "id": 1242
+        "text": "{} 41\n\nB Nienhuis 1984 J. Stat. Phys. [**34**]{} 731\n\nP G de Gennes ",
+        "id": 1276
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042449951171875,
+        "text": " req->source = src;\n    req->destination = dst;\n    UnlockDisplay (dpy);\n    SyncHandle();\n}\n\nXRectangle *\nXFixesFetch",
+        "id": 1189
       },
       {
         "prediction": true,
@@ -749,10 +742,17 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": "{} 41\n\nB Nienhuis 1984 J. Stat. Phys. [**34**]{} 731\n\nP G de Gennes ",
-        "id": 1276
+        "ground_truth": true,
+        "max_activation": 0.039825439453125,
+        "text": "-3ddbcd2b799d\"\n            ],\n            \"x_capec_version\": \"3.3\"\n        }\n    ]\n}<|return|># encoding:",
+        "id": 1203
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042388916015625,
+        "text": "> operator*(const ParDenseMatrix<T> &A, const Vector<T> &b)\n  {\n    DenseVector<T> c;\n    A.Par",
+        "id": 1190
       }
     ],
     "metrics": {
@@ -773,27 +773,6 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.05181884765625,
-        "text": "#jah32587-sec-0014}\n=======\n\nBaseline Characteristics {#jah32587-sec-0015}\n------------------------\n\nOver the study period of 6",
-        "id": 1382
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04986572265625,
-        "text": " Based on the results of Harrup et al. ([@CR24]), future field experiments on *C. impunctatus* should validate the effect of (*",
-        "id": 1383
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.049560546875,
-        "text": " mind: Please be sure to give all your details, email contact and list your website to link to if you have one. Organizations that disclose there is a charge",
-        "id": 1384
-      },
-      {
-        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": "ptr);\n}\n\n/*\n * operators\n */\nstatic struct snd_pcm_ops snd_tm6000_pcm_ops = {\n\t.open = snd_tm6000_pcm_open,\n\t",
@@ -801,10 +780,17 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": "\n\tF_GETNOSIGPIPE                    = 0x4a\n\tF_GETOWN                          = 0x5\n\tF_GETPATH                         = 0x",
-        "id": 1453
+        "ground_truth": true,
+        "max_activation": 0.04052734375,
+        "text": " Kummer’s confluent hypergeometric function defined as $$_1F_1(\\alpha,\\beta, z) =\n\\frac {\\Gamma(\\beta)}",
+        "id": 1408
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038055419921875,
+        "text": "}{z^3})^\\beta(\\frac{z^5}{x^3})^\\gamma}$$\nThen by symmetry you can permute circularly",
+        "id": 1418
       },
       {
         "prediction": true,
@@ -812,6 +798,20 @@
         "max_activation": 0.0,
         "text": " this object using the -z interpose option.\nHowever, this technique is rather heavy weight, because all of the interfaces exported\nby the application would act as",
         "id": 1480
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04083251953125,
+        "text": "avesize\\ttfamily},\n  backgroundcolor=\\Routbackground,%\n}\n\nSo with the following complete code\n\\documentclass{tufte-book}\n\n",
+        "id": 1406
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "\n\tF_GETNOSIGPIPE                    = 0x4a\n\tF_GETOWN                          = 0x5\n\tF_GETPATH                         = 0x",
+        "id": 1453
       }
     ],
     "metrics": {
@@ -831,25 +831,25 @@
     "explanation": "This expert activates across several distinct technical, legal, and structural contexts. It fires for tokens that are parts of technical terms, code, identifiers, URLs, mathematical notation, or specific named entities within structured or semi-structured text like programming, academic writing, or data formats, exemplified by elements in scientific notation, data fields, or special characters. It also activates for specific formatting tokens such as a single space preceding a number, date, or measurement in technical contexts, and for broader document structural elements like section headers, citations, code blocks, figure references, and delimiting punctuation or whitespace.\n\nIn software contexts, the token \"install\" (including variants like \"-install\" or \"_INSTALL\") is strongly activated when describing package installation commands, often following package managers like apt-get, pip, npm, or brew. In legal domains, the expert fires for legal citations, case names, court names, procedural terms, and formatting elements like page numbers and section headers within legal documents. It also activates for the definite article \"the\" (and sometimes \"a\" or \"The\") when it precedes a key noun phrase in technical, legal, or academic discussion. Finally, it responds to tokens forming part of a rating or grade, including numbers, letters, symbols, and words like \"stars\" or \"part,\" appearing in contexts stating a score, evaluation, or proportion, often following terms like \"rating,\" \"grade,\" or \"out of.\"",
     "examples": [
       {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.048431396484375,
-        "text": " does extend the current \"replacement child\" and \"vulnerable child\" debate as discussed by Turton and colleagues \\[[@CR17]\\], while bringing",
-        "id": 1282
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " professionals. Due to this popularity, foam roller devices can be found in many clinical and fitness settings. Despite the popularity, there are still several unknowns regarding foam",
+        "id": 1349
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.0462646484375,
-        "text": "}}\\,\\int\\limits^{+\\infty}_{-\\infty}\\textstyle \\,\\frac{\\exp\\big({\\text{i}k_0",
-        "id": 1283
+        "max_activation": 0.038055419921875,
+        "text": "1}(x_{t+1},\\tau))]}{\\partial\n\\tau}=\\frac{\\partial E[\\pi_{1}^{-1}\\lambda",
+        "id": 1319
       },
       {
         "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.045806884765625,
-        "text": " to implement the logic of how is checked or not, getting the list of the CheckBoxes is your task :) \n\n<|return|>Tag Archives: American Airlines flight attendant\n\n",
-        "id": 1284
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " judgment of an expert in the same way as lean or Six Sigma and can be taught to a broader audience through short training workshops.\n\nIt is effective\nAt its",
+        "id": 1353
       },
       {
         "prediction": false,
@@ -859,18 +859,18 @@
         "id": 1341
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " professionals. Due to this popularity, foam roller devices can be found in many clinical and fitness settings. Despite the popularity, there are still several unknowns regarding foam",
-        "id": 1349
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04534912109375,
+        "text": "frac{1}{z}\\left(-\\frac{1}{z}G_X\\left(\\frac{1}{z}\\right)+1\\right),\n",
+        "id": 1285
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " judgment of an expert in the same way as lean or Six Sigma and can be taught to a broader audience through short training workshops.\n\nIt is effective\nAt its",
-        "id": 1353
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0462646484375,
+        "text": "}}\\,\\int\\limits^{+\\infty}_{-\\infty}\\textstyle \\,\\frac{\\exp\\big({\\text{i}k_0",
+        "id": 1283
       }
     ],
     "metrics": {
@@ -891,24 +891,24 @@
     "examples": [
       {
         "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.06268310546875,
-        "text": "7512 (indicating Virginia) and, Death Master File says, died January 1965\n1273208 Check the source file (free) and then",
-        "id": 1782
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " hugs Tendulkar after winning the World Cup in 2011\n\nWhile 11 of the 15 will be making their World Cup debuts, Virat",
+        "id": 1861
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.05743408203125,
-        "text": ".Owin.Host.SystemWeb.OwinBuilder.GetAppStartup() +65\n   Microsoft.Owin.Host.SystemWeb.OwinHttpModule.InitializeBlueprint() +28\n",
-        "id": 1783
+        "max_activation": 0.042388916015625,
+        "text": "):=\\int_0^t \\beta(s)ds.$$ Let us also define for $(x,y)$ in ${{{\\bf}R}}^{N",
+        "id": 1794
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.055084228515625,
-        "text": " of them had their noses reshaped and their ears setback, but 5,000 had their breasts made smaller and 4,000 had their breasts made larger",
-        "id": 1784
+        "max_activation": 0.03790283203125,
+        "text": " [1](#T1){ref-type=\"table\"}** and **[2](#T2){ref-type=\"table\"}** present statistical analysis results",
+        "id": 1812
       },
       {
         "prediction": false,
@@ -918,11 +918,11 @@
         "id": 1839
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " hugs Tendulkar after winning the World Cup in 2011\n\nWhile 11 of the 15 will be making their World Cup debuts, Virat",
-        "id": 1861
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040130615234375,
+        "text": "( new RegExp('(\\_\\_prefix\\_\\_|\\\\d)') , index );\n            var id = 'label_' + newFor;\n            $(",
+        "id": 1802
       },
       {
         "prediction": false,
@@ -950,24 +950,17 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.050048828125,
-        "text": " '\\\\MyServer\\myShare\\myFolder\\myFile.mdb'\n\n<|return|>The quantum computing apocalypse is imminent\n\nShlomi Dolev is the Chair",
-        "id": 1482
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "\" id=\"index_h\"></a>- h -</h3><ul>\n<li>handle_messages\n: <a class=\"el\" href=\"structgu",
+        "id": 1556
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.048248291015625,
-        "text": "mathrm{(H_2)}$ and $(\\mathrm{H}_3^{k})$ if and only if $H\\in (\\frac12-\\",
-        "id": 1483
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.047607421875,
-        "text": "8 billion riyals) this year compared with $70.2 billion (263.7 billion riyals) in 2015. Two years ago",
-        "id": 1484
+        "max_activation": 0.04632568359375,
+        "text": "0(dx),\\\\\nL_2(f,\\hat f_m)^2&:=\\int_{I\\setminus{[-\\varepsilon_m,\\vare",
+        "id": 1485
       },
       {
         "prediction": true,
@@ -985,10 +978,17 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": "\" id=\"index_h\"></a>- h -</h3><ul>\n<li>handle_messages\n: <a class=\"el\" href=\"structgu",
-        "id": 1556
+        "ground_truth": true,
+        "max_activation": 0.050048828125,
+        "text": " '\\\\MyServer\\myShare\\myFolder\\myFile.mdb'\n\n<|return|>The quantum computing apocalypse is imminent\n\nShlomi Dolev is the Chair",
+        "id": 1482
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.048248291015625,
+        "text": "mathrm{(H_2)}$ and $(\\mathrm{H}_3^{k})$ if and only if $H\\in (\\frac12-\\",
+        "id": 1483
       }
     ],
     "metrics": {
@@ -1008,32 +1008,18 @@
     "explanation": "This expert activates in several distinct contexts, all involving tokens that serve as specific, often initial, components within larger structured units. One major pattern is the beginning of significant textual segments, such as the first token of a sentence, quote, proper noun, date, number, technical term, or a new section, particularly when that segment is being emphasized. Another is within categorical lists and classifications, such as musical instrument families (e.g., \"wind,\" \"woodwind,\" \"brass,\" \"horn\") or biological groupings (e.g., \"poultry,\" \"shellfish\"), and within rating systems involving scores, grades, or proportions (e.g., \"stars,\" numbers, \"out of\").\n\nThe expert also fires for specific proper nouns and titles, most notably tokens within the \"Divergent\" series (like \"gent\" in \"Divergent\" or \"Insurgent\" and \"is\" in \"Tris\") and other distinct named entities. It activates for specialized vocabulary in niche domains, including heraldic and symbolic design elements (e.g., coats of arms, flags, emblems) and for the concept of instantaneous movement (e.g., \"teleport,\" \"teleportation\"). Additionally, it responds to sexually explicit themes through tokens like \"erotic,\" \"erotica,\" and \"sensual.\"\n\nFinally, it is sensitive to structured and technical data formats, where tokens are parts of code, URLs, mathematical notation, identifiers, or specific formatting elements like punctuation and special characters within programming or scientific contexts.",
     "examples": [
       {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.0479736328125,
-        "text": " by FOA turned over to them. Kelly objects to the turnover, claiming that the funds are not PACA trust assets because the new method of preserving trust claims",
-        "id": 1682
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.045989990234375,
-        "text": " for amassing a large number of properties to 11 years and 6 months in prison on Thursday.\n\nCai Bin, formerly a party official at a local",
-        "id": 1683
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.0455322265625,
-        "text": "AM wasborn 20 April 1926, received Social Security number 227-36-6918 (indicating Virginia) and, Death Master File says",
-        "id": 1684
-      },
-      {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": "3Qjzx\",\n      \"sent_timestamp\": \"Fri, 31 Mar 2017 14:01:59 GMT\"\n    }\n\nThe depicted payload",
         "id": 1734
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037261962890625,
+        "text": "1.4                0.6        \n  Conservative   0.8$\\times$10$^{22}$             0.72            0",
+        "id": 1715
       },
       {
         "prediction": true,
@@ -1044,10 +1030,24 @@
       },
       {
         "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037811279296875,
+        "text": "]\n  {\n    'name' => name,\n    'tag' => @dictionary_data[name],\n    'state' => STATE_MAP[server['state']],\n",
+        "id": 1709
+      },
+      {
+        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": "N3726) [@pone.0099234-Cao1]. The lines *NaHG* and *sid2-2* were provided by Fred",
         "id": 1778
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04388427734375,
+        "text": "QS cont==+&&son==+&&cplace==a { \"*-l+*\",\"*-r+*\" }\nQS cont==-&&cvox==",
+        "id": 1687
       }
     ],
     "metrics": {
@@ -1067,25 +1067,18 @@
     "explanation": "This expert activates when text contains tokens that serve as leading elements within structured phrases or specific named entities, particularly the first token of sentences, quotes, proper nouns, dates, numbers, or technical terms, such as in formal or formatted contexts. It also fires for the token \"off\" in financial discount phrases (e.g., \"$20 off\", \"50% off\") or in the phrase \"take time off\". A strong signal is the substring \"Pod\" specifically within the product name \"iPod\", or similar fragments like \"od\", \"Pads\", or \"une\" completing brand names like \"iPad\" or \"Zune\". The expert responds to structured data markers, code syntax, formatting elements, or key delimiters in technical, academic, or tabular texts. It activates for \"sticker\" and its substrings in contexts about adhesive labels or digital graphics, including related terms like \"decal\". The token \"credit\" triggers activation in financial collocations such as \"credit rating\", \"credit report\", \"credit score\", or \"bad credit\". The token \"soy\" and its variants (e.g., \"soybean\") are important in contexts discussing plant proteins, food allergens, or agricultural research. Finally, it fires for parts of distinctive proper nouns, titles, or technical terms from known works or systems, such as \"7 Habits\", \"SF-36\", \"Orthologous Groups\", or \"Leaders\", and for punctuation, brackets, or spaces that act as structural formatting elements in code or notation.",
     "examples": [
       {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.046478271484375,
-        "text": "UFUTURE, finalized in development of added high value manufacturing based on research and innovation, work on the development of new products and processes, business models and related",
-        "id": 2182
+        "max_activation": 0.04083251953125,
+        "text": "data1</td></tr>\n</tbody>\n\n<tbody>\n  <tr><th>heading2</th></tr>\n  <tr> <td>",
+        "id": 2202
       },
       {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.044921875,
-        "text": " finding phone numbers of the company’s engineers scribbled on whiteboards in customers’ offices. “They know whom to call, instead of just having to rely on",
-        "id": 2183
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.044647216796875,
-        "text": " If we look high on a premium or we can’t get adequate coverage for the same premium, I have no problem telling someone to do what is best for them",
-        "id": 2184
+        "max_activation": 0.041412353515625,
+        "text": "=\\frac{(k_1+\\cdots + k_n)^{(k_1+\\cdots +k_n)}}{k_1^{k",
+        "id": 2198
       },
       {
         "prediction": true,
@@ -1100,6 +1093,13 @@
         "max_activation": 0.0,
         "text": "$$ Strong convergence of $f_k$ and weak convergence from , yields $$\\begin{aligned}\n\\limsup_{k \\to \\infty} I",
         "id": 2236
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03533935546875,
+        "text": " @ell15], of N(H$_{2}$) = 0.8 and 0.4 $\\times$ 10$^{22}$ cm",
+        "id": 2231
       },
       {
         "prediction": true,
@@ -1128,23 +1128,9 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.044921875,
-        "text": "\n\nSince $\\{ L(\\tau_n) \\ge j \\} \\subset \\{ \\max_{0\\le k \\le 2j} |",
-        "id": 1982
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.043975830078125,
-        "text": "mathbf W_{N,4}}}\\right)\\\\\n    &=\\dim_{\\mathbb Q}{\\operatorname{Im}}{\\varphi^{(",
-        "id": 1983
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04364013671875,
-        "text": "\\]). It should be noted that for series whose leading singularity in the Borel plane is at $u = -u_0$ with $u_",
-        "id": 1984
+        "max_activation": 0.03753662109375,
+        "text": " us take the $\\mathcal{O}(\\hbar ^{n+1})$ divergent part of (\\[provef\\]). By the inductive",
+        "id": 2022
       },
       {
         "prediction": true,
@@ -1157,15 +1143,29 @@
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": "6633, -6638, -6633, -6612, -6569, -6498?\n-6393\nWhat is next in -",
-        "id": 2071
+        "text": " -24893, -46510, -68113, -89696, -111253, -132778?\ns**3 + s**2 -",
+        "id": 2072
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.043975830078125,
+        "text": "mathbf W_{N,4}}}\\right)\\\\\n    &=\\dim_{\\mathbb Q}{\\operatorname{Im}}{\\varphi^{(",
+        "id": 1983
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041168212890625,
+        "text": "(\\Phi ,{\\mkern2mu\\underline{\\mkern-2mu\\smash{\\Phi }\\mkern-2mu}\\mkern2mu",
+        "id": 1998
       },
       {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " -24893, -46510, -68113, -89696, -111253, -132778?\ns**3 + s**2 -",
-        "id": 2072
+        "text": "6633, -6638, -6633, -6612, -6569, -6498?\n-6393\nWhat is next in -",
+        "id": 2071
       }
     ],
     "metrics": {
@@ -1185,32 +1185,11 @@
     "explanation": "This expert activates on punctuation, formatting, and technical syntax that structure formal, scientific, or programming contexts. It fires for specific punctuation marks and whitespace that denote boundaries, such as line endings, closing delimiters, or the transition between code and text. In programming, it responds to particular language-specific syntax: the colon token when used for C++ initializer lists or class member access specifiers (like `public:`, `private:`, or `protected:`), as well as code syntax elements in languages like Python and Keras, including keywords, function calls, and variable names.\n\nThe expert also activates on the lexical components of technical and academic writing. This includes mathematical and scientific notation, such as LaTeX commands, Greek letters, subscripts, and superscripts. It fires on alphanumeric codes, technical terms, and abbreviations found in structured data, laboratory procedures, equipment descriptions, and methodological analysis. Furthermore, it responds to formatting elements like parentheses, brackets, braces, and slashes used in citations, equations, and general code syntax. The activation is driven by these tokens appearing within the broader contexts of scientific documents, legal texts, programming code, and formal structured data.",
     "examples": [
       {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.047515869140625,
-        "text": " findings also suggest that, at least in rats, aging alters the protein expression of the biosynthetic catecholamine enzymes as well as protein kinase substrates that may atten",
-        "id": 2082
-      },
-      {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.04632568359375,
-        "text": " is bundled\n * with this package in the file LICENSE.txt.\n * It is also available through the world-wide-web at this URL:\n * http://framework.z",
-        "id": 2083
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04608154296875,
-        "text": "1, currentID, activeArray);\n    });\n\nUPDATED FIDDLE:\nhttp://jsfiddle.net/yfukm8kh/3/\nYou should read",
-        "id": 2084
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": "6]))\n    self.send_header(\"Last-Modified\", self.date_time_string(fs.st_mtime))\n    self.end_headers()\n    return f\n\ndef list_directory",
-        "id": 2144
+        "max_activation": 0.0400390625,
+        "text": "\\t\\t!ordered: sparse %d\\n\", sparse);\n#endif\n    for (unsigned i = 0; i < codebook_entries; ++i)",
+        "id": 2113
       },
       {
         "prediction": true,
@@ -1221,10 +1200,31 @@
       },
       {
         "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042144775390625,
+        "text": "uf\": \"\\u00a0\\u00a4\",\n        \"posPre\": \"\",\n        \"posSuf\": \"\\u00a0\\u00a",
+        "id": 2098
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03704833984375,
+        "text": " overloads internally calling a\n  * template function, e.g.:\n  * \\code\n  * // in the .h:\n  * void foo",
+        "id": 2126
+      },
+      {
+        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": "469d-ba64-1ed58bbab771\"\n        ],\n        \"created_by\": \"bb760e2d-d679-4b64-b",
         "id": 2168
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "6]))\n    self.send_header(\"Last-Modified\", self.date_time_string(fs.st_mtime))\n    self.end_headers()\n    return f\n\ndef list_directory",
+        "id": 2144
       }
     ],
     "metrics": {
@@ -1246,23 +1246,9 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.050628662109375,
-        "text": " local area network and communicate with a backend computing device that maintains a database for transaction, inventory, accounting, sales, tax, etc. information. Transaction data received",
-        "id": 1582
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.048919677734375,
-        "text": " to see Petraeusget into hot water as he did after how faithfully he served his country...could happen to anyone though. I'm sure it was not a planned",
-        "id": 1583
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.048828125,
-        "text": ", so\nthat I could be drowned properly dressed,” he said, with a chuckle.\n“Well, there’s nothing like doing your work right, whether you",
-        "id": 1584
+        "max_activation": 0.039276123046875,
+        "text": "_{m\\geq 1}$ is a Cauchy sequence in $L_2$, i.e. $\\sup_{m'\\geq m}",
+        "id": 1617
       },
       {
         "prediction": false,
@@ -1273,10 +1259,24 @@
       },
       {
         "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042877197265625,
+        "text": "Smooth.None));\n\n  connect(bat.terminal, terminal) annotation (Line(\n      points={{40,0},{-100,0}},\n      color={0",
+        "id": 1599
+      },
+      {
+        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": " high-high-predation; HP, high-predation; LP, low-predation.\n\nFeeding kinematics: neonates and juveniles {#",
         "id": 1654
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03936767578125,
+        "text": ".\n     */\n    public function setCharset($charset);\n\n    /**\n     * Returns the message sender.\n     * @return string|array the sender\n     */\n",
+        "id": 1615
       },
       {
         "prediction": true,
@@ -1305,23 +1305,23 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.048919677734375,
-        "text": "_tmpl='azure.cli.command_modules.acr.custom#{}',\n        table_transformer=registry_output_format,\n        client_factory=cf_acr_registries",
-        "id": 1882
+        "max_activation": 0.040069580078125,
+        "text": "\": \"Allow\",\n     \"Principal\": {\n         \"AWS\": \"arn:aws:iam::********:root\"\n     },\n    \"Action\": \"sts",
+        "id": 1915
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.047332763671875,
-        "text": "ad7dedf4e5e738763f69145a' +\\\n                        '571b242012fb7ae07fa9baac3",
-        "id": 1883
+        "max_activation": 0.044403076171875,
+        "text": "        //run some code here\n        List<T> res = repository.findAll();\n        //run some code here\n        return res;\n    }\n    //",
+        "id": 1892
       },
       {
         "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.04705810546875,
-        "text": " the efficacy of their teams.\n\nThe surprise in these areas was that a full 36% of the respondents reported that 3rd Party Communications was only Seld",
-        "id": 1884
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " into the bank with the Draft but was not accompanied by Stromberg. Kevin Moore told Linda Tucker that Stromberg was his partner. Linda Tucker testified that she did",
+        "id": 1967
       },
       {
         "prediction": false,
@@ -1331,18 +1331,18 @@
         "id": 1937
       },
       {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " Osha takes a jab at him.\n\nThe Black (Night’s Watch)\n\nHurray! Dire Wolf appearance! After Jon Snow and Sam take their vows, Ghost",
-        "id": 1956
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03936767578125,
+        "text": "}B^{(2)}_u;$$\n\n-   for all $H\\in(0,1)$, we have $$\\label{star",
+        "id": 1919
       },
       {
         "prediction": false,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " into the bank with the Draft but was not accompanied by Stromberg. Kevin Moore told Linda Tucker that Stromberg was his partner. Linda Tucker testified that she did",
-        "id": 1967
+        "text": " Osha takes a jab at him.\n\nThe Black (Night’s Watch)\n\nHurray! Dire Wolf appearance! After Jon Snow and Sam take their vows, Ghost",
+        "id": 1956
       }
     ],
     "metrics": {
@@ -1363,31 +1363,17 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.047515869140625,
-        "text": " Mm00475834); target genes for MC3T3-E1 evaluation were: Osterix (Mm 04209856), osteocalcin (Bgl",
-        "id": 2882
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.0455322265625,
-        "text": " Marr Residence\n\nCategory:Houses completed in 1884\nCategory:Buildings and structures in Saskatoon\nCategory:Museums in Saskatoon\nCategory:Historic",
-        "id": 2883
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " Pharmacoat 615 (blue colour) and (iii) HPMC-Sigma (red colour)) in compendial and biorelevant media. Light",
+        "id": 2976
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.045257568359375,
-        "text": " from the function arguments\n\nAlso, you didn't specify a copy constructor, so the implicit one will be used. But the implicit one just copies the values, and",
-        "id": 2884
-      },
-      {
-        "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": ".2 pH units) were observed. Evaluation of the theoretical pH--solubility profile (Fig. [3](#Fig3){ref-type",
-        "id": 2973
+        "max_activation": 0.0374755859375,
+        "text": " sets of a strongly $q$-convex exhaustion function on $Y$.) Assume that $f_0\\colon X\\to Y$ is a",
+        "id": 2919
       },
       {
         "prediction": false,
@@ -1397,11 +1383,25 @@
         "id": 2975
       },
       {
-        "prediction": true,
+        "prediction": false,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " Pharmacoat 615 (blue colour) and (iii) HPMC-Sigma (red colour)) in compendial and biorelevant media. Light",
-        "id": 2976
+        "text": ".2 pH units) were observed. Evaluation of the theoretical pH--solubility profile (Fig. [3](#Fig3){ref-type",
+        "id": 2973
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042724609375,
+        "text": "}$ as $Q_j=P_j\\circ S$. Then $$\\left\\Vert \\prod_{j=1}^n Q_j \\right\\Vert",
+        "id": 2890
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.036773681640625,
+        "text": " $\\tau$ is almost surely finite. We then introduce the random variables $Z_{m}=\\sum_{n=0}^{m} \\Delta^{(",
+        "id": 2925
       }
     ],
     "metrics": {
@@ -1422,31 +1422,31 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.045013427734375,
-        "text": " all the bits to feed it.  We could do something crazy in the future\n  // (issue a smaller load then merge the bits in) but this",
-        "id": 2382
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " healthy controls, *MDD* major depressive disorder, *BDI* beck depression inventory, *HAM-D* Hamilton Rating Scale for depression, *STAI",
+        "id": 2437
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.04364013671875,
-        "text": " Processing (SMP). SMP is a VERY old concept (in computer years). I understand the cores share memory rather than have dedicated RAM. Basic stuff. How",
-        "id": 2383
+        "max_activation": 0.041961669921875,
+        "text": ">\n<p><a href=\"/files/2018/sheetplanner/calendar.png\" title=\"Click for full size.\"><img src=\"/files/2018/s",
+        "id": 2389
       },
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.043365478515625,
-        "text": "3)?\n19\nWhat is 7*(1/2)/((-14)/(-68))?\n17\n(12*(-10)/(-540))/((-80",
-        "id": 2384
+        "max_activation": 0.037384033203125,
+        "text": "dagger},~\n\\mathcal{J}_{\\mathrm{in}} \\rho\n=\n2 \\kappa_{\\mathrm{in}} a \\rho a",
+        "id": 2426
       },
       {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " healthy controls, *MDD* major depressive disorder, *BDI* beck depression inventory, *HAM-D* Hamilton Rating Scale for depression, *STAI",
-        "id": 2437
+        "text": " research and education.\n\nBarry creates smart environments\n2017-03-31\nHow often do you look at your mobile phone and what do you use it for",
+        "id": 2450
       },
       {
         "prediction": true,
@@ -1457,10 +1457,10 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " research and education.\n\nBarry creates smart environments\n2017-03-31\nHow often do you look at your mobile phone and what do you use it for",
-        "id": 2450
+        "ground_truth": true,
+        "max_activation": 0.04248046875,
+        "text": "ds E \\, \\widehat{\\lambda_0 (t)} =  K \\displaystyle{ \\sum_{j=1}^J} Q_j",
+        "id": 2386
       }
     ],
     "metrics": {
@@ -1482,23 +1482,9 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.045440673828125,
-        "text": " EU Important Safety Information Treatment with Galafold should be initiated and supervised by specialists experienced in the diagnosis and treatment of Fabry disease. Galafold is not",
-        "id": 2282
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.044464111328125,
-        "text": " have two major dilemmas: (1) Should I wait to start investing (at least until the end of the year where I’ll hopefully have $5k",
-        "id": 2283
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.0440673828125,
-        "text": "Myosin-binding protein H*                                                         [U68267](U68267)       3.9                 0.5             1.5   ",
-        "id": 2284
+        "max_activation": 0.04229736328125,
+        "text": " $(\"<div></div>\").addClass(\"list-depth-\" + $(elem).parents('ul').length).text(elem.childNodes[0].nodeValue);\n   ",
+        "id": 2294
       },
       {
         "prediction": false,
@@ -1506,6 +1492,20 @@
         "max_activation": 0.0,
         "text": " control, diagnosis, monitoring and new generation supervising systems, virtual design methods of products and processes and new organizational, mangement and business paradigms.\n\nITIA's",
         "id": 2346
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037994384765625,
+        "text": "(addr) {\n\tcomplex VtConn addr;\n\tprint(\"QLock lk {\\n\");\n\tQLock(addr.lk);\n\tprint(\"}\\n\");\n\tprint(\"QL",
+        "id": 2326
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037017822265625,
+        "text": "sec:concl\\].\n\nA time-fractional diffusion problem. {#sec:diffeq}\n====================================\n\nWe consider the [*time-fraction",
+        "id": 2329
       },
       {
         "prediction": false,
@@ -1539,25 +1539,18 @@
     "explanation": "This expert activates in several distinct contexts, primarily involving technical and mathematical language. One strong pattern is the presence of programming and text-editing tokens, including code syntax like braces `{ }`, `{{`, and `}}`, file operation terms such as \"files\" and \"multiple\", editing actions like \"cursor\", \"caret\", \"Move\", and \"fix\", and specific identifiers like \"graph\", \"frontier\", \"obj\", \"_BEGIN\", and \"_addresses\". Another condition is the use of mathematical and technical terms related to variance, scaling, and gain, often accompanied by symbols like parentheses, equals signs, and dollar signs within formulas. The expert also responds to the word \"both\" when it introduces a pair of items in a list or comparison, and to \"gap\" and its variants like \"gaps\" or \"hole\" describing an absence or break in a structure or sequence. A separate context involves the token \"wind\" or \"breeze\" in descriptions of air movement, often related to tracking or natural phenomena. Finally, it activates on a cluster of tokens from mathematical, statistical, and code environments, including \"cubic\" (as in cubic splines), \"network\", \"dimensions\", \"percolation\", \"algebra\", numeric tokens like \"0\", \"2\", \"3\", \"5\", \"6\", \"10\", statistical \"df\", code elements like \"Edge\", \"TREE\", \"_GRAPH\", and syntax tokens such as \"(\", \"]\", \":\", \",\", and large whitespace blocks from formatted tables.",
     "examples": [
       {
-        "prediction": false,
+        "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.05120849609375,
-        "text": "3, 1999.\n\nM. Lester and M. Nieto-Vesperinas.. Opt. Lett.,  24, pages 936",
-        "id": 2782
+        "max_activation": 0.041717529296875,
+        "text": "}{\\mathbf}P){\\right)}},-\\frac{n^2{\\left(}3{{\\rm tr}}{\\left(}{\\mathbf",
+        "id": 2799
       },
       {
         "prediction": false,
         "ground_truth": true,
-        "max_activation": 0.0479736328125,
-        "text": " renal pelvis and ureter have also been associated with exposure to coal/coke, natural gas and mineral oils, or employment in dry cleaning, iron and steel,",
-        "id": 2783
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.04742431640625,
-        "text": " possible headings\nAlternatively, Witex asks the Court to choose another appropriate heading, referencing the dispute before the Court in Faus Group, Inc. v. United",
-        "id": 2784
+        "max_activation": 0.035186767578125,
+        "text": " Lett. **45**, 566 (1980). J. P. Perdew and A. Zunger, Phys. Rev. B **23**, ",
+        "id": 2830
       },
       {
         "prediction": false,
@@ -1570,15 +1563,22 @@
         "prediction": false,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " possess grossly normal skeletal muscle, indicating that there is redundancy and compensation for the loss of either factor during development. Indeed, only with the concurrent loss of M",
-        "id": 2849
+        "text": " the standard theory of polynomials with more than one variable. Intuitively, they would be formed as ‘halves’ of Chebyshev polynomials although",
+        "id": 2874
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.03973388671875,
+        "text": "\\{~A'  \\left|\n      \\begin{array}{l}A'\\approx A \\wedge \\alpha(A')=M\\end",
+        "id": 2807
       },
       {
         "prediction": false,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " the standard theory of polynomials with more than one variable. Intuitively, they would be formed as ‘halves’ of Chebyshev polynomials although",
-        "id": 2874
+        "text": " possess grossly normal skeletal muscle, indicating that there is redundancy and compensation for the loss of either factor during development. Indeed, only with the concurrent loss of M",
+        "id": 2849
       }
     ],
     "metrics": {
@@ -1599,34 +1599,6 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.05120849609375,
-        "text": "ConstGroup{}\n\t\t\t\t\t\t\tctx.see(cg)\n\t\t\t\t\t\t\tfor _, spec := range specs {\n\t\t\t\t\t\t\t\tfor _, name := range spec.(*ast.ValueSpec).Names {\n",
-        "id": 2582
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.048919677734375,
-        "text": " EWINDOWS }\nfunc SetsockoptTimeval(fd Handle, level, opt int, tv *Timeval) (err error) { return EWINDOWS",
-        "id": 2583
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.048248291015625,
-        "text": " of this invention will be administered as pharmaceutical compositions by one of the following routes: oral, topical, systemic (e.g. transdermal, intranasal",
-        "id": 2584
-      },
-      {
-        "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " 29?\nFalse\nIs 169 a factor of 27923532?\nTrue\nDoes 3 divide 23337718?\nFalse\nDoes 764",
-        "id": 2655
-      },
-      {
-        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": "False\nIs 261697077 a multiple of 13?\nFalse\nDoes 42 divide 14579166?\nTrue\nIs 20 a factor of",
@@ -1638,6 +1610,34 @@
         "max_activation": 0.0,
         "text": "11?\nTrue\nIs 996 a factor of 134401368?\nFalse\nIs 357 a factor of 51596496?\nTrue\nIs ",
         "id": 2672
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04132080078125,
+        "text": " relation defined for those entities.\n/**\n * @ORM\\Entity()\n */\nclass Order extends AbstractEntity {\n    // ...\n    /**\n     * @ORM\\ManyToOne",
+        "id": 2606
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " 29?\nFalse\nIs 169 a factor of 27923532?\nTrue\nDoes 3 divide 23337718?\nFalse\nDoes 764",
+        "id": 2655
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040374755859375,
+        "text": "nm}}$ indeed give (\\[estobar\\]) we get the identities $$\\mathcal{R}_{B}^{I}(B,C)=-\\int",
+        "id": 2611
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.043792724609375,
+        "text": "mySelect\">\n   <option value=\"1\">hello [test]</option>\n   <option value=\"2\">hello2 [test2]</option>\n  ",
+        "id": 2598
       }
     ],
     "metrics": {
@@ -1658,31 +1658,31 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.044403076171875,
-        "text": ")[0].files[i]);\n                            }\n                        } else {\n                            alert(\"This browser does not support FileReader.\");\n                        }\n                    } else {\n                        alert(\"",
-        "id": 2482
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04254150390625,
-        "text": " primary HBE cells. Whenever possible, we performed the same experiment in human primary HBE cells as in permanent human BEAS-2B cells.\n\nTaken together",
-        "id": 2483
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.041961669921875,
-        "text": "Vim 是由 Bill Joy 于 1976 年编写的，[vi](http://en.wikipedia.org/wiki/Vi) 的重新实现。vi 实",
-        "id": 2484
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " use of information continues to increase, individuals and businesses seek additional ways to process and store information. One option available to users is information handling systems. An information handling",
+        "id": 2538
       },
       {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " use of information continues to increase, individuals and businesses seek additional ways to process and store information. One option available to users is information handling systems. An information handling",
-        "id": 2538
+        "text": " representation\nXsan file system uses several logical storages to distribute information. The two main classes of information appear on Xsan: the user data (such as",
+        "id": 2556
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038604736328125,
+        "text": "f00e9c13ff3808fceb4c71c1172fb51\">guac_socket</a>\n</li>\n<li>length",
+        "id": 2499
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03863525390625,
+        "text": "_{u\\in \\lambda}F(h(u))} = \\frac{ \\varphi^{ \\binom{n+1}{2} } [",
+        "id": 2498
       },
       {
         "prediction": true,
@@ -1693,10 +1693,10 @@
       },
       {
         "prediction": true,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " representation\nXsan file system uses several logical storages to distribute information. The two main classes of information appear on Xsan: the user data (such as",
-        "id": 2556
+        "ground_truth": true,
+        "max_activation": 0.044403076171875,
+        "text": ")[0].files[i]);\n                            }\n                        } else {\n                            alert(\"This browser does not support FileReader.\");\n                        }\n                    } else {\n                        alert(\"",
+        "id": 2482
       }
     ],
     "metrics": {
@@ -1717,31 +1717,17 @@
     "examples": [
       {
         "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04852294921875,
-        "text": "ary operations $U_{\\mathcal{O}^{(k)}}$ according to the the given prescription. Consider the unitary operation $U^{\\mathrm{",
-        "id": 2982
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.046783447265625,
-        "text": " of order dividing $m$ and having exactly two $s$-large cycles we count triples $(C_1, C_2, g)$, where",
-        "id": 2983
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.046417236328125,
-        "text": "938263, -531917683, -664897103, -797876523?\n-132979420*i - 3\nWhat is the k't",
-        "id": 2984
-      },
-      {
-        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": " h.\n-4\nSolve 17*o + 18 = -5*q + 23*o, -4*q = -5*o +",
         "id": 3036
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04180908203125,
+        "text": " reformulated as: $$\\label{dualmiref}\n\\inf_{(\\varphi, b)} \\int \\max_{t\\in [0",
+        "id": 2998
       },
       {
         "prediction": true,
@@ -1752,10 +1738,24 @@
       },
       {
         "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04608154296875,
+        "text": "$, uniformly on $(-\\infty,\\xi^-] \\times [0,2\\pi]$.\\\niii. Let $\\xi (\\tau) =",
+        "id": 2985
+      },
+      {
+        "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
         "text": "3, 4, are respectively formed in a shape having an angle formed by the mutual intersection of an arc and a straight line (which is hereinafter",
         "id": 3072
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.044403076171875,
+        "text": " to an efficient estimator of $\\beta_{0}$. Let $\\Sigma(x_{i})$ denote some positive definite matrix with its smallest eigenvalue bounded away from",
+        "id": 2989
       }
     ],
     "metrics": {
@@ -1777,23 +1777,9 @@
       {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.046234130859375,
-        "text": "i\\sum_{q} \\left[{\\partial\\over \n{\\partial q}} b^{\\dag }_{q,\\alpha }\\right]b_{",
-        "id": 2682
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.04449462890625,
-        "text": " THEREFORE ORDERED as follows:\n1. Jimmy D. McGuire be, and hereby is, DISBARRED from the practice of law.\n2.",
-        "id": 2683
-      },
-      {
-        "prediction": true,
-        "ground_truth": true,
-        "max_activation": 0.043975830078125,
-        "text": "elanocortin neurons and neuropeptide Y.[@b84-dmso-4-273] Leptin reduces food intake and increases energy expenditure",
-        "id": 2684
+        "max_activation": 0.043212890625,
+        "text": " w^i {\\tilde{w}}^i$. Furthermore, if $w^{1:N} = {\\tilde{w}}^{1:N}$",
+        "id": 2685
       },
       {
         "prediction": true,
@@ -1806,15 +1792,29 @@
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " al. [@CR11]; Hurwitz et al. [@CR14]; Minami et al. [@CR18]; Demetri et al.",
-        "id": 2754
+        "text": " Modesti, S., et al. [*Phys. Rev. Lett.*]{} [**98**]{}, 126401 (2007). Li",
+        "id": 2755
       },
       {
         "prediction": true,
         "ground_truth": false,
         "max_activation": 0.0,
-        "text": " Modesti, S., et al. [*Phys. Rev. Lett.*]{} [**98**]{}, 126401 (2007). Li",
-        "id": 2755
+        "text": " al. [@CR11]; Hurwitz et al. [@CR14]; Minami et al. [@CR18]; Demetri et al.",
+        "id": 2754
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.046234130859375,
+        "text": "i\\sum_{q} \\left[{\\partial\\over \n{\\partial q}} b^{\\dag }_{q,\\alpha }\\right]b_{",
+        "id": 2682
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.039825439453125,
+        "text": " of FreeType 2 is found first.\"\n#endif\n\n\nFT_BEGIN_HEADER\n\n  /***************************************************************************\n   *\n   * @section:\n   *   lcd_filtering",
+        "id": 2701
       }
     ],
     "metrics": {
@@ -1834,25 +1834,11 @@
     "explanation": "This expert activates in several distinct, unrelated contexts connected by OR logic. One strong domain is environmental sustainability and organic materials, specifically the concepts of composting and its variants (e.g., \"compostable\", \"composting\") alongside related tokens like \"food\", \"waste\", \"garden\", \"soil\", and \"fertiliser\". Another is textiles and materials, with high activation for \"wool\" and its variants (e.g., \"ools\", \"oolen\") particularly in contexts of felting processes. A third is agriculture and food, activating on \"soy\" and its related terms (\"soybean\", \"soybeans\") in discussions of plant proteins, allergens, or farming, and separately on \"lamb\" when referring to the animal or meat.\n\nThe expert also fires on specific grammatical and structural patterns. This includes the token \"to\" when it functions as an infinitive marker indicating purpose or goal. Furthermore, it activates on punctuation, function words, and formatting elements—such as parentheses, brackets, hyphens, spaces, \"**\", and numbers—that serve as structural markers, delimiters, or identifiers within technical text, code, mathematical notation, citations, or tabular data.\n\nFinally, it responds to tokens that are parts of multi-word technical terms, proper nouns, code syntax, or specific key phrases. These serve as identifiers, delimiters, or defined concepts in contexts like legal clauses, scientific compounds, programming methods (e.g., \"Test\", \"Category\"), named entities, and formatted identifiers within academic, legal, or programming text.",
     "examples": [
       {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.049560546875,
-        "text": "s filings, but would not otherwise comment.\n\nLabor lawyer Michael Weber, a senior partner at Littler Mendelson, said the workers attempt to link the",
-        "id": 3082
-      },
-      {
-        "prediction": false,
-        "ground_truth": true,
-        "max_activation": 0.04669189453125,
-        "text": " and fruits of *Passiflora edulis* harvested in Egypt were screened at 100 µg/mL against HCT-116 cells, HepG",
-        "id": 3083
-      },
-      {
         "prediction": true,
         "ground_truth": true,
-        "max_activation": 0.046234130859375,
-        "text": "N-γ controls the differentiation of circulating monocytes into inflammatory dendritic cells during i. p. *T. gondii* infection, and is thus required",
-        "id": 3084
+        "max_activation": 0.0418701171875,
+        "text": "=xl6553525262></td>\n  <td class=xl6553525262></td>\n  <td class=xl6553525262",
+        "id": 3093
       },
       {
         "prediction": true,
@@ -1863,10 +1849,17 @@
       },
       {
         "prediction": false,
-        "ground_truth": false,
-        "max_activation": 0.0,
-        "text": " corresponding article in the German-language Wikipedia.\n German language site about mite cheese\n German language article on mite cheese\n\nCategory:German cheeses\nCategory:Arachnids",
-        "id": 3166
+        "ground_truth": true,
+        "max_activation": 0.042510986328125,
+        "text": "}\n&\\Omega_{\\{\\omega_1,\\omega_2,\\cdots,\\omega_s\\}}^{{\\left(}\\gamma_1,\\gamma",
+        "id": 3092
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041229248046875,
+        "text": " data up to 300K show Curie-Weiss behavior $\\chi(T)=\\frac{C}{T+\\theta}$ with $\\theta$=-1.",
+        "id": 3096
       },
       {
         "prediction": false,
@@ -1874,6 +1867,13 @@
         "max_activation": 0.0,
         "text": ".9, 2477.5)1494.0 (819.3, 2589.2)0.54Total fat (g ",
         "id": 3178
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " corresponding article in the German-language Wikipedia.\n German language site about mite cheese\n German language article on mite cheese\n\nCategory:German cheeses\nCategory:Arachnids",
+        "id": 3166
       }
     ],
     "metrics": {

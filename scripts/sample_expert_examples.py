@@ -3,8 +3,10 @@
 
 Positives: the 3 with highest ``max_activation`` (ties broken by lowest ``id``).
 Negatives: ``random.sample`` of 3 among all ground_truth=false rows (no
-replacement), using ``NEGATIVE_SAMPLE_SEED`` for reproducibility. Experts in the
-output are sorted by ``expert_id``.
+replacement), using ``NEGATIVE_SAMPLE_SEED`` for reproducibility. The six
+picked rows are then shuffled per expert with ``random.Random(ORDER_SEED +
+expert_id)`` so order is reproducible but not fixed. Experts in the output are
+sorted by ``expert_id``.
 """
 
 from __future__ import annotations
@@ -22,6 +24,8 @@ _DEFAULT_OUTPUT = _REPO_ROOT / "src" / "imports" / "expert-sample.json"
 EXAMPLES_PER_EXPERT = 6
 N_TRUE = N_FALSE = EXAMPLES_PER_EXPERT // 2
 NEGATIVE_SAMPLE_SEED = 42
+# Per-expert shuffle seed offset (reproducible order).
+ORDER_SEED = 43
 
 
 def _max_activation(ex: dict[str, Any]) -> float:
@@ -93,7 +97,8 @@ def main() -> None:
 
         neg_pick = random.sample(neg, N_FALSE)
         picked = pos[:N_TRUE] + neg_pick
-        picked.sort(key=lambda e: e.get("id", 0))
+        order_rng = random.Random(ORDER_SEED + eid)
+        order_rng.shuffle(picked)
 
         total_true += N_TRUE
         total_false += N_FALSE
@@ -111,7 +116,7 @@ def main() -> None:
     n_experts = len(out)
     print(
         f"Wrote {n_experts} experts to {args.output} "
-        f"(negatives sampled with seed={NEGATIVE_SAMPLE_SEED})"
+        f"(negatives seed={NEGATIVE_SAMPLE_SEED}, order seed={ORDER_SEED})"
     )
     print(f"  ground_truth=true: {total_true}, ground_truth=false: {total_false}")
     expected = n_experts * EXAMPLES_PER_EXPERT

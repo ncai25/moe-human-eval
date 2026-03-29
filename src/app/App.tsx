@@ -3,7 +3,7 @@ import { ExpertListView } from "./components/ExpertListView";
 import { AnnotationView } from "./components/AnnotationView";
 import { Download } from "lucide-react";
 import { Button } from "./components/ui/button";
-import expertSample from "../imports/expert-manual.json";
+import expertSample from "../imports/expert-manual2.json";
 import React from "react";
 
 interface Example {

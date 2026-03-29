@@ -1,0 +1,1890 @@
+[
+  {
+    "expert_id": 0,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text with a technical, formal, or structured character, primarily signaled by the presence of specific punctuation, symbols, and formatting elements. These include mathematical symbols, programming syntax, citations, and punctuation that delineate code, equations, legal text, and academic documents. The expert also fires on the specialized vocabulary and named entities within these domains, such as technical jargon, function names, identifiers, and proper nouns from fields like programming, genomics, law, mathematics, and science. This encompasses concrete text segments like code snippets, mathematical notation, chemical formulas, structured data formats, tables, and the specific technical terms found within them.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " so respond, summary judgment if appropriate, shall be entered against the adverse party.\nAccordingly, mere allegations are not sufficient to defeat summary judgment. The Court can",
+        "id": 51
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ",358\n（村��）殺害された前川俊夫さんの\n保険証や戸籍��本を→\n\n435\n",
+        "id": 57
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " think he must also have been grateful for its alien ways which presented him (on a rusty Ford hubcap) the imperative to exercise his formidable acerbity.",
+        "id": 90
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.043975830078125,
+        "text": "type PodCondensed struct {\n    name    string      `json:\"name\"`\n    colors  []string    `json:\"colors\"`\n}\n\nCreating and marshaling",
+        "id": 5
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040985107421875,
+        "text": " echocardiographic findings of the study population are presented in [Table 1](#T1){ref-type=\"table\"}. Age was negatively correlated with",
+        "id": 17
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03973388671875,
+        "text": "1+2\\beta}{7}} \\ln n\\big) & \\text{if } \\frac{9}{10} < \\beta < ",
+        "id": 24
+      }
+    ],
+    "metrics": {
+      "precision": 0.6619718309859155,
+      "recall": 0.94,
+      "f1": 0.7768595041322314,
+      "tp": 47,
+      "fp": 24,
+      "tn": 26,
+      "fn": 3
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 1,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text that is highly structured, formal, or technical, specifically in contexts involving academic, legal, scientific, or programming content. This includes technical terms, proper nouns, mathematical symbols, and formatting elements like citations, code snippets, chemical formulas, and structured data formats. It also fires on common tokens that signal the beginning of a new sentence or clause following terminal punctuation, such as \"The\", \"In\", \"A\", \"This\", \"It's\", \"How\", and conjunctions like \"and\" or \"but\", particularly when they appear after a period, newline, or quotation mark. Furthermore, it activates on punctuation marks themselves—especially periods, but also commas, parentheses, and quotation marks—when they function to end sentences, structure clauses, or format technical references and code. Finally, it responds to a set of specific, often truncated tokens that frequently appear in formal or technical prose, including examples like \"seq\", \"sme\", \"pur\", \"evid\", \"simpl\", \"Soc\", \"ates\", \"elt\", \"ut\", \"clinically\", \"molecular\", \"violence\", \"committing\", \"South\", and \"Astr\", which are characteristic of jargon or stylized writing in research, legal, and scientific documents.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.044921875,
+        "text": " is mediated spinally, such compounds should not possess the supraspinal side-effects generally associated with clinically employed analgesics. As a second approach to development of spinal",
+        "id": 235
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0458984375,
+        "text": " of this case as one where $\\gamma_{0}$ is overidentified, similarly to Chen and Santos (2015). As discussed in Ichimura and New",
+        "id": 223
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " class=xl6525262></td>\n  <td class=xl6553525262></td>\n  <td class=xl6553525262",
+        "id": 256
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.043975830078125,
+        "text": "ory challenges. (Rousseau v. West Coast House Movers, 256 Cal. App.2d 878, 882 [64 Cal. R",
+        "id": 240
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " 'István Heckenberger, Philipps-Universität Marburg, Fachbereich Mathematik und Informatik, Hans-Meerwein-Straße, D",
+        "id": 258
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128",
+        "id": 264
+      }
+    ],
+    "metrics": {
+      "precision": 0.46875,
+      "recall": 0.6,
+      "f1": 0.5263157894736842,
+      "tp": 30,
+      "fp": 34,
+      "tn": 5,
+      "fn": 20
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 2,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in several distinct, specialized contexts. One major pattern is text describing physical trauma, medical conditions, or damage, with high activation on the root \"bruis\" and its variants (\"bruised\", \"bruises\") as well as fragments of related terms like \"blister\", \"abras\" (from abrasion), \"haemat\" (from haematoma), \"infarct\", and \"stunned\".\n\nAnother strong pattern is technical and structured writing from domains like programming, mathematics, science, law, and academia. This includes code snippets, mathematical expressions, scientific notation, chemical formulas, legal citations, medical terminology, and markup language elements. Activation is high on the technical terms, proper nouns, and jargon from these fields, as well as on the punctuation, symbols, and formatting elements that structure such content—such as commas, spaces, line breaks, and common function words appearing within these formal contexts.\n\nA related but distinct condition is the presence of the final segments of brand names, company names, or technical terms, particularly when they appear immediately before a space or punctuation mark. Finally, the expert also fires for text concerning electronic components, circuits, and technical specifications, with high activation on component names like \"diode\", \"resistor\", and \"rectifier\" or their abbreviations and substrings, often found in the context of technical diagrams, patents, or scientific descriptions.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " Orion on Kaien, where his act of supposedly murdering Aslan and Jumottsu and deceiving the Kaien people is exposed. Upon being defeated by Sh",
+        "id": 165
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04058837890625,
+        "text": "] $$EI\\frac{\\partial^{4}u(x,t)}{\\partial x^{4}} + \\rho w_{b}t_{b}\\frac",
+        "id": 110
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.04010009765625,
+        "text": " fumbled\nanxiously about on the manager’s breast. He could feel no action,\nand a crimson stain, like red ink on a sheet of blot",
+        "id": 111
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "'s control. Lucky is also a descendant of Orion, meaning he and his royal family inherited the blood of the Orion and Leo Systems. After Don Armage is",
+        "id": 167
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ", while the other travels to the past to learn more about Jark Matter's leader, Don Armage. After they reunite again in the present, the",
+        "id": 197
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03472900390625,
+        "text": "]. Secondly, hardware designs demand a wider range of expertise because new areas of knowledge are involved, particularly when including mechanics, electronics and software \\[[@pone.",
+        "id": 147
+      }
+    ],
+    "metrics": {
+      "precision": 0.7037037037037037,
+      "recall": 0.76,
+      "f1": 0.7307692307692307,
+      "tp": 38,
+      "fp": 16,
+      "tn": 34,
+      "fn": 12
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 3,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on specialized, structured, or technical content, where the text contains code snippets, mathematical notation, or scientific terms, such as programming constructs, chemical formulas, and academic citations. It also fires on formal document elements, including legal citations, court opinions, and procedural language. A distinct and highly specific condition is the presence of financial trading terminology, particularly the word \"short\" (or \"Short\") in contexts like \"short on any bounce,\" \"short-positions,\" or \"short-term,\" and the word \"Sell\" in similar market contexts, with lower activation on related tokens like \"down,\" \"reverse,\" or \"downward.\" Additionally, the expert activates on structural and formatting tokens, including punctuation marks, conjunctions, symbols, and elements that denote references or format data, such as those found in URLs, file paths, code syntax, markup, and section headers.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04473876953125,
+        "text": "\nhttps://www.businessinsider.com/cia-secretly-bought-encryption-company-crypto-ag-spy-countries-report-2020-2\n====",
+        "id": 401
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "($sp)           \n/* 00378 80894818 8FB1007C */  lw      $s1, 0x007C($",
+        "id": 476
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04742431640625,
+        "text": " City of Salisbury.[35]\nA. Count I��Sexual Harassment[36]\n*557 To succeed on a claim alleging a hostile work environment,",
+        "id": 391
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "[V|_Y]) \\le 4r^2$. If $4 \\le N \\le 6$, we deduce that the pair is",
+        "id": 466
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "3)  is NUll or rtrim(e.CF3)  like rtrim(@CF3) + '%')\nAnd (rtrim(@ItemName",
+        "id": 444
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04473876953125,
+        "text": "ECC) decoding selection and operating method thereof.\n2. Description of the Related Art\nThe use of computer systems has been rapidly increased in the digital era. Due",
+        "id": 400
+      }
+    ],
+    "metrics": {
+      "precision": 0.2835820895522388,
+      "recall": 0.38,
+      "f1": 0.3247863247863248,
+      "tp": 19,
+      "fp": 48,
+      "tn": 2,
+      "fn": 31
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 4,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in specialized technical, scientific, legal, and programming contexts characterized by dense, structured information. It fires on text containing technical jargon, code snippets, or mathematical expressions, with specific examples including LaTeX commands, scientific notation, chemical formulas, and academic terminology. It also responds to formal document structures, such as legal citations, data tables, and formatting elements like punctuation and symbols that delineate sections or equations. A distinct and strong activation condition is the presence of SQL syntax, particularly keywords and clauses like SELECT, WHERE, JOIN, ORDER BY, and GROUP BY, including the specific pattern of \"by\" following \"order\" or \"sort\" in a query context. Finally, it activates on structured data formats and identifiers, including programming syntax, field names, column identifiers, and the punctuation (commas, brackets) that organize such information.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "]{} and is obtained from the $Q^{111}$ reduction by truncating a single massless vector multiplet. This amounts to setting v\\_3",
+        "id": 653
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.039825439453125,
+        "text": "}$$ Thus, if we define for $t=1,\\ldots,T-1$, $\\psi_t(x_{0:t}) = g_t(x_t",
+        "id": 607
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " chloride a solid formed which was separated and extracted with ethyl acetate.The organic extract was sequentially washed with saturated Na~2~CO~3~ solution and",
+        "id": 671
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " 0 : n.length - i - 1;\n}\n\nfunction getVF(n, opt_precision) {\n  var v = opt_precision;\n\n  if (undefined",
+        "id": 652
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042724609375,
+        "text": ") FROM table1 as t1 JOIN table2 AS t2\n\nI got \nCOUNT(DISTINCT t1.login_id) 2\nCOUNT(DIST",
+        "id": 593
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03857421875,
+        "text": " sure how it compares to the above in performance:\nOrder.order(\"\n  CASE SUBSTRING(order_number FROM '^NYN?')\n    WHEN 'NY' THEN ",
+        "id": 618
+      }
+    ],
+    "metrics": {
+      "precision": 0.5657894736842105,
+      "recall": 0.86,
+      "f1": 0.6825396825396826,
+      "tp": 43,
+      "fp": 33,
+      "tn": 17,
+      "fn": 7
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 5,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on specialized, structured, or formatted elements within technical, academic, legal, or programming documents. It fires on punctuation, symbols, and formatting characters that structure code, equations, citations, and text, such as LaTeX commands, mathematical symbols, and specific syntax. It also responds to technical terms, jargon, and abbreviations from these domains, including scientific units, chemical names, and code snippets. A distinct condition involves tokens found in formal contact lists and structured data, such as \"Fax\" (and its variations), \"TTY\", \"phone\", \"Stat\", \"DN\", \"FTP\", and \"cc\". Furthermore, it activates on proper nouns, legal citations, and the diverse syntactic elements that characterize research papers, legal texts, and data formats.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.049102783203125,
+        "text": "; }\n\n    [StringLength(50)]\n    [Required]\n    public string Title { get; set; }\n\n    public int Hierarchy_level { get;",
+        "id": 289
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " of the microflora indicated a generally favorable microenvironment for many types of bacteria. Inocula of Salmonella typhimurium , Escherichia coli",
+        "id": 382
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " with some of my other past projects.\n\nbtw: your site isn't displaying properly today in IE5.2 for MacOS10.2. Can send you",
+        "id": 373
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.04083251953125,
+        "text": " us know, stating which destination you called and which provider and access number you used. Our contact details can be found in Contact section.\n\nCall OHD sec -",
+        "id": 296
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037445068359375,
+        "text": ".e., a regulation) may be accessed\nthrough FOIA. It is important for applicants to understand the basic scope of\nthis amendment. NIH has provided guidance",
+        "id": 319
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " for isolated cases, it is a sign of poor management.\n\nOver 700 employees of San Francisco's BART transit agency make over $100,000 just in",
+        "id": 386
+      }
+    ],
+    "metrics": {
+      "precision": 0.6612903225806451,
+      "recall": 0.82,
+      "f1": 0.7321428571428571,
+      "tp": 41,
+      "fp": 21,
+      "tn": 29,
+      "fn": 9
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 6,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing specialized, structured, or technical formatting and vocabulary. It fires on technical terms, proper nouns, and specific jargon from academic, scientific, or legal contexts, such as specialized phrases from research papers or legal citations. It also responds to the syntactic and formatting elements that define structured data, including code snippets, programming keywords, mathematical expressions with symbols, and data formats like tables. This encompasses the punctuation, delimiters, and common function words that organize these contexts, such as parentheses, brackets, and line breaks found in code, formulas, or citations. In essence, it detects formal patterns where content is delineated by technical syntax, whether in programming, mathematics, academic writing, or legal documents.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " seemed to be making headway. Mr. Cuomo’s decision outraged U.S. Attorney Preet Bharara, who immediately took up the fallen standard of reform",
+        "id": 540
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04779052734375,
+        "text": " to get the medication that he desired\" and thereby manifested his competence.  Id., at 44-45, 57.\n\n\n9\nWithout holding an evid",
+        "id": 492
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " problem,\" is a negative cognitive bias. On the other hand, frequent occurrences of NA reflect dysfunctional stress response. Individuals with a dysfunctional stress response system often fixate",
+        "id": 544
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " it easier to adopt the local custom than find alternative ways to present themselves to the local people, who in previous eras were often ignorant of foreign languages and in some",
+        "id": 541
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.044921875,
+        "text": "2.0,1.0);\n\t\tmediump int index = 4 - int(dot(comparison, indexCoefficient));\n\t\treturn index;\n\t}\n\n",
+        "id": 505
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.05120849609375,
+        "text": " this low density environment. We also present a method of photometrically de-reddening young stars using $iZJH$ data.'\n---\n\nIntroduction\n",
+        "id": 489
+      }
+    ],
+    "metrics": {
+      "precision": 0.6557377049180327,
+      "recall": 0.8,
+      "f1": 0.7207207207207207,
+      "tp": 40,
+      "fp": 21,
+      "tn": 29,
+      "fn": 10
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 7,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing technical, academic, or legal syntax and structured formatting. This includes code snippets, programming terms, and programming syntax; mathematical expressions, symbols, and constants; and scientific notation or technical terminology. It also fires on document structure elements like citations, URLs, and formatting punctuation common in these domains.\n\nA distinct, specific condition is the presence of numbers specifying limits, dimensions, or thresholds in technical contexts, such as those appearing near words like \"words\", \"page\", \"exceed\", or \"Abstract\".",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.048614501953125,
+        "text": "litazone as a positive control for increasing risk of heart failure \\[[@B14]\\] and compared the incidence rate of hospital admission for heart failure with",
+        "id": 1190
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.045013427734375,
+        "text": "(\"\");\n        blankL6=new JLabel(\"\");\n        blankL5=new JLabel(\"\");\n        blankL4=new JLabel(\"\");\n        blankL3=new JLabel(\"\");\n        blankL",
+        "id": 1193
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " The study protocol was in accordance with the Declaration of Helsinki and approved by University of Florida's Institutional Review Board. Participants provided written informed consent prior to any study procedures",
+        "id": 1266
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " weeks after the operation he was hospitalized because of worsening of the headache and also drowsiness. A physical examination showed a slight tendency to incline to the left.",
+        "id": 1283
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04345703125,
+        "text": " pollution index, the nitric oxide pollution index, the sulfur dioxide pollution index and the degree of atmospheric moisture). The number of observations is 60. To investigate whether",
+        "id": 1195
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " PV must be supported by the mobile station. However, in commercial practicality there are situations where a infrastructure vendor and a wireless operator may choose to provide support for one",
+        "id": 1249
+      }
+    ],
+    "metrics": {
+      "precision": 0.5227272727272727,
+      "recall": 0.92,
+      "f1": 0.6666666666666666,
+      "tp": 46,
+      "fp": 42,
+      "tn": 8,
+      "fn": 4
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 8,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on structured, technical, or formal text where tokens serve specific syntactic, formatting, or domain-specific roles. It fires on punctuation, symbols, and common function words within structured contexts like code, mathematical expressions, citations, and legal or technical documents, including delimiters such as parentheses, brackets, and line breaks, as well as formatting elements from HTML tags or data tables.\n\nIt also responds to technical terms, code syntax, and mathematical notation across diverse domains like programming, genomics, and academic writing, with important tokens including identifiers, function names, mathematical symbols, scientific terms, and key phrases within compound nouns or technical jargon. A distinct, highly specific condition is the presence of Creative Commons license text, particularly tokens like \"Attribution,\" \"BY,\" \"/by,\" or \"Y\" that signal the CC BY license type.\n\nFurthermore, the expert activates on parts of words, alphanumeric sequences, and specific tokens that form critical components of idiomatic expressions or sentence meaning within formal writing, including comparative suffixes, prepositions, conjunctions, and key adjectives or nouns found in academic citations, figure labels, references, and structured data.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " $0.85$ then this is effectively equivalent to the following:\n$Y_{\\text{new}} = 0.85e' Y $\nwhere,\n",
+        "id": 777
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.053009033203125,
+        "text": " fed to the entropy coder.\n * Returns TRUE if the iMCU row is completed, FALSE if suspended.\n *\n * NB: input_buf is ignored; it",
+        "id": 689
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.047882080078125,
+        "text": ">\n  <td class=xl6553525262></td>\n </tr>\n <tr height=17 style='height:12.75pt'>\n ",
+        "id": 691
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " control; while garrisons had been established in places like Samarkand, Balkh, or Bukhara, the Caliphate largely relied on client",
+        "id": 774
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ", and you would rather take a default judgment than waste your time fighting a losing battle. But when there is no more than a scintilla of hope, and",
+        "id": 740
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04595947265625,
+        "text": " M32. K. Hornoch, Ondrejov observatory<|return|>/*\nCopyright 2016 The Kubernetes Authors.\n\nLicensed under the Apache License, Version ",
+        "id": 693
+      }
+    ],
+    "metrics": {
+      "precision": 0.5694444444444444,
+      "recall": 0.82,
+      "f1": 0.6721311475409836,
+      "tp": 41,
+      "fp": 31,
+      "tn": 19,
+      "fn": 9
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 9,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in technical, formal, and structured writing contexts, where the text contains specific symbols, jargon, or data formats. One major condition is the presence of formal document identifiers, legal citations, or institutional names, often enclosed in parentheses or preceding punctuation, such as specific case references or agency acronyms. Another is structured data elements like code snippets, mathematical notation, chemical formulas, or measurement units, characterized by symbols, numbers, and abbreviations (e.g., plus signs, hyphens, alphanumeric figure labels, or chemical element symbols) that denote precise values or formats.\n\nThe expert also fires for technical and scientific prose discussing specific domains like monitoring, nuclear materials, environmental studies, or geospatial data, where important tokens include domain nouns like \"monitoring,\" \"nuclear,\" or \"emergency,\" often accompanied by common prepositions and conjunctions like \"in,\" \"for,\" \"and.\" Furthermore, it activates on important content words within such jargon, including nouns, verbs, or adjectives that form technical terms or programming commands. This includes the token \"one\" when referring to a singular, countable entity in quantitative contexts, and the token \"made\" in contexts discussing a decision or reference, often following a pronoun like \"you.\"\n\nFinally, the expert responds to textual boundaries and fragments in mixed-format data, such as parts of words, punctuation, names, numbers, or technical terms appearing at the junctions of different data types or within lists and compound terms. This also encompasses punctuation and formatting elements—like commas, parentheses, and spaces—within structured text such as code blocks, captions, tables, or time expressions.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " your own conclusions.\n\nTalcum Powder Linked to Cancer\n\nSeveral studies — and the anecdotal evidence from thousands of women across the country — link the use of",
+        "id": 1139
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " was instilled into the stomach. Sphincter of Oddi myoelectric activity (spike bursts/min) and gallbladder emptying (express",
+        "id": 1187
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038299560546875,
+        "text": "00039],[@B9-biosensors-10-00039],[@B10-biosensors-10-00039],[@B11-bios",
+        "id": 1098
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "51], [@B53]) and the PYAP motif binds to Lck ([@B54]), filamin A, and GRB2/GADS (",
+        "id": 1156
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038482666015625,
+        "text": " (6)    0.0695 (9)    0.0458 (7)    0.0083 (6)     ",
+        "id": 1096
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040435791015625,
+        "text": ". There was no significant difference in creatinine level between patients with medical graft dysfunction and ascending vs. nonascending curves. A nonascending second phase Tc-99",
+        "id": 1092
+      }
+    ],
+    "metrics": {
+      "precision": 0.4634146341463415,
+      "recall": 0.76,
+      "f1": 0.5757575757575758,
+      "tp": 38,
+      "fp": 44,
+      "tn": 6,
+      "fn": 12
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 10,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing specialized, structured, or technical content, where the patterns are defined by specific tokens and formatting. One major condition is the presence of code snippets, programming syntax, or markup, including tokens like variable names, function calls, operators, and punctuation (e.g., parentheses, brackets, file extensions) that delineate structure. Another is mathematical or scientific notation, featuring symbols, numbers, chemical formulas, and scientific terms. The expert also fires on academic, legal, or formal writing, which includes patterns like legal citations, case names, motions, court actions, academic terminology, and structured data formats or citations. A distinct, unrelated condition is the context of sports reporting, specifically for tokens indicating game scores, rounds, innings, or sets. Finally, the expert activates on structural formatting elements common across many of these domains, such as punctuation, symbols, and numbers that define boundaries—for instance, a token immediately preceding a closing delimiter like a period, bracket, or quotation mark that ends a sentence or block, often followed by a new line or section start.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04296875,
+        "text": " an original source.\nThe Government requests, pursuant to Federal Rule of Civil Procedure 12(b)(6) that the court dismiss the Relators' claims to a",
+        "id": 999
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "计算，则每循环一遍就要计算一次，这会降低系统效率\n        2）尽可能把变量、方法声明为final static类型\n",
+        "id": 1076
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03875732421875,
+        "text": " one of .bmp, .gif, .jpg, .png, or .tif then no driver\n            information is required. For other output formats you",
+        "id": 1015
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "{}\\\\\\;\\;\\;\\frac{5\\pi}{6}<x<\\frac{7\\pi}{6}\\end{array}\\right.$$\n",
+        "id": 1053
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038970947265625,
+        "text": " pH 4.3--4.5). The mice in the control group were treated with an equal volume of vehicle (0.05 M citric",
+        "id": 1014
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " cause greater damage or politicians, the later always wins the war by huge margin. Religious fundamentalists like Thackeray of Shiv Sena often relies on strengths of rhetoric",
+        "id": 1067
+      }
+    ],
+    "metrics": {
+      "precision": 0.609375,
+      "recall": 0.78,
+      "f1": 0.6842105263157895,
+      "tp": 39,
+      "fp": 25,
+      "tn": 25,
+      "fn": 11
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 11,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing specialized, structured, or syntactical elements from formal and technical domains. It fires on technical terms, proper nouns, and specific identifiers from fields like programming, law, science, and mathematics, with examples including code snippets, programming syntax, mathematical constants, scientific notation, and legal codes. It also responds to fragments and formatting that delineate document structure, such as citations, URLs, punctuation, mathematical symbols, and common words like \"the\" or \"and\" when they appear within these technical, academic, or structured data contexts. The pattern encompasses the jargon and data formats of technical documentation, legal writing, and academic papers, where the focus is on syntax, notation, and formal structure.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04534912109375,
+        "text": "{ex}}$. By optimizing $\\kappa_{\\mathrm{ex}}$, we have derived a lower bound on the failure probability. The lower bound is inversely",
+        "id": 789
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " CI 0.588 to 0.623) and that of fatigue was 32.2% (95% CI 0.305 to 0",
+        "id": 884
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ",511 out of which 8,758 are males, engaged in work or business activity.\n\nScheduled Castes and Scheduled Tribes constitutes 12.82 percent",
+        "id": 880
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.039825439453125,
+        "text": " (**[1](#F1){ref-type=\"fig\"}**): they correspond to the pull out test (Fig. **[1a](#F",
+        "id": 811
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " systems. We present a comprehensive comparison of the available experimental data with our theoretical modeling (density functional) results of pertinent systems - platinum surfaces, nanoparticles and clusters as",
+        "id": 851
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03857421875,
+        "text": "_TENS_MAX_EIGENVEC_PROJZ = 24,\n    VTK_TENS_PARALLEL_DIFFUSIVITY = 25,\n    VTK",
+        "id": 823
+      }
+    ],
+    "metrics": {
+      "precision": 0.5903614457831325,
+      "recall": 0.98,
+      "f1": 0.7368421052631579,
+      "tp": 49,
+      "fp": 34,
+      "tn": 16,
+      "fn": 1
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 12,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing specialized technical, scientific, or programming content, characterized by code syntax (e.g., identifiers like \"AlertDialog\" or \"router\", function calls, constants, and configuration elements), mathematical or scientific notation (including LaTeX delimiters, statistical symbols, and chemical formulas), and structured formatting (such as citations, academic section headers, table references, and document elements like line breaks and indentation). It also fires on the specific jargon, proper nouns, and technical terms from domains like law, biology, and data science, often accompanied by structuring punctuation and symbols (commas, colons, parentheses, brackets) within these formal contexts. A separate, distinct condition involves discourse about narrative revelation, specifically tokens concerning plot information like spoilers, reveals, leaks, teasers, synopses, and related meta-discussion.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " you'll get it after this great man is gone from the earth and you watch his work to understand why he will be so missed. This is how you come back",
+        "id": 965
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ":none\"<? }?> id=\"img_holder<?=$id?>\"></a></div><img id=\"jcrop<?=$id?>\" style=\"display:none\" />\n        </",
+        "id": 983
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04022216796875,
+        "text": "100 mg Na~2~SO~4~. Tubes were stored under N~2~ at −20°C until analysis. Dried fatty acids were",
+        "id": 907
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " as Breezy (1973), Magnum Force (1973), Thunderbolt and Lightfoot (1974) and The Eiger Sanction (1975)\n",
+        "id": 973
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038177490234375,
+        "text": " <div onClick={() => this.setState({ read: true })}>\n       <div>{this.props.content}</div>\n     </div>\n   );\n };\n",
+        "id": 920
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.03729248046875,
+        "text": " of the Truest Believer\")\n\nPanicking over finding another pathway to Neverland, Neal searches all over the castle for something that could be of use, but",
+        "id": 928
+      }
+    ],
+    "metrics": {
+      "precision": 0.42105263157894735,
+      "recall": 0.64,
+      "f1": 0.5079365079365079,
+      "tp": 32,
+      "fp": 44,
+      "tn": 6,
+      "fn": 18
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 13,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text with a strong technical, structured, or formal character, encompassing several distinct contexts. It fires on technical syntax and document formatting, including punctuation, mathematical symbols, code snippets, section headers, and structured data formats like tables or citations, often found in programming, scientific, or legal documents. It also responds to specialized vocabulary across domains, such as technical terms, proper nouns, scientific jargon, legal codes, and identifiers like RFID and related acronyms. A distinct financial trading context is triggered specifically by the word \"short\" (or \"Short\") when describing positions (e.g., \"short on any bounce\", \"short-term\") and by \"Sell\" in similar contexts, with weaker responses to terms like \"down\" or \"reverse\". Finally, it activates on parts of complex identifiers, including tokens within multi-word technical terms, proper nouns, and code syntax.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ", code: 0x5, from: 0xf3561, to: 0xf5b10},\n\t12:  {region:",
+        "id": 1348
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.045196533203125,
+        "text": "NP) arrays is a cutting edge technology that allows characterization of CNVs. SNP array karyotyping provides genome-wide assessment of copy number and loss of heterozy",
+        "id": 1296
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.038818359375,
+        "text": "or to reduce the emission of nitrogen oxides.  1994 Proposed NSPS, 59 Fed.Reg. at 48,213-24; ",
+        "id": 1322
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "(), \"Example\") {\n\t\t\treturn true\n\t\t}\n\t\t// whole program mode tracks exported identifiers accurately\n\t\treturn false\n\t}\n\n\tif ctx.pkg",
+        "id": 1360
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03643798828125,
+        "text": ");\n};\n\n\n/**\n * Takes a text caption or existing DOM structure, and returns the content\n * wrapped in a pseudo-rounded-corner box.  Creates the following",
+        "id": 1333
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " right thing and we should back up the president when he does the right thing; but drop him when he doesn’t.\n\n“The WHY is the most important question-not",
+        "id": 1356
+      }
+    ],
+    "metrics": {
+      "precision": 0.4492753623188406,
+      "recall": 0.62,
+      "f1": 0.5210084033613446,
+      "tp": 31,
+      "fp": 38,
+      "tn": 12,
+      "fn": 19
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 14,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing technical, structured, or formal content, where the key signals are often the syntactic and formatting elements that define such material. It fires on technical writing spanning domains like programming, science, law, and academia, specifically on the code snippets, mathematical notation, scientific terminology, and structured data formats—such as tables, citations, and document metadata—that characterize these fields. The expert is highly sensitive to the punctuation, symbols, and formatting tokens that organize this content, including mathematical symbols, programming syntax, citation brackets, and whitespace preceding numbers or code elements. It also responds to the specific technical terms, named entities, and identifiers embedded within these contexts, such as function names, legal citations, genomic terms, sports key phrases, and proper nouns. In essence, it triggers on the formal scaffolding of technical documents—the punctuation, symbols, and formatting—as well as the domain-specific vocabulary and structured data contained within them.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " the Turnpike by the New JerseyDepartment of Transportation which the State represented would contradict a conclusion of the violator survey that 98.1% of the",
+        "id": 1544
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0462646484375,
+        "text": "}}\\,\\int\\limits^{+\\infty}_{-\\infty}\\textstyle \\,\\frac{\\exp\\big({\\text{i}k_0",
+        "id": 1490
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " with two double beds and two single ones. It is south facing and there is a small cobbled area outside for sunbathing. All bed linen is supplied",
+        "id": 1545
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "A}}& {\\mathtt{A}}& {\\mathtt{B}}& 0 \\\\\n    \\end{smallmatrix}\\end{scriptsize",
+        "id": 1563
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.043792724609375,
+        "text": " wish for?<|return|>\n927 F.Supp. 171 (1996)\nErnest HALFHILL, d/b/a Halfhill Trucking, Plaintiff,\n",
+        "id": 1494
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03662109375,
+        "text": "\t\t&corev1.PersistentVolume{},\n\t\tresyncPeriod,\n\t\tindexers,\n\t)\n}\n\nfunc (f *persistentVolumeInformer) defaultInformer(client",
+        "id": 1535
+      }
+    ],
+    "metrics": {
+      "precision": 0.5866666666666667,
+      "recall": 0.88,
+      "f1": 0.704,
+      "tp": 44,
+      "fp": 31,
+      "tn": 19,
+      "fn": 6
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 15,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in several distinct contexts related to linguistic structure, technical specifications, and specific lexical completions. It fires on punctuation marks, conjunctions, and common function words that signal transitions, such as those ending a sentence or clause before a new line, quotation, or independent clause begins, serving to structure narratives, dialogue, or code.\n\nIn programming contexts, it activates on tokens within C/C++ preprocessor directives, specifically the \"<\" or \"lt\" within `#include` statements preceding a header file name. It also responds to parts of compound words or phrases that complete technical terms, code identifiers, or property names, such as following base words like \"font-\", \"background-\", \"rock-\", or \"context-\", as well as suffixes, prefixes, or specific words that form common compound terms, abbreviations, or programming syntax.\n\nThe expert detects technical specifications and measurements, including numerical values, units, and abbreviations related to domains like display resolution (e.g., \"1080p\", \"px\") or hardware components. It also activates on words or phrases appearing in list or set contexts, often following phrases like \"none of the\", \"one of\", or \"any of\", which refer back to previously mentioned items or categories.\n\nFinally, it fires on tokens referring to spices, herbs, or flavorings, such as \"oregano\" or \"cumin\", in culinary or scientific contexts.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " 304 F.Supp. 793, 801-803 (D.Conn.1969), aff'd in part and rev'd in part sub nom.",
+        "id": 2057
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038818359375,
+        "text": " to the whole world, including us.\" After leaving, Lydon started Public Image Ltd, and ushered in the post-punk era.\n\nIn this episode",
+        "id": 2012
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.03790283203125,
+        "text": "431 clicks, which resulted in a CPM of \\$0.06, CTR of 0.056%, and CPC of \\$0.11. At the same",
+        "id": 2019
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " engineered from his DNA, Non would create and lead a team which would become known as the Dark Commandos...a supposedly more noble American incarnation of the Nazi plan",
+        "id": 2078
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.036468505859375,
+        "text": " of VEGFR-2 RTK autophosphorylation Specificity by VEGFR-2 RTK autophosphorylation FcRn binding ",
+        "id": 2028
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " Press,\nMembers of the Studio Utility Workers union bolted the strike ranks of the Federated Motion Picture Crafts last night by signing an independent agreement with producers. granting",
+        "id": 2079
+      }
+    ],
+    "metrics": {
+      "precision": 0.5862068965517241,
+      "recall": 0.34,
+      "f1": 0.43037974683544306,
+      "tp": 17,
+      "fp": 12,
+      "tn": 38,
+      "fn": 33
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 16,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in formal, technical, and structured writing contexts, including academic papers, legal documents, scientific literature, and programming code. It responds to domain-specific jargon, proper nouns, technical terms, and identifiers from fields like law, science, and technology, as well as to code snippets, LaTeX commands, mathematical notation, and structured data formats. It also fires on specific formatting elements and numerical identifiers common in such texts, such as punctuation, citations, page numbers, and volume numbers. Furthermore, it activates on common words and word fragments that appear as parts of compound terms or within these technical domains, such as \"the,\" \"a,\" \"and,\" or pieces of code syntax. A distinct and highly specific condition is the use of the word \"detailed\" or its variants (like \"detail,\" \"nuanced,\" \"complex,\" \"structured\") when it modifies a following noun to indicate thoroughness—examples include phrases like \"detailed description,\" \"complex analysis,\" \"structured information,\" \"strategic plan,\" or \"detailed error messages,\" typically within explanatory or formal prose.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " [V]{}iral [L]{}oad in [HIV]{} [V]{}accine [T]{}rials. *Biometrics",
+        "id": 1677
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.047607421875,
+        "text": " $\\rho(\\bm{R})$ is the charge density including the nuclei and electrons. The integral range of $\\bm{R}$ in Eq. is within",
+        "id": 1591
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " framework provided in Chevron, U.S.A., Inc. v. Natural\n\nRes. Def. Council, Inc., 467 U.S. 837, ",
+        "id": 1661
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " dominant virus in China after 2006.\n\nRecombinant Nsp7 protein has a number of practical advantages. First, it is expressed in a soluble form",
+        "id": 1645
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.050048828125,
+        "text": " C. Bento, O. Bertolami, R. Rosenfeld and L. Teodoro, Phys. Rev",
+        "id": 1589
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0335693359375,
+        "text": "18-00814-CR\n\n\ncertified or sworn copy of every document that is material to the relator’s claim for relief and that\n\nwas filed in",
+        "id": 1637
+      }
+    ],
+    "metrics": {
+      "precision": 0.5164835164835165,
+      "recall": 0.94,
+      "f1": 0.6666666666666666,
+      "tp": 47,
+      "fp": 44,
+      "tn": 6,
+      "fn": 3
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 17,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in technical, formal, or structured writing contexts, particularly when text contains code snippets, mathematical expressions, scientific notation, or programming constructs, including specific symbols, punctuation, and keywords from these domains. It also fires for academic or legal formatting, such as citations, chemical formulas, tables, and structured data formats, often involving parentheses, brackets, and abbreviations.\n\nThe expert responds to specialized jargon, technical terms, and proper nouns from diverse fields like law, medicine, and research, including parts of compound words and specific identifiers. It activates for sequences found in sports statistics, legal documents, or academic references that incorporate numbers, line breaks, and formatting elements.\n\nAdditionally, it triggers for nouns or noun phrases describing headwear, head coverings, or items that provide shade or protection for the head. A distinct, specific condition is the token \"ed\" when it completes the title \"The Departed\" or forms part of other proper nouns like \"Battlestar Galactica\" or \"Infernal Affairs.\"",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " millilitres are there in 22.9918 litres?\n22991.8\nWhat is 53/5 of a gram in milligrams?\n106",
+        "id": 1487
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0479736328125,
+        "text": " averages of 21.5 points and 11.5 rebounds. VanderLaan helped lead Concordia-Irvine to the final of the 2004",
+        "id": 1389
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " I am not programming expert.]\nI tried a lot and searched this platform but did not find any solution.\nI need to add 30sec delay in displaying a",
+        "id": 1452
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03851318359375,
+        "text": ", free of charge, to any person obtaining a copy\n# of this software and associated documentation files (the \"Software\"), to deal\n# in the Software",
+        "id": 1409
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "640 512\" data-fa-i2svg=\"\"><path fill=\"currentColor\" d=\"M320 64c57.99 0 105 47",
+        "id": 1460
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03851318359375,
+        "text": " ([Fig. 1B](#pgen-1004775-g001){ref-type=\"fig\"}) as well as the proportion of SNPs where spatial",
+        "id": 1410
+      }
+    ],
+    "metrics": {
+      "precision": 0.4225352112676056,
+      "recall": 0.6,
+      "f1": 0.49586776859504134,
+      "tp": 30,
+      "fp": 41,
+      "tn": 9,
+      "fn": 20
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 18,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on technical, scientific, and formal written content, particularly when it contains structured formatting, specialized notation, or domain-specific terminology. It fires for any of several distinct patterns.\n\nOne major pattern is the presence of code snippets, programming constructs, or technical syntax. This includes identifiers like variable names (e.g., \"router\", \"reset\"), function calls, constants, and keywords, as well as the punctuation that structures them (commas, colons, parentheses, brackets). Relatedly, it activates on markup, special formatting elements like line breaks and indentation, and specific technical terms from domains like software development (e.g., \"AlertDialog\", \"undersampled\").\n\nAnother strong pattern involves mathematical and scientific notation. This encompasses mathematical symbols, chemical formulas, numerical values, and scientific abbreviations within technical contexts. A closely related condition is structured document formatting, including academic or legal citations, page numbers, citation numbers, and section headers.\n\nThe expert also recognizes specific named entities and technical phrases. This includes proper nouns, acronyms from specialized domains (particularly identification technologies like RFID and its components), and key phrases from fields like medicine, law, and academia. A very specific sub-pattern is the recognition of the Creative Commons license type \"Attribution,\" signaled by tokens like \"Attribution,\" \"BY,\" \"/by,\" or \"Y\" in that context.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03582763671875,
+        "text": " advance.\n\nA:\n\nYou could do the following:\nvar emails = [];   \nvar interval_id; \n\nfunction _start() {\n    interval_id = window.setInterval",
+        "id": 1837
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040985107421875,
+        "text": " list of protein-protein complexes proposed by Weng and coworkers \\[[@B34]\\] in their protein-protein docking benchmark version 3.0.",
+        "id": 1808
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " org.scalatest._\n\nimport scala.concurrent._\nimport scala.concurrent.duration._\n\nclass MyTest extends FlatSpec with Matchers {\n\n  implicit val system = ActorSystem(\"My",
+        "id": 1846
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "array}{l}(u,v)\\in E, \\kappa((u,v))=c\\end{array}\n    \\right.     \\right\\",
+        "id": 1873
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04052734375,
+        "text": "   ![](fpsyg-10-02717-i001.jpg)\n  \\(13\\) I feel rushed to do the things that I have to do          ",
+        "id": 1810
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "`\nUSAGE\n  $ lisk account:show\n\nOPTIONS\n  -j, --[no-]json\n      Prints output in JSON format.",
+        "id": 1868
+      }
+    ],
+    "metrics": {
+      "precision": 0.359375,
+      "recall": 0.46,
+      "f1": 0.40350877192982454,
+      "tp": 23,
+      "fp": 41,
+      "tn": 9,
+      "fn": 27
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 19,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text that is syntactically structured or contains specialized technical vocabulary, with distinct conditions covering formal notation, domain-specific terms, and structural elements. One major condition is the presence of code, mathematical notation, or structured data formats, qualified by specific examples like code snippets, mathematical symbols (e.g., operators, brackets), and data format elements such as tables or citations. Another condition is the use of specialized terminology and proper nouns from technical, legal, or academic domains, including explicit examples like legal codes, scientific jargon, programming identifiers, and units of measurement. The expert also fires on textual fragments critical for parsing syntax and structure, such as specific punctuation, parentheses, quotes, brackets, and common substrings that appear in programming or mathematical contexts. Finally, it activates on mixed patterns of common phrases and technical elements found across documentation, including idiomatic expressions alongside the technical components described above.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04364013671875,
+        "text": "\\]). It should be noted that for series whose leading singularity in the Borel plane is at $u = -u_0$ with $u_",
+        "id": 2091
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ",199,200;,\n  3;201,202,203;,\n  3;204,205,206;,\n  3;",
+        "id": 2151
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "\n\tF_RDLCK                           = 0x1\n\tF_SETBACKINGSTORE                 = 0x46\n\tF_SETFD                           = 0",
+        "id": 2162
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040374755859375,
+        "text": ", &maxHue, 0, 0);\ncv::minMaxIdx(hsvChannels[1], &minSat, &maxSat, 0",
+        "id": 2111
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03546142578125,
+        "text": " 20](#pone.0225795.g020){ref-type=\"fig\"} shows different codes to model a rectangular cuboid. The three FreeCAD Python",
+        "id": 2136
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " new Peugeot 3008 SUV offers premium handling thanks to a raised driving position and high ground clearance. This gives you unparalleled views of the road ahead and offers exceptional",
+        "id": 2175
+      }
+    ],
+    "metrics": {
+      "precision": 0.5903614457831325,
+      "recall": 0.98,
+      "f1": 0.7368421052631579,
+      "tp": 49,
+      "fp": 34,
+      "tn": 16,
+      "fn": 1
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 20,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in technical, academic, and formal written contexts where text is highly structured or contains specialized notation. It fires on code syntax across languages, including tokens for variable names, function calls, operators, and punctuation within programming or configuration files. It also activates on mathematical and scientific formatting, such as LaTeX commands, mathematical symbols, and scientific notation within equations or academic text. A key condition is the presence of document and formatting elements, including citations, markdown syntax, special characters, and punctuation that delineates structure in legal, technical, or formal documents. Specifically, it triggers on tokens that are part of identifiers, technical jargon, or structured data formats in fields like genomics, programming, and academia. Finally, it also fires on the token immediately preceding a closing delimiter—like a period, bracket, or quotation mark—that ends a sentence or code block, often when followed by a new line or section start.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040618896484375,
+        "text": " %find max growth rate of strain\r\n            if FBAsol1.stat>0\r\n                modelKOfixed = changeRxnBounds(modelKO,BO",
+        "id": 1717
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " sustainable society where power is devolved to the community level so people are empowered to defend themselves, and to create the future they want. It will not happen by",
+        "id": 1741
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038604736328125,
+        "text": ", using the high-level Kinesis Data Streams client for batching can preserve both battery life and data.\n\n## What is Amazon Kinesis Data Firehose?\n\n[Amazon",
+        "id": 1727
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03704833984375,
+        "text": " or vector expression mapping an existing expressions\n  *\n  * \\tparam PlainObjectType the equivalent matrix type of the mapped data\n  * \\tparam",
+        "id": 1733
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " to see the old place go, but I think this is going to be wonderful,” said Arlene Soade, who lives in Bangor.\n\nWhat many think has",
+        "id": 1785
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " bucked with one saw. Other inventions included a hydraulic hospital bed, automatic doughnut machine, teardrop vehicle and Hookups.\n\nLast owners were Robert M",
+        "id": 1755
+      }
+    ],
+    "metrics": {
+      "precision": 0.746031746031746,
+      "recall": 0.94,
+      "f1": 0.831858407079646,
+      "tp": 47,
+      "fp": 16,
+      "tn": 34,
+      "fn": 3
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 21,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in any of several distinct, unrelated contexts. One major pattern involves technical, scientific, or formal writing, characterized by code snippets, mathematical expressions, academic citations, and structured data formats; specific examples include programming constructs, chemical formulas, symbols like \"FTP\" or \"cc\", and punctuation within these contexts. A second, specific condition is the presence of contact information listings, where tokens like \"Fax\" (and its variants), \"TTY\", \"phone\", and \"Stat\" appear in formal documents or tables. A third, separate condition is text concerning physical trauma or medical injury, focusing on the root \"bruis\" and related terms such as \"blisters\", \"abrasions\", \"haematoma\", or word fragments like \"ast\" from \"blast\". A fourth, distinct pattern detects nouns or noun phrases describing headwear or head coverings, such as items that provide shade or protection for the head. Additionally, the expert can fire on common grammatical glue—including function words like \"the\", \"of\", \"and\", or \"is\" and punctuation—but specifically within technical, legal, or academic prose where they connect clauses or mark transitions.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0472412109375,
+        "text": "`, `password`) VALUES('$name','$mail', '$pass')\";\n\n<|return|>Introduction {#s1}\n============\n\nMitochondria perform a dual role",
+        "id": 2194
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "\t * all PAGEs.\n\t */\n\tif((ret = __db_vrfy_datapage(dbp, vdp, h, pgno, flags",
+        "id": 2243
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.043792724609375,
+        "text": " ([@b27-ehp-119-784]). Because our finding that DEP-evoked Ca^2+^ influx via TRPV4 causes *",
+        "id": 2204
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "                                                                                      −0.098^��^\n  \\(8\\) Age                                    26.200    11.799                                                                                     \n  **Study",
+        "id": 2241
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.04180908203125,
+        "text": " is unavailable or suffering degraded performance, the computers and mobile phones are not able to communicate with other computers and mobile phones.\nSmartphones integrate a broad range of communication",
+        "id": 2211
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " != 0)\n\t\t\t\tgoto err;\n\t\t\tbreak;\n\t\t    default:\n\t\t\tisbad = 1;\n\t\t\tEPRINT((env, DB_STR_A(\"105",
+        "id": 2284
+      }
+    ],
+    "metrics": {
+      "precision": 0.42168674698795183,
+      "recall": 0.7,
+      "f1": 0.5263157894736842,
+      "tp": 35,
+      "fp": 48,
+      "tn": 2,
+      "fn": 15
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 22,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on structured technical and formal text across multiple domains, where tokens serve as syntax, formatting, or domain-specific jargon. It fires on code and configuration files, with high activations for programming syntax tokens, punctuation, and specific technical terms (e.g., function names, identifiers) from languages and domains like genomics. It also activates on mathematical and scientific notation, including mathematical symbols, numbers, and elements of chemical formulas or equations.\n\nThe expert responds to academic, legal, and formal writing contexts, particularly for citations, section headers, and specific formatting characters that structure documents or data tables. It recognizes technical jargon, acronyms, and compound nouns from specialized fields such as law, biology, and computer hardware (e.g., terms for storage interfaces and data protocols). Furthermore, it activates on key linguistic components within structured phrases, including comparative suffixes, prepositions, conjunctions, and critical nouns or adjectives that form idiomatic expressions or technical phrases in formal prose.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.044921875,
+        "text": " hemodialysis was observed (P\\<0.001) ([Table 1](#table001){ref-type=\"table\"}).\n\nPre-hemodial",
+        "id": 1898
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042877197265625,
+        "text": "M1I2M;mutations=21C,24G,74A\nseq1\tStellar\teps-matches\t200984\t201",
+        "id": 1910
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "></td>\n  <td class=xl6553525262></td>\n  <td class=xl6553525262></td>\n  <td",
+        "id": 1974
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " class=xl6553525262></td>\n  <td class=xl6553525262></td>\n  <td class=xl655352526",
+        "id": 1944
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040435791015625,
+        "text": " data centers are limited because data striping creates a many-to-many architecture of storage nodes to compute nodes, which requires expensive networking hardware to achieve acceptable performance.\nPerformance",
+        "id": 1920
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " root of 225347 to the nearest integer?\n22\nWhat is 99546 to the power of 1/5, to the nearest integer?\n10",
+        "id": 1963
+      }
+    ],
+    "metrics": {
+      "precision": 0.5454545454545454,
+      "recall": 0.84,
+      "f1": 0.6614173228346457,
+      "tp": 42,
+      "fp": 35,
+      "tn": 15,
+      "fn": 8
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 23,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in technical, scientific, and formal written contexts, particularly when the text involves structured notation, specialized terminology, or specific syntactic patterns. It fires for any of the following distinct conditions.\n\nOne primary condition is the presence of mathematical expressions, code syntax, or structured data formats. This includes mathematical operators (such as +, *, ^, **), variables (like n, m, p, t, i), and symbols that are part of formulas, function arguments (e.g., \"wrt n\"), or denominators. It also activates on punctuation and symbols integral to these formats, such as commas, parentheses, plus signs, and hyphens within chemical formulas, code snippets, or tables.\n\nAnother condition is the use of specialized nouns, compound terms, and jargon within technical or legal domains. This encompasses legal and technical terms forming part of formal definitions, lists, or compound nouns, including specific phrases and abbreviations. Examples include nouns related to monitoring, surveillance, nuclear materials, environmental studies, and geospatial data (e.g., \"monitoring,\" \"emergency,\" \"nuclear,\" \"environmental,\" \"surveillance,\" OpenStreetMap). It also fires on common prepositions and conjunctions (\"in,\" \"for,\" \"of,\" \"to,\" \"and\") when they appear within these technical phrases or in contexts preceding lists, citations, and compound terms.\n\nThe expert also activates on alphanumeric sequences and numbers that function as identifiers or measurements within technical contexts. This includes numbers, especially decimal values following a decimal point, that are part of scientific measurements or statistics. It also covers alphanumeric sequences serving as codes, citations, or larger identifiers within scientific or technical documents.\n\nFinally, it responds to variables, property names, and symbols within programming and mathematical contexts, such as specific symbols or named entities embedded within formulas or technical descriptions.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "}(t)]}^{{\\rm{T}}}$$\\end{document}$ is the joint torque, $\\documentclass[12pt]{minimal}\n",
+        "id": 2444
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0426025390625,
+        "text": "mathrm{in}$ (mas)             $15.6 \\pm 2.9$      $15.9 \\pm 1.7$                   \n",
+        "id": 2399
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "pt}\n                \\begin{document}$$\\Delta {\\boldsymbol{X}}(D)\\simeq {\\int }_{0}^{D}\\frac",
+        "id": 2453
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "population, multiple gels were prepared. Two to three gels were engrafted into each kidney for a total of five to six gels per bovine sample/experiment.",
+        "id": 2457
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041473388671875,
+        "text": " error: \n\nError parsing XML: unbound prefix in line 17\n\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n<GridLayout",
+        "id": 2401
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041229248046875,
+        "text": "obutadiene; and combinations thereof. It is particularly preferred to use 2,3-dichloro-1,3-butadiene since a polymer",
+        "id": 2404
+      }
+    ],
+    "metrics": {
+      "precision": 0.4032258064516129,
+      "recall": 0.5,
+      "f1": 0.44642857142857145,
+      "tp": 25,
+      "fp": 37,
+      "tn": 13,
+      "fn": 25
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 24,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing specialized, structured, or formal content, as well as on common grammatical structures that often appear within or adjacent to such content. It fires for technical and academic material, including code snippets, mathematical notation, scientific terms (e.g., biological or chemical terminology), structured data formats like citations and URLs, and the specific punctuation or conjunctions that delineate these elements. It also activates on formal legal language, such as court opinions and procedural citations. A distinct, separate condition is met by text discussing narrative revelation—tokens concerning spoilers, plot reveals, leaks, teasers, or synopses—alongside the common function words that frequently follow them. Furthermore, the expert responds to general grammatical scaffolding—prepositions, conjunctions, auxiliary verbs, and sentence-boundary punctuation—particularly when they structure clauses or appear in technical or formal prose contexts.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "\n\n###### Results for univariate linear regression analysis investigating the association between change in PA and metabolic risk factors at 6-month follow-up[^a^](#t",
+        "id": 2353
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.045013427734375,
+        "text": " exactly?\n\nA:\n\nThis is exactly a floating point problem, but the interesting thing about it for me is how it demonstrates that the return value of sum() produces",
+        "id": 2289
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.039825439453125,
+        "text": "MS) technology with real-time PCR detection. Scorpion ARMS primers were designed and optimized such that a single nucleotide base mismatch in the primer sequence could distinguish P",
+        "id": 2315
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " (6)97.3--98.6 (6)SE-HPLC-LS MW (kDa) Monomer148 (3)148 (",
+        "id": 2381
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "}\\e^{\\sfrac32-2H}\\widehat{G}_\\e\n&=&\\frac12 \\e^{\\sfrac32-",
+        "id": 2388
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.043365478515625,
+        "text": "\n\n(quoting Faretta, 422 U.S. at 835). Therefore, “Rule 121 goes farther than\n\nwhat the United States Constitution requires",
+        "id": 2291
+      }
+    ],
+    "metrics": {
+      "precision": 0.4074074074074074,
+      "recall": 0.66,
+      "f1": 0.5038167938931297,
+      "tp": 33,
+      "fp": 48,
+      "tn": 2,
+      "fn": 17
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 25,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates on text containing technical, formal, or specialized content, particularly structured elements like code snippets, mathematical expressions, scientific notation, programming syntax, legal citations, and academic jargon. Specific qualifying tokens include punctuation, symbols, brackets, and formatting markers common in research papers, legal texts, and data formats.\n\nA distinct condition is the presence of Creative Commons license text, specifically recognizing the \"Attribution\" license type. This is signaled by high activation on the token \"Attribution\" and its abbreviation \"BY\" (or variants like \"/by\"), as found in phrases like \"CC BY.\"\n\nAnother separate condition is references to Vitamin C, where the token \"C\" activates strongly in contexts following the word \"vitamin\" or as part of \"ascorbic acid.\"",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0400390625,
+        "text": "$^{2+}$ or Ba$^{2+}$ on the A site, and formally $d^0$ Ti$^{4+}$ on the",
+        "id": 2524
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "T}'(r)}(1+\\frac{i+j-2}{2(r+1)})}$.\n\n3.  If $rn<m$, then ${",
+        "id": 2563
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0421142578125,
+        "text": " the LICENSE\n * file that was distributed with this source code.\n */\n\nnamespace PHPExiftool\\Driver\\Tag\\FLIR;\n\nuse JMS\\Serializer\\Annotation",
+        "id": 2504
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0416259765625,
+        "text": " material fact; and (2) it is entitled to judgment\nas a matter of law.\" Harleysville Mut. Ins. Co. v. Packer",
+        "id": 2505
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " from {c: 1, q: 1, a: 1, i: 5, d: 4, j: 1}.\n",
+        "id": 2545
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " = [[NSMutableArray alloc] init];\n    if ([parsedObject isKindOfClass:[NSDictionary class]]) {\n        id errors = [parsedObject objectForKey",
+        "id": 2556
+      }
+    ],
+    "metrics": {
+      "precision": 0.32432432432432434,
+      "recall": 0.48,
+      "f1": 0.3870967741935484,
+      "tp": 24,
+      "fp": 50,
+      "tn": 0,
+      "fn": 26
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 26,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in several distinct technical and content-moderation contexts. One major pattern involves technical specifications and measurements, including scientific terms related to scaling, dimensions, and units of length, as well as numerical values and abbreviations for display resolution or hardware components. A closely related pattern focuses on the completion of specific technical terms, code identifiers, or property names, often following base words like \"font\", \"background\", \"rock\", or \"context\" within compound words or phrases. This includes technical tokens such as \"ray\" in optics or rendering contexts (e.g., \"ray tracing\"), acronyms like \"AC\" in \"RANSAC\", and specific code substrings like \"_at_pos\" in function names.\n\nAnother distinct condition is the presence of prepositions like \"in\", \"with\", and \"by\" when they introduce a medium, solvent, or diluent in scientific descriptions of solutions or mixtures. Separately, the expert also fires for anatomical terms, food items, and biological descriptors, particularly specific cuts of meat or body parts. In code or formatted text, it activates on punctuation tokens that close a block or line, often just before a newline. Finally, and unrelatedly, it responds to text discussing censorship, profanity, or offensive content, with keywords including \"profanity\", \"swear\", \"filtered\", \"muted\", \"blurred\", \"censored\", \"offensive\", and general terms like \"language\" or \"words\" in this context.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03973388671875,
+        "text": "}}\\\\\n    3 & 3 & 3 & 1 & {\\mathtt{A}}& {\\mathtt{A}}& {\\mat",
+        "id": 2714
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0394287109375,
+        "text": " IL-6 expression, U343 cells were incubated with OSM for different periods of time as indicated in figure [1B](#F1){ref",
+        "id": 2715
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " processed separately, through the same pipeline. Raw reads were pre-processed by removing adapters and low quality sequences (quality score = 0.05, discard reads",
+        "id": 2749
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " *PPC1*). The expression of these five genes had a tendency to be lower in the mutant than in the wild type at --Fe. In the",
+        "id": 2762
+      },
+      {
+        "prediction": false,
+        "ground_truth": true,
+        "max_activation": 0.036834716796875,
+        "text": " of the spatial dimension improves the CS reconstruction, with the largest improvement in the optic nerve and the lens nucleus, indicated by the white arrows. The total undersampling",
+        "id": 2732
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ".\n\nFor instance, as humans moved from a hunter-gatherer lifestyle constantly on the move to a more settled agrarian one, changes can be observed in the",
+        "id": 2761
+      }
+    ],
+    "metrics": {
+      "precision": 0.3125,
+      "recall": 0.1,
+      "f1": 0.15151515151515152,
+      "tp": 5,
+      "fp": 11,
+      "tn": 39,
+      "fn": 45
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 27,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in structured technical and formal writing contexts, particularly when punctuation, symbols, or specific formatting elements delineate syntax and document structure. This includes punctuation marks, mathematical symbols, programming syntax, and formatting characters—such as brackets, LaTeX commands, or markdown syntax—that organize code blocks, equations, citations, or text sections. A key specific trigger is the token immediately preceding a closing delimiter like a period, bracket, or quotation mark that ends a sentence or code block, often followed by a new line.\n\nThe expert also fires on technical jargon and compound terms within these domains, including parts of compound nouns, technical phrases, and key function words that form idiomatic expressions or critical sentence components, such as comparative suffixes, prepositions, and conjunctions. This encompasses specific technical terminology from scientific, legal, and programming contexts, including code snippets, variable names, academic citations, and structured data formats.\n\nA highly specific and distinct activation context is the presence of tokens marking destructor definitions or references in C++ source code. The expert activates in any of these structured scenarios, whether the content involves code, mathematical expressions, chemical formulas, scientific notation, or formal document formatting.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " went wrong and hunted the leather jacket of motorcycle gangs around Kanto, and he competed with his fellows for the number. When Nakamura had time job at a",
+        "id": 2679
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "-T2){ref-type=\"table\"} ). We detected no evidence of null alleles.\n\n###### \n\nCharacteristics of microsatellite loci used to estimate relatedness in Mong",
+        "id": 2662
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0458984375,
+        "text": " \\right\\}})$. Permutations act on adjacency matrices in the natural way: If $A$ is the adjacency matrix of a graph $G$, then",
+        "id": 2599
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " of env gene of HIV-1 variants prevalent in Thailand, Malaysia, India, and the Philippines. By phylogenetic tree analyses, an HIV-1 variant",
+        "id": 2668
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04815673828125,
+        "text": ")) { // \"square polar channel mapping is in use\"\n      unsigned vorbis_mapping_coupling_steps = bv.getBits(8) + 1;\n\n",
+        "id": 2592
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.048248291015625,
+        "text": "*<|return|>Q:\n\nGolang Struct Won't Marshal to JSON\n\nI'm trying to marshal a struct in Go to JSON but it won't marshal and I can't understand why",
+        "id": 2591
+      }
+    ],
+    "metrics": {
+      "precision": 0.6133333333333333,
+      "recall": 0.92,
+      "f1": 0.736,
+      "tp": 46,
+      "fp": 29,
+      "tn": 21,
+      "fn": 4
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 28,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in technical, scientific, and programming contexts, where it responds to the structural and formatting elements that define these domains. It fires on punctuation, conjunctions, and common function words—such as \"the\", \"and\", \"of\", \".\", and \"in\"—when they appear within or adjacent to these specialized formats, often at sentence or clause boundaries. A core condition is the presence of code syntax, mathematical notation, and LaTeX commands, including specific technical terms, mathematical symbols, and units of measurement. The expert also activates for structured data formats like academic citations and chemical formulas, as well as for markup elements such as HTML tags, attributes, and special characters like parentheses and brackets. In all cases, the tokens are parts of technical jargon, proper nouns, or programming constructs that organize documents, denote references, or format data.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "128 ±23      133 ±23     \\< 0.001\n  Diastolic blood pressure \\[mm Hg\\]   80 ±21",
+        "id": 2980
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": ":\n\nRiddle quality is dropping. I think most of us have seen it lately: there’s been a slow slide in effort and energy put into riddles,",
+        "id": 2983
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.040924072265625,
+        "text": " assays to study the impact of the two conformations of DENV2 NS5?\n\n2\\. Lines 99-101, p. 5: \"This",
+        "id": 2892
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.0390625,
+        "text": " \"hello\"\n                  /\nmyname ----------/\n\ntest --------------> \"how are you?\"\n\nIt's all about the pointers.\nEDIT AFTER COMMENT\nI have no idea",
+        "id": 2899
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "[](fpsyg-10-02717-i001.jpg)   ![](fpsyg-10-02717-i001.jpg)\n  \\(10\\) I",
+        "id": 2982
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.038665771484375,
+        "text": "A$ is a $(r_1,\\ldots,r_k;n)$ Ramsey coloring.\n\nFor graph coloring problems, solutions are typically closed under permutations of vertices and",
+        "id": 2903
+      }
+    ],
+    "metrics": {
+      "precision": 0.4807692307692308,
+      "recall": 0.5,
+      "f1": 0.49019607843137253,
+      "tp": 25,
+      "fp": 27,
+      "tn": 23,
+      "fn": 25
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 29,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in technical, scientific, academic, and programming contexts, where the text contains specialized jargon, structured formats, or specific syntactical elements. One major condition is the presence of technical terms, proper nouns, and symbols from domains like programming, genomics, chemistry, or law, including specific examples such as RFID-related acronyms, mathematical constants, chemical compounds, and units of measurement. This often occurs within structured data formats like code snippets, mathematical notation, LaTeX commands, or academic citations.\n\nAnother distinct condition is a set of function words, punctuation, and conjunctions—such as \"the\", \"and\", \"of\", \"in\", and periods—that frequently appear at the start of sentences, before punctuation, or within technical prose to structure academic discourse, denote references, or format code. The expert also fires for abbreviations, identifiers, and methodological details common in biological or scientific writing, as well as for tokens that are part of function names, code syntax, or technical documentation. Essentially, it activates for any text involving specialized terminology in a formal context, the specific structural tokens that organize such text, or the formatted elements like code and formulas that define these domains.",
+    "examples": [
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "arrowing his eyes at me. “Then what’s her favorite color?” I jerked back like he had hit me. Knowing exactly where he\nwas going",
+        "id": 3079
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.04852294921875,
+        "text": "^{2}$ this gives $d^{2}$ instead of $d^{4}-1$. This approach is consistent with previous results [@Grassl; @",
+        "id": 2989
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "2 = m/c_2.$ Since $d_i \\le  m/(r+1)$ we have $c_i \\ge r+1$ for",
+        "id": 3043
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.046417236328125,
+        "text": " W. Ke, X. Tao, [[A Feature Selection Method for Large-Scale Network Traffic Classification Based on Spark]{}]{}, Information ",
+        "id": 2991
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " airing of the TV series.\n\nPhilanthropic interests \n\nStroup, along with Corey Fleischer, another contestant and winner of The Big Brain Theory, and Jason",
+        "id": 3077
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.045257568359375,
+        "text": " (1 microM) on the stimulation-evoked [3H]5-HT efflux. In contrast to the PCA-treated animals, WIN55,",
+        "id": 2994
+      }
+    ],
+    "metrics": {
+      "precision": 0.673469387755102,
+      "recall": 0.66,
+      "f1": 0.6666666666666666,
+      "tp": 33,
+      "fp": 16,
+      "tn": 34,
+      "fn": 17
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 30,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in text containing specialized, structured, or syntactically critical elements from technical and formal domains. One key condition is the presence of technical terms, jargon, and identifiers from diverse fields such as legal codes (e.g., citations), scientific notation (e.g., chemical names, control group labels like \"undersampled\"), and programming (e.g., function names like \"router\", \"reset\", or identifiers like \"AlertDialog\"). Another distinct condition is code snippets and programming syntax, including tokens such as variable references, function calls, constants, and critical punctuation for parsing structure like parentheses, brackets, quotes, and operators. The expert also fires on mathematical expressions and notation, featuring symbols, operators, and formatted equations. A further condition is structured data formats and document elements, including tables, citations, numerical values, dates, abbreviations, and formatting such as line breaks, indentation, and special characters. Finally, it activates on punctuation and syntax-critical tokens that delineate structure across these domains, including commas, colons, and delimiters common in code, math, or formal text.",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041259765625,
+        "text": " The numerical results were summarized through a multifactor model \\[[@R22]\\], examining both the effects of each single factor and the interaction between the pitch and",
+        "id": 2797
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": "\nIn base 6, what is 3243 - -525?\n4212\nIn base 7, what is -6 + -13346?\n",
+        "id": 2881
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " you work harder for your next bill, but if your poor or middle class wouldn't you ramp up production to meet the demand of a outstanding bill ?\n\nHe did.",
+        "id": 2856
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " stock analysis.\n\nI first graduated in Business Administration, worked for a couple of years at PricewaterhouseCoopers on financial report auditing and i'm currently doing a Master",
+        "id": 2852
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041229248046875,
+        "text": "245) [@pone.0099234-Wang1]. A homozygous *bhlh39-1* plant was crossed with a *b",
+        "id": 2798
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.042724609375,
+        "text": "Multigraph<String>(), copy);\n        \n        copy.add(5);\n        assertTrue(copy.contains(5));\n        assertFalse(g.contains(5));\n    }\n\n\n   ",
+        "id": 2793
+      }
+    ],
+    "metrics": {
+      "precision": 0.5189873417721519,
+      "recall": 0.82,
+      "f1": 0.6356589147286822,
+      "tp": 41,
+      "fp": 38,
+      "tn": 12,
+      "fn": 9
+    },
+    "per_feature_predictions": {}
+  },
+  {
+    "expert_id": 31,
+    "hookpoint": "model.layers.11",
+    "explanation": "This expert activates in any text containing technical, structured, or specialized content, which manifests in several distinct ways. One primary condition is the presence of technical terms, proper nouns, and specific jargon from domains like law, programming, mathematics, and science, including code elements, legal references, scientific concepts, and named entities. A closely related, broader condition is the prevalence of punctuation, symbols, and common function words—such as commas, spaces, \"and,\" \"the,\" \"to,\" and \"in\"—but specifically when these appear within structured contexts like code snippets, mathematical expressions, citations, legal documents, or technical formatting. This includes tokens that are part of technical syntax, markup, mathematical notation, or document formatting elements like section headers and line breaks. Separately, the expert also fires for the specific token \"C\" in the context of Vitamin C, such as following the word \"vitamin\" or within the phrase \"ascorbic acid.\"",
+    "examples": [
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.03924560546875,
+        "text": ") { return true; }\n    else { return false; }\n\n}\n\nfunction get_immediate_children($path) {\n\n    $path=sanitize($path);\n\n   ",
+        "id": 3112
+      },
+      {
+        "prediction": false,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " edges of the circle it snaps back as shown in the screenshot. Don't get me wrong, i just want to have the shape the same size as the outter",
+        "id": 3149
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.041107177734375,
+        "text": "\\end{document}$, and acceleration $\\documentclass[12pt]{minimal}\n                \\usepackage{amsmath}\n                \\usepackage{wasys",
+        "id": 3104
+      },
+      {
+        "prediction": true,
+        "ground_truth": true,
+        "max_activation": 0.037933349609375,
+        "text": "Edwards boundary condition [@lees], where $\\dot{\\gamma}$ is the shear rate. Then, we describe motions of the disks by overdamped dynamics [",
+        "id": 3118
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " (%) *Sex*    Males509 (43.2)178 (57.4)\\<0.001 Females668 (56.",
+        "id": 3185
+      },
+      {
+        "prediction": true,
+        "ground_truth": false,
+        "max_activation": 0.0,
+        "text": " for public use, and has therefore denied the District judgment\r\nto which it is entitled in law, I respectfully dissent.\n          As the majority states,",
+        "id": 3173
+      }
+    ],
+    "metrics": {
+      "precision": 0.5714285714285714,
+      "recall": 0.8,
+      "f1": 0.6666666666666666,
+      "tp": 40,
+      "fp": 30,
+      "tn": 20,
+      "fn": 10
+    },
+    "per_feature_predictions": {}
+  }
+]
